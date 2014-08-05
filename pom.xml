@@ -6,10 +6,10 @@
   <parent>
     <groupId>de.winkler.betoffice</groupId>
     <artifactId>betoffice-maven-parent</artifactId>
-    <version>1.2.3</version>
+    <version>1.2.4-SNAPSHOT</version>
   </parent>
 
-  <groupId>betoffice-testsupport</groupId>
+  <groupId>de.betoffice</groupId>
   <artifactId>betoffice-testsupport</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>betoffice test support</name>
@@ -20,6 +20,13 @@
       <groupId>de.awtools</groupId>
       <artifactId>awtools-config</artifactId>
       <version>1.2</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.dbunit</groupId>
+      <artifactId>dbunit</artifactId>
+      <version>2.2</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>

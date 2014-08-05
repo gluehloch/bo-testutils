@@ -22,7 +22,7 @@
  *
  */
 
-package de.betoffice.database.hibernate;
+package de.betoffice.database.dbunit;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -46,6 +46,7 @@ import org.dbunit.dataset.xml.FlatXmlDataSet;
 import org.dbunit.operation.DatabaseOperation;
 
 import de.awtools.config.PropertiesGlueConfig;
+import de.betoffice.database.hibernate.HibernateProperties;
 
 /**
  * Importiert die DBUnit Daten.

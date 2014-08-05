@@ -21,7 +21,7 @@
  * Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-package de.betoffice.database.hibernate;
+package de.betoffice.database.dbunit;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -42,6 +42,7 @@ import org.dbunit.dataset.xml.FlatDtdDataSet;
 import org.dbunit.dataset.xml.FlatXmlWriter;
 
 import de.awtools.config.PropertiesGlueConfig;
+import de.betoffice.database.hibernate.HibernateProperties;
 
 /**
  * Exportiert die Daten einer Datenbank.
