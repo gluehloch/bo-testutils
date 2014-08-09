@@ -10,7 +10,7 @@
   </parent>
 
   <groupId>de.betoffice</groupId>
-  <artifactId>betoffice-testsupport</artifactId>
+  <artifactId>betoffice-testutils</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>betoffice test support</name>
   <description>betoffice test support</description>
@@ -28,6 +28,12 @@
       <artifactId>dbunit</artifactId>
       <version>2.2</version>
       <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>de.winkler.dbload</groupId>
+      <artifactId>dbload</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

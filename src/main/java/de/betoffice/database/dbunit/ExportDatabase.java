@@ -122,7 +122,7 @@ public class ExportDatabase {
         PropertiesGlueConfig propertyHolder = new PropertiesGlueConfig(resource);
         propertyHolder.load();
 
-        System.out.println("Loading the properties from URL: " + resource);
+        System.out.println("Loading properties from URL: " + resource);
 
         String outputFile = null;
         if (args.length > 1) {
