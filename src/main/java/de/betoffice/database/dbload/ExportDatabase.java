@@ -24,6 +24,9 @@
 package de.betoffice.database.dbload;
 
 import java.io.File;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -32,11 +35,12 @@ import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.MissingOptionException;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.OptionBuilder;
-import org.apache.commons.cli.OptionGroup;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
+import de.dbload.Dbload;
 import de.dbload.csv.writer.ResourceWriter;
+import de.dbload.jdbc.connector.JdbcConnector;
 
 /**
  * Export database with Dbload.
@@ -69,12 +73,13 @@ public class ExportDatabase {
             System.out.println(String.format("%s", ex.getMessage()));
             HelpFormatter formatter = new HelpFormatter();
             formatter.printHelp("betoffice database csv export tool", options);
+            formatter.printUsage(new PrintWriter(System.out), 30, "use me....");
             System.exit(0);
         } catch (ParseException ex) {
             throw new RuntimeException(ex);
         }
 
-        if (!commandLine.hasOption(ExportDatabase.HELP)) {
+        if (commandLine.hasOption(ExportDatabase.HELP)) {
             HelpFormatter formatter = new HelpFormatter();
             formatter.printHelp("betoffice database csv export tool", options);
         } else {
@@ -83,15 +88,26 @@ public class ExportDatabase {
             edp.setPassword(commandLine.getOptionValue(PASSWORD));
             edp.setJdbcUrl(commandLine.getOptionValue(JDBCURL));
             edp.setFile(commandLine.getOptionValue(FILE));
+            edp.setTables(commandLine.getOptionValues(TABLES));
 
             File file = new File(edp.getFile());
+            if (file.exists()) {
+                file.delete();
+            }
             ResourceWriter resourceWriter = new ResourceWriter(file);
+
+            Connection connection = JdbcConnector.createConnection(
+                    edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
+
+            for (String table : edp.getTables()) {
+                try {
+                    Dbload.write(connection, new File(edp.getFile()), edp.getTables());
+                    resourceWriter.start(connection, table, true);
+                } catch (SQLException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
         }
-        /*
-         * File file = Files.newFile("C:/tmp/betoffice/betoffice.dat");
-         * ResourceWriter resourceWriter = new ResourceWriter(file);
-         * resourceWriter.start(conn, sqlSelect, append);
-         */
     }
 
     @SuppressWarnings("static-access")
@@ -123,21 +139,12 @@ public class ExportDatabase {
                 .withDescription("print this help").create(ExportDatabase.HELP);
 
         Options options = new Options();
-        OptionGroup standardGroup = new OptionGroup();
-        standardGroup.addOption(username);
-        standardGroup.addOption(password);
-        standardGroup.addOption(jdbcUrl);
-        standardGroup.addOption(file);
-        standardGroup.setRequired(true);
-        options.addOptionGroup(standardGroup);
-
-        OptionGroup exportDefinition = new OptionGroup();
-        exportDefinition.addOption(tables);
-        options.addOptionGroup(exportDefinition);
-
-        OptionGroup helpGroup = new OptionGroup();
-        helpGroup.addOption(help);
-        options.addOptionGroup(helpGroup);
+        options.addOption(username);
+        options.addOption(password);
+        options.addOption(jdbcUrl);
+        options.addOption(file);
+        options.addOption(tables);
+        options.addOption(help);
 
         return options;
     }

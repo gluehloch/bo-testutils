@@ -35,6 +35,12 @@
       <artifactId>dbload</artifactId>
       <version>0.0.1-SNAPSHOT</version>
     </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.30</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
 </project>

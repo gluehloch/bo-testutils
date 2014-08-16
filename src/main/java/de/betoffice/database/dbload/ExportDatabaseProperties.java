@@ -23,6 +23,8 @@
 
 package de.betoffice.database.dbload;
 
+import java.util.Arrays;
+
 /**
  * Holds the properties for {@link ExportDatabase}.
  * 
@@ -34,6 +36,7 @@ public class ExportDatabaseProperties {
     private String password;
     private String jdbcUrl;
     private String file;
+    private String[] tables;
 
     public String getUsername() {
         return username;
@@ -67,10 +70,19 @@ public class ExportDatabaseProperties {
         this.file = file;
     }
 
+    public void setTables(String[] tables) {
+        this.tables = Arrays.copyOf(tables, tables.length);
+    }
+
+    public String[] getTables() {
+        return tables;
+    }
+
     @Override
     public String toString() {
         return "ExportDatabaseProperties [username=" + username + ", password="
-                + password + ", jdbcUrl=" + jdbcUrl + ", file=" + file + "]";
+                + password + ", jdbcUrl=" + jdbcUrl + ", file=" + file
+                + ", tables=" + Arrays.toString(tables) + "]";
     }
 
 }
