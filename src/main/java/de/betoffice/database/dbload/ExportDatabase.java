@@ -24,18 +24,7 @@
 package de.betoffice.database.dbload;
 
 import java.io.File;
-import java.io.PrintWriter;
 import java.sql.Connection;
-
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.GnuParser;
-import org.apache.commons.cli.HelpFormatter;
-import org.apache.commons.cli.MissingOptionException;
-import org.apache.commons.cli.Option;
-import org.apache.commons.cli.OptionBuilder;
-import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
 
 import de.dbload.Dbload;
 import de.dbload.jdbc.connector.JdbcConnector;
@@ -47,47 +36,10 @@ import de.dbload.jdbc.connector.JdbcConnector;
  */
 public class ExportDatabase {
 
-    private static final String TABLES = "t";
-
-    private static final String FILE = "f";
-
-    private static final String JDBCURL = "d";
-
-    private static final String PASSWORD = "p";
-
-    private static final String USERNAME = "u";
-
-    private static final String HELP = "h";
-
     public static void main(String[] args) {
-        ExportDatabase ed = new ExportDatabase();
-        Options options = ed.parseCommandLine(args);
-
-        CommandLineParser parser = new GnuParser();
-        CommandLine commandLine = null;
-        try {
-            commandLine = parser.parse(options, args);
-        } catch (MissingOptionException ex) {
-            System.out.println(String.format("%s", ex.getMessage()));
-            HelpFormatter formatter = new HelpFormatter();
-            formatter.printHelp("betoffice database csv export tool", options);
-            formatter.printUsage(new PrintWriter(System.out), 30, "use me....");
-            System.exit(0);
-        } catch (ParseException ex) {
-            throw new RuntimeException(ex);
-        }
-
-        if (commandLine.hasOption(ExportDatabase.HELP)) {
-            HelpFormatter formatter = new HelpFormatter();
-            formatter.printHelp("betoffice database csv export tool", options);
-        } else {
-            ExportDatabaseProperties edp = new ExportDatabaseProperties();
-            edp.setUsername(commandLine.getOptionValue(USERNAME));
-            edp.setPassword(commandLine.getOptionValue(PASSWORD));
-            edp.setJdbcUrl(commandLine.getOptionValue(JDBCURL));
-            edp.setFile(commandLine.getOptionValue(FILE));
-            edp.setTables(commandLine.getOptionValues(TABLES));
-
+        CommandLineParser clp = new CommandLineParser();
+        CommandLineArguments edp = clp.parse(args, System.out);
+        if (edp != null) {
             File file = new File(edp.getFile());
             if (file.exists()) {
                 file.delete();
@@ -95,48 +47,8 @@ public class ExportDatabase {
 
             Connection connection = JdbcConnector.createConnection(
                     edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
-
             Dbload.write(connection, new File(edp.getFile()), edp.getTables());
         }
-    }
-
-    @SuppressWarnings("static-access")
-    private Options parseCommandLine(String[] args) {
-        Option username = OptionBuilder.withArgName(ExportDatabase.USERNAME)
-                .withLongOpt("username").hasArg()
-                .withDescription("User for login.").isRequired()
-                .create(ExportDatabase.USERNAME);
-        Option password = OptionBuilder.withArgName(ExportDatabase.PASSWORD)
-                .withLongOpt("password").hasArg()
-                .withDescription("Password for login").isRequired()
-                .create(ExportDatabase.PASSWORD);
-        Option jdbcUrl = OptionBuilder.withArgName(ExportDatabase.JDBCURL)
-                .withLongOpt("database").hasArg()
-                .withDescription("jdbc database url").isRequired()
-                .create(ExportDatabase.JDBCURL);
-        Option file = OptionBuilder.withArgName(ExportDatabase.FILE)
-                .withLongOpt("file").hasArg()
-                .withDescription("the file to wrtite to").isRequired()
-                .create(ExportDatabase.FILE);
-
-        Option tables = OptionBuilder.withArgName(ExportDatabase.TABLES)
-                .withLongOpt("tables").hasArgs().withValueSeparator(',')
-                .withDescription("the tables to export")
-                .create(ExportDatabase.TABLES);
-
-        Option help = OptionBuilder.withArgName(ExportDatabase.HELP)
-                .withLongOpt("help").hasArg(false)
-                .withDescription("print this help").create(ExportDatabase.HELP);
-
-        Options options = new Options();
-        options.addOption(username);
-        options.addOption(password);
-        options.addOption(jdbcUrl);
-        options.addOption(file);
-        options.addOption(tables);
-        options.addOption(help);
-
-        return options;
     }
 
 }

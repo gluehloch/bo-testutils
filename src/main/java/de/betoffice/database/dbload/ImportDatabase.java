@@ -23,29 +23,32 @@
 
 package de.betoffice.database.dbload;
 
-import org.junit.Test;
+import java.io.File;
+import java.sql.Connection;
+
+import de.dbload.Dbload;
+import de.dbload.jdbc.connector.JdbcConnector;
 
 /**
- * Test for class {@link ExportDatabase}.
+ * Imports a dbload file.
  *
  * @author Andre Winkler
  */
-public class ExportDatabaseTest {
+public class ImportDatabase {
 
-    @Test
-    public void testExportDatabase() {
-        ExportDatabase
-                .main(new String[] {
-                        "-u",
-                        "betoffice",
-                        "-p",
-                        "betoffice",
-                        "-d",
-                        "jdbc:mysql://localhost/betoffice",
-                        "-f",
-                        "D:/tmp/betoffice/export.dat",
-                        "-t",
-                        "bo_team,bo_grouptype,bo_user,bo_season,bo_group,bo_team_group,bo_teamalias,bo_user_season,bo_gamelist,bo_game,bo_gametipp" });
+    public static void main(String[] args) {
+        CommandLineParser clp = new CommandLineParser();
+        CommandLineArguments edp = clp.parse(args, System.out);
+        if (edp != null) {
+            File file = new File(edp.getFile());
+            if (file.exists()) {
+                file.delete();
+            }
+
+            Connection connection = JdbcConnector.createConnection(
+                    edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
+            Dbload.write(connection, new File(edp.getFile()), edp.getTables());
+        }
     }
 
 }
