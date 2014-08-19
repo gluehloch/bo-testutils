@@ -25,6 +25,10 @@ package de.betoffice.database.dbload;
 
 import java.io.File;
 import java.sql.Connection;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.SingleConnectionDataSource;
 
 import de.dbload.Dbload;
 import de.dbload.jdbc.connector.JdbcConnector;
@@ -40,14 +44,40 @@ public class ImportDatabase {
         CommandLineParser clp = new CommandLineParser();
         CommandLineArguments edp = clp.parse(args, System.out);
         if (edp != null) {
-            File file = new File(edp.getFile());
-            if (file.exists()) {
-                file.delete();
-            }
-
             Connection connection = JdbcConnector.createConnection(
                     edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
-            Dbload.write(connection, new File(edp.getFile()), edp.getTables());
+            deleteDatabase(connection);
+            Dbload.read(connection, new File(edp.getFile()));
+            try {
+                connection.commit();
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void deleteDatabase(final Connection _conn) {
+        try {
+            SingleConnectionDataSource scds = new SingleConnectionDataSource(
+                    _conn, true);
+            scds.setAutoCommit(false);
+            JdbcTemplate jdbcTemplate = new JdbcTemplate(scds);
+            jdbcTemplate.execute("update bo_season set bo_current_ref = null");
+            jdbcTemplate.execute("delete from bo_gametipp");
+            jdbcTemplate.execute("delete from bo_game");
+            jdbcTemplate.execute("delete from bo_gamelist");
+            jdbcTemplate.execute("delete from bo_team_group");
+            jdbcTemplate.execute("delete from bo_group");
+            jdbcTemplate.execute("delete from bo_user_season");
+            jdbcTemplate.execute("delete from bo_season");
+            jdbcTemplate.execute("delete from bo_teamalias");
+            jdbcTemplate.execute("delete from bo_team");
+            jdbcTemplate.execute("delete from bo_user");
+            jdbcTemplate.execute("delete from bo_grouptype");
+            _conn.commit();
+        } catch (Exception ex) {
+            throw new RuntimeException(ex);
         }
     }
 

@@ -109,7 +109,7 @@ public final class MySqlDatabasedTestSupport {
      * @throws SQLException
      *             Da ging was beim Löschen daneben.
      */
-    public void deleteDatabase(final Connection _conn) throws SQLException {
+    public void deleteDatabase(final Connection _conn) {
         try {
             SingleConnectionDataSource scds = new SingleConnectionDataSource(
                     _conn, true);
