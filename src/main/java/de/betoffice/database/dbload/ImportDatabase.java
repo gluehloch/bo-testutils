@@ -1,21 +1,21 @@
 /*
  * ============================================================================
- * Project betoffice-storage Copyright (c) 2000-2014 by Andre Winkler. All
+ * Project betoffice-testutils Copyright (c) 2000-2014 by Andre Winkler. All
  * rights reserved.
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
  * MODIFICATION
- *
+ * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation; either version 2 of the License, or (at your option) any later
  * version.
- *
+ * 
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
  * details.
- *
+ * 
  * You should have received a copy of the GNU General Public License along with
  * this program; if not, write to the Free Software Foundation, Inc., 59 Temple
  * Place, Suite 330, Boston, MA 02111-1307 USA
@@ -27,15 +27,13 @@ import java.io.File;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.datasource.SingleConnectionDataSource;
-
+import de.betoffice.database.data.DeleteDatabase;
 import de.dbload.Dbload;
 import de.dbload.jdbc.connector.JdbcConnector;
 
 /**
  * Imports a dbload file.
- *
+ * 
  * @author Andre Winkler
  */
 public class ImportDatabase {
@@ -46,38 +44,15 @@ public class ImportDatabase {
         if (edp != null) {
             Connection connection = JdbcConnector.createConnection(
                     edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
-            deleteDatabase(connection);
+            
+            DeleteDatabase.deleteDatabase(connection);
+
             Dbload.read(connection, new File(edp.getFile()));
             try {
                 connection.commit();
-            } catch (SQLException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
             }
-        }
-    }
-
-    public static void deleteDatabase(final Connection _conn) {
-        try {
-            SingleConnectionDataSource scds = new SingleConnectionDataSource(
-                    _conn, true);
-            scds.setAutoCommit(false);
-            JdbcTemplate jdbcTemplate = new JdbcTemplate(scds);
-            jdbcTemplate.execute("update bo_season set bo_current_ref = null");
-            jdbcTemplate.execute("delete from bo_gametipp");
-            jdbcTemplate.execute("delete from bo_game");
-            jdbcTemplate.execute("delete from bo_gamelist");
-            jdbcTemplate.execute("delete from bo_team_group");
-            jdbcTemplate.execute("delete from bo_group");
-            jdbcTemplate.execute("delete from bo_user_season");
-            jdbcTemplate.execute("delete from bo_season");
-            jdbcTemplate.execute("delete from bo_teamalias");
-            jdbcTemplate.execute("delete from bo_team");
-            jdbcTemplate.execute("delete from bo_user");
-            jdbcTemplate.execute("delete from bo_grouptype");
-            _conn.commit();
-        } catch (Exception ex) {
-            throw new RuntimeException(ex);
         }
     }
 

@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- * Project betoffice-storage Copyright (c) 2000-2014 by Andre Winkler. All
+ * Project betoffice-testutilss Copyright (c) 2000-2014 by Andre Winkler. All
  * rights reserved.
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
@@ -28,11 +28,6 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.datasource.SingleConnectionDataSource;
-
-import de.awtools.basic.LoggerFactory;
 import de.betoffice.database.dbunit.ImportDatabase;
 import de.betoffice.database.hibernate.HibernateConnectionFactory;
 
@@ -44,8 +39,6 @@ import de.betoffice.database.hibernate.HibernateConnectionFactory;
  * @author Andre Winkler
  */
 public final class MySqlDatabasedTestSupport {
-
-    private final Logger log = LoggerFactory.make();
 
     public enum DataLoader {
 
@@ -89,7 +82,7 @@ public final class MySqlDatabasedTestSupport {
     public void setUp(final Connection _conn, final DataLoader _dataLoader)
             throws SQLException {
 
-        deleteDatabase(_conn);
+        DeleteDatabase.deleteDatabase(_conn);
         if (!_dataLoader.equals(DataLoader.EMPTY)) {
             ImportDatabase importDatabase = new ImportDatabase();
             InputStream xmlStream = this.getClass().getResourceAsStream(
@@ -98,39 +91,6 @@ public final class MySqlDatabasedTestSupport {
                     "/de/winkler/betoffice/test/database/database.dtd");
             importDatabase.load(_conn, xmlStream, dtdStream);
             _conn.commit();
-        }
-    }
-
-    /**
-     * Löscht alle Tabellen der Testdatenbank.
-     * 
-     * @param _conn
-     *            A database connection.
-     * @throws SQLException
-     *             Da ging was beim Löschen daneben.
-     */
-    public void deleteDatabase(final Connection _conn) {
-        try {
-            SingleConnectionDataSource scds = new SingleConnectionDataSource(
-                    _conn, true);
-            scds.setAutoCommit(false);
-            JdbcTemplate jdbcTemplate = new JdbcTemplate(scds);
-            jdbcTemplate.execute("update bo_season set bo_current_ref = null");
-            jdbcTemplate.execute("delete from bo_gametipp");
-            jdbcTemplate.execute("delete from bo_game");
-            jdbcTemplate.execute("delete from bo_gamelist");
-            jdbcTemplate.execute("delete from bo_team_group");
-            jdbcTemplate.execute("delete from bo_group");
-            jdbcTemplate.execute("delete from bo_user_season");
-            jdbcTemplate.execute("delete from bo_season");
-            jdbcTemplate.execute("delete from bo_teamalias");
-            jdbcTemplate.execute("delete from bo_team");
-            jdbcTemplate.execute("delete from bo_user");
-            jdbcTemplate.execute("delete from bo_grouptype");
-            _conn.commit();
-        } catch (Exception ex) {
-            log.debug("Unable to delete database: ", ex);
-            throw new RuntimeException(ex);
         }
     }
 
