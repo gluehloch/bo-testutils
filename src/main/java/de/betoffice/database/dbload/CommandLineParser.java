@@ -5,17 +5,17 @@
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
  * MODIFICATION
- *
+ * 
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation; either version 2 of the License, or (at your option) any later
  * version.
- *
+ * 
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
  * details.
- *
+ * 
  * You should have received a copy of the GNU General Public License along with
  * this program; if not, write to the Free Software Foundation, Inc., 59 Temple
  * Place, Suite 330, Boston, MA 02111-1307 USA
@@ -37,7 +37,7 @@ import org.apache.commons.cli.ParseException;
 
 /**
  * Command line parser for database export/import.
- *
+ * 
  * @author Andre Winkler
  */
 public class CommandLineParser {
@@ -57,7 +57,7 @@ public class CommandLineParser {
                 .create(CommandLineParser.USERNAME);
         Option password = OptionBuilder.withArgName(CommandLineParser.PASSWORD)
                 .withLongOpt("password").hasArg()
-                .withDescription("Password for login").isRequired()
+                .withDescription("Password for login").isRequired(false)
                 .create(CommandLineParser.PASSWORD);
         Option jdbcUrl = OptionBuilder.withArgName(CommandLineParser.JDBCURL)
                 .withLongOpt("database").hasArg()
@@ -91,7 +91,7 @@ public class CommandLineParser {
 
     /**
      * Parse the command line.
-     *
+     * 
      * @param args
      *            the command line arguments
      * @param ps
@@ -123,7 +123,9 @@ public class CommandLineParser {
         } else {
             edp = new CommandLineArguments();
             edp.setUsername(commandLine.getOptionValue(USERNAME));
-            edp.setPassword(commandLine.getOptionValue(PASSWORD));
+            if (commandLine.hasOption(PASSWORD)) {
+                edp.setPassword(commandLine.getOptionValue(PASSWORD));
+            }
             edp.setJdbcUrl(commandLine.getOptionValue(JDBCURL));
             edp.setFile(commandLine.getOptionValue(FILE));
             edp.setTables(commandLine.getOptionValues(TABLES));
