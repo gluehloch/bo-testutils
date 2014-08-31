@@ -21,41 +21,23 @@
  * Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-package de.betoffice.database.dbload;
-
-import java.io.File;
-import java.sql.Connection;
-import java.sql.SQLException;
+package de.betoffice.database;
 
 import de.betoffice.database.commandline.CommandLineArguments;
 import de.betoffice.database.commandline.CommandLineParser;
-import de.betoffice.database.data.DeleteDatabase;
-import de.dbload.Dbload;
-import de.dbload.jdbc.connector.JdbcConnector;
 
 /**
- * Imports a dbload file.
+ * Command line processor.
  * 
  * @author Andre Winkler
  */
-public class ImportDatabase {
+public class Testutils {
 
     public static void main(String[] args) {
         CommandLineParser clp = new CommandLineParser();
-        CommandLineArguments edp = clp.parse(args, System.out);
-        if (edp != null) {
-            Connection connection = JdbcConnector.createConnection(
-                    edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
-            
-            DeleteDatabase.deleteDatabase(connection);
-
-            Dbload.read(connection, new File(edp.getFile()));
-            try {
-                connection.commit();
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
-        }
+        CommandLineArguments arguments = clp.parse(args, System.out);
+        
+        arguments.
     }
 
 }

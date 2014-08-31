@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- * Project betoffice-storage Copyright (c) 2000-2014 by Andre Winkler. All
+ * Project betoffice-testutils Copyright (c) 2000-2014 by Andre Winkler. All
  * rights reserved.
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
@@ -21,9 +21,11 @@
  * Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-package de.betoffice.database.dbload;
+package de.betoffice.database.commandline;
 
 import java.util.Arrays;
+
+import de.betoffice.database.dbload.ExportDatabase;
 
 /**
  * Holds the properties for {@link ExportDatabase}.
@@ -32,11 +34,24 @@ import java.util.Arrays;
  */
 public class CommandLineArguments {
 
+    public enum Command {
+        EXPORT, IMPORT, CREATE_SCHEMA
+    }
+    
+    private Command command;
     private String username;
     private String password;
     private String jdbcUrl;
     private String file;
     private String[] tables;
+
+    public Command getCommand() {
+        return command;
+    }
+
+    public void setCommand(Command command) {
+        this.command = command;
+    }
 
     public String getUsername() {
         return username;
@@ -84,9 +99,10 @@ public class CommandLineArguments {
 
     @Override
     public String toString() {
-        return "ExportImportDatabaseProperties [username=" + username
-                + ", password=" + password + ", jdbcUrl=" + jdbcUrl + ", file="
-                + file + ", tables=" + Arrays.toString(tables) + "]";
+        return "CommandLineArguments [command=" + command + ", username="
+                + username + ", password=" + password + ", jdbcUrl=" + jdbcUrl
+                + ", file=" + file + ", tables=" + Arrays.toString(tables)
+                + "]";
     }
 
 }

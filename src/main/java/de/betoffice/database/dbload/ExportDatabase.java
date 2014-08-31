@@ -26,6 +26,8 @@ package de.betoffice.database.dbload;
 import java.io.File;
 import java.sql.Connection;
 
+import de.betoffice.database.commandline.CommandLineArguments;
+import de.betoffice.database.commandline.CommandLineParser;
 import de.dbload.Dbload;
 import de.dbload.jdbc.connector.JdbcConnector;
 

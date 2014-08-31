@@ -21,7 +21,7 @@
  * Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-package de.betoffice.database.dbload;
+package de.betoffice.database.commandline;
 
 import java.io.PrintStream;
 import java.io.PrintWriter;
@@ -34,6 +34,8 @@ import org.apache.commons.cli.Option;
 import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
+
+import de.betoffice.database.commandline.CommandLineArguments.Command;
 
 /**
  * Command line parser for database export/import.
@@ -49,8 +51,24 @@ public class CommandLineParser {
     public static final String USERNAME = "u";
     public static final String HELP = "h";
 
+    public static final String COMMAND_EXPORT = "export";
+    public static final String COMMAND_IMPORT = "import";
+    public static final String COMMAND_CREATE = "createschema";
+
     @SuppressWarnings("static-access")
     private Options parseCommandLine(String[] args) {
+        Option exportOption = OptionBuilder.withArgName(COMMAND_EXPORT)
+                .withDescription("Export some tables of the database.")
+                .create(COMMAND_EXPORT);
+        Option importOption = OptionBuilder.withArgName(COMMAND_IMPORT)
+                .withDescription("Import some data to the database.")
+                .create(COMMAND_IMPORT);
+        Option createSchemaOption = OptionBuilder
+                .withArgName(COMMAND_CREATE)
+                .withDescription(
+                        "Creates application and administration user with different grants.")
+                .create(COMMAND_CREATE);
+
         Option username = OptionBuilder.withArgName(CommandLineParser.USERNAME)
                 .withLongOpt("username").hasArg()
                 .withDescription("User for login.").isRequired()
@@ -70,7 +88,7 @@ public class CommandLineParser {
 
         Option tables = OptionBuilder.withArgName(CommandLineParser.TABLES)
                 .withLongOpt("tables").hasArgs().withValueSeparator(',')
-                .withDescription("the tables to export")
+                .withDescription("the tables to export").isRequired(false)
                 .create(CommandLineParser.TABLES);
 
         Option help = OptionBuilder.withArgName(CommandLineParser.HELP)
@@ -79,6 +97,9 @@ public class CommandLineParser {
                 .create(CommandLineParser.HELP);
 
         Options options = new Options();
+        options.addOption(exportOption);
+        options.addOption(importOption);
+        options.addOption(createSchemaOption);
         options.addOption(username);
         options.addOption(password);
         options.addOption(jdbcUrl);
@@ -129,6 +150,16 @@ public class CommandLineParser {
             edp.setJdbcUrl(commandLine.getOptionValue(JDBCURL));
             edp.setFile(commandLine.getOptionValue(FILE));
             edp.setTables(commandLine.getOptionValues(TABLES));
+
+            if (commandLine.hasOption(COMMAND_EXPORT)) {
+                edp.setCommand(Command.EXPORT);
+            } else if (commandLine.hasOption(COMMAND_IMPORT)) {
+                edp.setCommand(Command.IMPORT);
+            } else if (commandLine.hasOption(COMMAND_CREATE)) {
+                edp.setCommand(Command.CREATE_SCHEMA);
+            } else {
+                System.out.println("Missing command parameter.");
+            }
         }
 
         return edp;
