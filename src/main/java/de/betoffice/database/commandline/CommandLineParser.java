@@ -51,6 +51,12 @@ public class CommandLineParser {
     public static final String USERNAME = "u";
     public static final String HELP = "h";
 
+    public static final String DATABASENAME = "database";
+    public static final String USER = "user";
+    public static final String USER_PASSWORD = "password";
+    public static final String SU = "su";
+    public static final String SU_PASSWORD = "supassword";
+
     public static final String COMMAND_EXPORT = "export";
     public static final String COMMAND_IMPORT = "import";
     public static final String COMMAND_CREATE = "createschema";
@@ -66,8 +72,12 @@ public class CommandLineParser {
         Option createSchemaOption = OptionBuilder
                 .withArgName(COMMAND_CREATE)
                 .withDescription(
-                        "Creates application and administration user with different grants.")
+                        "Creates application and administration users with different grants.")
                 .create(COMMAND_CREATE);
+
+        Option createDatabase = OptionBuilder.withArgName(DATABASENAME)
+                .withDescription("The name of the database to create.")
+                .create(DATABASENAME);
 
         Option username = OptionBuilder.withArgName(CommandLineParser.USERNAME)
                 .withLongOpt("username").hasArg()
@@ -138,9 +148,7 @@ public class CommandLineParser {
 
         CommandLineArguments edp = null;
         if (commandLine.hasOption(CommandLineParser.HELP)) {
-            HelpFormatter formatter = new HelpFormatter();
-            formatter.printHelp("betoffice database csv import/export tool",
-                    options);
+            printHelp(options);
         } else {
             edp = new CommandLineArguments();
             edp.setUsername(commandLine.getOptionValue(USERNAME));
@@ -159,10 +167,17 @@ public class CommandLineParser {
                 edp.setCommand(Command.CREATE_SCHEMA);
             } else {
                 System.out.println("Missing command parameter.");
+                printHelp(options);
             }
         }
 
         return edp;
+    }
+
+    private void printHelp(Options options) {
+        HelpFormatter formatter = new HelpFormatter();
+        formatter.printHelp("betoffice database csv import/export tool",
+                options);
     }
 
 }

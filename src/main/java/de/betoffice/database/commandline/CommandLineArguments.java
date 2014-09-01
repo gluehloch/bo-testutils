@@ -44,6 +44,7 @@ public class CommandLineArguments {
     private String jdbcUrl;
     private String file;
     private String[] tables;
+    private String database;
 
     public Command getCommand() {
         return command;
@@ -97,12 +98,21 @@ public class CommandLineArguments {
         return tables;
     }
 
+
+    public String getDatabase() {
+        return database;
+    }
+
+    public void setDatabase(String database) {
+        this.database = database;
+    }
+
     @Override
     public String toString() {
         return "CommandLineArguments [command=" + command + ", username="
                 + username + ", password=" + password + ", jdbcUrl=" + jdbcUrl
                 + ", file=" + file + ", tables=" + Arrays.toString(tables)
-                + "]";
+                + ", database=" + database + "]";
     }
 
 }

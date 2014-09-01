@@ -25,6 +25,7 @@ package de.betoffice.database;
 
 import de.betoffice.database.commandline.CommandLineArguments;
 import de.betoffice.database.commandline.CommandLineParser;
+import de.betoffice.database.dbload.ExportDatabase;
 
 /**
  * Command line processor.
@@ -36,8 +37,19 @@ public class Testutils {
     public static void main(String[] args) {
         CommandLineParser clp = new CommandLineParser();
         CommandLineArguments arguments = clp.parse(args, System.out);
-        
-        arguments.
+
+        switch (arguments.getCommand()) {
+        case EXPORT:
+            ExportDatabase.start(arguments);
+            break;
+        case IMPORT:
+            ExportDatabase.start(arguments);
+            break;
+        case CREATE_SCHEMA:
+            break;
+        default:
+            // Undefined
+        }
     }
 
 }

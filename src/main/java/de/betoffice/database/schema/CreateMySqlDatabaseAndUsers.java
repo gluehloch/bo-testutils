@@ -25,11 +25,17 @@ package de.betoffice.database.schema;
 
 import static org.apache.commons.lang.StringUtils.replace;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+import de.betoffice.database.commandline.CommandLineArguments;
+import de.betoffice.database.data.DeleteDatabase;
+import de.dbload.Dbload;
+import de.dbload.jdbc.connector.JdbcConnector;
 
 /**
  * Creates the betoffice database schema.
@@ -199,6 +205,13 @@ public class CreateMySqlDatabaseAndUsers {
 
     public static String createGrantsForSuRemote(String database, String user) {
         return replace(replace(GRANT_SU_REMOTE, DATABASE, database), SU, user);
+    }
+
+    public static void start(CommandLineArguments edp) {
+        Connection connection = JdbcConnector.createConnection(
+                edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
+
+        createSchema();
     }
 
 }

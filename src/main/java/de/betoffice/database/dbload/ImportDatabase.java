@@ -28,7 +28,6 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 import de.betoffice.database.commandline.CommandLineArguments;
-import de.betoffice.database.commandline.CommandLineParser;
 import de.betoffice.database.data.DeleteDatabase;
 import de.dbload.Dbload;
 import de.dbload.jdbc.connector.JdbcConnector;
@@ -40,21 +39,16 @@ import de.dbload.jdbc.connector.JdbcConnector;
  */
 public class ImportDatabase {
 
-    public static void main(String[] args) {
-        CommandLineParser clp = new CommandLineParser();
-        CommandLineArguments edp = clp.parse(args, System.out);
-        if (edp != null) {
-            Connection connection = JdbcConnector.createConnection(
-                    edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
-            
-            DeleteDatabase.deleteDatabase(connection);
+    public static void start(CommandLineArguments edp) {
+        Connection connection = JdbcConnector.createConnection(
+                edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
 
-            Dbload.read(connection, new File(edp.getFile()));
-            try {
-                connection.commit();
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
+        DeleteDatabase.deleteDatabase(connection);
+        Dbload.read(connection, new File(edp.getFile()));
+        try {
+            connection.commit();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
         }
     }
 
