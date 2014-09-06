@@ -33,8 +33,8 @@ public class TestutilsTest {
     public static void main(String args[]) {
         String arguments[] = new String[] { "-u", "root", "-d",
                 "jdbc:mysql://localhost/mysql", "-createschema", "--schema",
-                "betoffice", "-user", "betoffice", "-password", "betoffice",
-                "-su", "betofficesu", "-supassword", "betofficesu" };
+                "botest", "-user", "test", "-password", "test",
+                "-su", "testsu", "-supassword", "testsu" };
         Testutils.main(arguments);
     }
 
