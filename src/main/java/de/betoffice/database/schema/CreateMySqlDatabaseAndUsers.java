@@ -64,11 +64,6 @@ public class CreateMySqlDatabaseAndUsers {
      */
     private static final String SU = "{{superUser}}";
 
-    /**
-     * Parameter for the application´s super user password.
-     */
-    private static final String SU_PASSWORD = "{{superUserPassword}}";
-
     //
     // SQL Statements for the MySQL root user.
     //
