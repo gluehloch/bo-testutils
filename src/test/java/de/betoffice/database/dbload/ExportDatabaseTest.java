@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- * Project betoffice-storage Copyright (c) 2000-2014 by Andre Winkler. All
+ * Project betoffice-testutils Copyright (c) 2000-2014 by Andre Winkler. All
  * rights reserved.
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
@@ -25,6 +25,9 @@ package de.betoffice.database.dbload;
 
 import org.junit.Test;
 
+import de.betoffice.database.commandline.CommandLineArguments;
+import de.betoffice.database.commandline.CommandLineParser;
+
 /**
  * Test for class {@link ExportDatabase}.
  *
@@ -34,8 +37,9 @@ public class ExportDatabaseTest {
 
     @Test
     public void testExportDatabase() {
-        ExportDatabase
-                .main(new String[] {
+        CommandLineParser clp = new CommandLineParser();
+        CommandLineArguments arguments = clp.parse(
+                new String[] {
                         "-u",
                         "betoffice",
                         "-p",
@@ -45,7 +49,9 @@ public class ExportDatabaseTest {
                         "-f",
                         "D:/tmp/betoffice/export.dat",
                         "-t",
-                        "bo_team,bo_grouptype,bo_user,bo_season,bo_group,bo_team_group,bo_teamalias,bo_user_season,bo_gamelist,bo_game,bo_gametipp" });
+                        "bo_team,bo_grouptype,bo_user,bo_season,bo_group,bo_team_group,bo_teamalias,bo_user_season,bo_gamelist,bo_game,bo_gametipp" },
+                System.out);
+        ExportDatabase.start(arguments);
     }
 
 }

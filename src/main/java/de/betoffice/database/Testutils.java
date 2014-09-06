@@ -23,9 +23,13 @@
 
 package de.betoffice.database;
 
+import java.nio.channels.IllegalSelectorException;
+import java.sql.SQLException;
+
 import de.betoffice.database.commandline.CommandLineArguments;
 import de.betoffice.database.commandline.CommandLineParser;
-import de.betoffice.database.dbload.ImportDatabase;
+import de.betoffice.database.dbload.ExportDatabase;
+import de.betoffice.database.schema.CreateMySqlDatabaseAndUsers;
 
 /**
  * Command line processor.
@@ -38,13 +42,24 @@ public class Testutils {
         CommandLineParser clp = new CommandLineParser();
         CommandLineArguments arguments = clp.parse(args, System.out);
 
-        switch (arguments.getCommand()) {
-        case CREATE_SCHEMA:
-        case EXPORT:
-        case IMPORT:
-            ImportDatabase.
+        if (arguments != null) {
+            switch (arguments.getCommand()) {
+            case EXPORT:
+                ExportDatabase.start(arguments);
+                break;
+            case IMPORT:
+                ExportDatabase.start(arguments);
+                break;
+            case CREATE_SCHEMA:
+                try {
+                    CreateMySqlDatabaseAndUsers.start(arguments);
+                } catch (SQLException ex) {
+                    System.out.println(ex.getLocalizedMessage());
+                }
+                break;
             default:
-                throw new IllegalStateException("Unknown testutils command!");
+                throw new IllegalSelectorException();
+            }
         }
     }
 

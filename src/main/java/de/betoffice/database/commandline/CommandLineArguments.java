@@ -5,17 +5,17 @@
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
  * MODIFICATION
- * 
+ *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation; either version 2 of the License, or (at your option) any later
  * version.
- * 
+ *
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
  * details.
- * 
+ *
  * You should have received a copy of the GNU General Public License along with
  * this program; if not, write to the Free Software Foundation, Inc., 59 Temple
  * Place, Suite 330, Boston, MA 02111-1307 USA
@@ -29,7 +29,7 @@ import de.betoffice.database.dbload.ExportDatabase;
 
 /**
  * Holds the properties for {@link ExportDatabase}.
- * 
+ *
  * @author Andre Winkler
  */
 public class CommandLineArguments {
@@ -37,13 +37,15 @@ public class CommandLineArguments {
     public enum Command {
         EXPORT, IMPORT, CREATE_SCHEMA
     }
-    
+
     private Command command;
     private String username;
     private String password;
     private String jdbcUrl;
     private String file;
     private String[] tables;
+    private String database;
+    private CreateSchemaProperties createSchemaProperties;
 
     public Command getCommand() {
         return command;
@@ -97,12 +99,33 @@ public class CommandLineArguments {
         return tables;
     }
 
+    public String getDatabase() {
+        return database;
+    }
+
+    public void setDatabase(String database) {
+        this.database = database;
+    }
+
+    public CreateSchemaProperties getCreateSchemaProperties() {
+        return createSchemaProperties;
+    }
+
+    public void setCreateSchemaProperties(
+            CreateSchemaProperties createSchemaProperties) {
+        this.createSchemaProperties = createSchemaProperties;
+    }
+
+    /* (non-Javadoc)
+     * @see java.lang.Object#toString()
+     */
     @Override
     public String toString() {
         return "CommandLineArguments [command=" + command + ", username="
                 + username + ", password=" + password + ", jdbcUrl=" + jdbcUrl
                 + ", file=" + file + ", tables=" + Arrays.toString(tables)
-                + "]";
+                + ", database=" + database + ", createSchemaProperties="
+                + createSchemaProperties + "]";
     }
 
 }

@@ -25,6 +25,9 @@ package de.betoffice.database.dbload;
 
 import org.junit.Test;
 
+import de.betoffice.database.commandline.CommandLineArguments;
+import de.betoffice.database.commandline.CommandLineParser;
+
 /**
  * Test for class {@link ExportDatabase}.
  * 
@@ -34,9 +37,12 @@ public class ImportDatabaseTest {
 
     @Test
     public void testExportDatabase() {
-        ImportDatabase.main(new String[] { "-u", "betoffice", "-p",
-                "betoffice", "-d", "jdbc:mysql://localhost/betoffice", "-f",
-                "D:/tmp/betoffice/export.dat" });
+        CommandLineParser clp = new CommandLineParser();
+        CommandLineArguments arguments = clp.parse(new String[] { "-u",
+                "betoffice", "-p", "betoffice", "-d",
+                "jdbc:mysql://localhost/betoffice", "-f",
+                "D:/tmp/betoffice/export.dat" }, System.out);
+        ImportDatabase.start(arguments);
     }
 
 }
