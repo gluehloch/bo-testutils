@@ -8,7 +8,7 @@
     bo_group*,
     bo_team_group*,
     bo_gamelist*,
-    bo_game*, 
+    bo_game*,
     bo_gametipp*)>
 
 <!ELEMENT bo_game EMPTY>
@@ -67,7 +67,6 @@
     bo_exporttemplate CDATA #IMPLIED
     bo_year CDATA #IMPLIED
     bo_name CDATA #IMPLIED
-    bo_current_ref CDATA #IMPLIED
     bo_mode CDATA #IMPLIED
     bo_teamtype CDATA #IMPLIED
 >
