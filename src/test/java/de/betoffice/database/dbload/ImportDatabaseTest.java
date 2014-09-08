@@ -23,6 +23,7 @@
 
 package de.betoffice.database.dbload;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import de.betoffice.database.commandline.CommandLineArguments;
@@ -35,6 +36,7 @@ import de.betoffice.database.commandline.CommandLineParser;
  */
 public class ImportDatabaseTest {
 
+    @Ignore
     @Test
     public void testExportDatabase() {
         CommandLineParser clp = new CommandLineParser();
