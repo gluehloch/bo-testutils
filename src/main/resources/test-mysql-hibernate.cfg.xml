@@ -33,6 +33,7 @@
     <!-- mapping files -->
     <mapping resource="de/winkler/betoffice/storage/Location.hbm.xml" />
     <mapping resource="de/winkler/betoffice/storage/Player.hbm.xml" />
+    <mapping resource="de/winkler/betoffice/storage/Goal.hbm.xml" />
     <mapping resource="de/winkler/betoffice/storage/Team.hbm.xml" />
     <mapping resource="de/winkler/betoffice/storage/TeamAlias.hbm.xml" />
     <mapping resource="de/winkler/betoffice/storage/GroupType.hbm.xml" />

@@ -24,9 +24,8 @@
 package de.betoffice.database.data;
 
 import java.sql.Connection;
-
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.datasource.SingleConnectionDataSource;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * Utility to delete the betoffice database.
@@ -38,28 +37,29 @@ public class DeleteDatabase {
     /**
      * Deletes all data from all betoffice tables.
      * 
-     * @param connection a database connection
+     * @param connection
+     *            a database connection
      */
-    public static void deleteDatabase(final Connection connection) {
+    public static void deleteDatabase(Connection connection) {
         try {
-            SingleConnectionDataSource scds = new SingleConnectionDataSource(
-                    connection, true);
-            scds.setAutoCommit(false);
-            JdbcTemplate jdbcTemplate = new JdbcTemplate(scds);
-            jdbcTemplate.execute("DELETE FROM bo_gametipp");
-            jdbcTemplate.execute("DELETE FROM bo_game");
-            jdbcTemplate.execute("DELETE FROM bo_gamelist");
-            jdbcTemplate.execute("DELETE FROM bo_team_group");
-            jdbcTemplate.execute("DELETE FROM bo_group");
-            jdbcTemplate.execute("DELETE FROM bo_user_season");
-            jdbcTemplate.execute("DELETE FROM bo_season");
-            jdbcTemplate.execute("DELETE FROM bo_teamalias");
-            jdbcTemplate.execute("DELETE FROM bo_team");
-            jdbcTemplate.execute("DELETE FROM bo_user");
-            jdbcTemplate.execute("DELETE FROM bo_grouptype");
-            connection.commit();
-        } catch (Exception ex) {
-            throw new RuntimeException(ex);
+            Statement stmt = connection.createStatement();
+            stmt.execute("DELETE FROM bo_goal");
+            stmt.execute("DELETE FROM bo_gametipp");
+            stmt.execute("DELETE FROM bo_game");
+            stmt.execute("DELETE FROM bo_gamelist");
+            stmt.execute("DELETE FROM bo_team_group");
+            stmt.execute("DELETE FROM bo_group");
+            stmt.execute("DELETE FROM bo_user_season");
+            stmt.execute("DELETE FROM bo_season");
+            stmt.execute("DELETE FROM bo_teamalias");
+            stmt.execute("DELETE FROM bo_team");
+            stmt.execute("DELETE FROM bo_user");
+            stmt.execute("DELETE FROM bo_grouptype");
+            stmt.execute("DELETE FROM bo_location");
+            stmt.close();
+        } catch (SQLException ex) {
+            throw new RuntimeException("Unable to delete the botest database!",
+                    ex);
         }
     }
 
