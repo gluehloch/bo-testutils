@@ -56,6 +56,7 @@ public class DeleteDatabase {
             stmt.execute("DELETE FROM bo_user");
             stmt.execute("DELETE FROM bo_grouptype");
             stmt.execute("DELETE FROM bo_location");
+            stmt.execute("DELETE FROM bo_player");
             stmt.close();
         } catch (SQLException ex) {
             throw new RuntimeException("Unable to delete the botest database!",

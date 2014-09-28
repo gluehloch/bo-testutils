@@ -36,12 +36,13 @@ import de.betoffice.database.commandline.CommandLineParser;
  */
 public class ExportDatabaseTest {
 
-    @Ignore
+    //@Ignore
     @Test
     public void testExportDatabase() {
         CommandLineParser clp = new CommandLineParser();
         CommandLineArguments arguments = clp.parse(
                 new String[] {
+                        "-export",
                         "-u",
                         "betoffice",
                         "-p",
@@ -49,9 +50,10 @@ public class ExportDatabaseTest {
                         "-d",
                         "jdbc:mysql://localhost/betoffice",
                         "-f",
-                        "D:/tmp/betoffice/export.dat",
+                        "E:/projects/tmp/export.dat",
                         "-t",
-                        "bo_team,bo_grouptype,bo_user,bo_season,bo_group,bo_team_group,bo_teamalias,bo_user_season,bo_gamelist,bo_game,bo_gametipp" },
+                        "bo_team", "bo_teamalias"},
+                        //"bo_team,bo_grouptype,bo_user,bo_season,bo_group,bo_team_group,bo_teamalias,bo_user_season,bo_gamelist,bo_game,bo_gametipp" },
                 System.out);
         ExportDatabase.start(arguments);
     }
