@@ -41,8 +41,7 @@ public class DeleteDatabase {
      *            a database connection
      */
     public static void deleteDatabase(Connection connection) {
-        try {
-            Statement stmt = connection.createStatement();
+        try (Statement stmt = connection.createStatement()) {
             stmt.execute("DELETE FROM bo_goal");
             stmt.execute("DELETE FROM bo_gametipp");
             stmt.execute("DELETE FROM bo_game");
@@ -57,7 +56,7 @@ public class DeleteDatabase {
             stmt.execute("DELETE FROM bo_grouptype");
             stmt.execute("DELETE FROM bo_location");
             stmt.execute("DELETE FROM bo_player");
-            stmt.close();
+            connection.commit();
         } catch (SQLException ex) {
             throw new RuntimeException("Unable to delete the botest database!",
                     ex);
