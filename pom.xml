@@ -6,12 +6,12 @@
   <parent>
     <groupId>de.winkler.betoffice</groupId>
     <artifactId>betoffice-maven-parent</artifactId>
-    <version>1.2.4-SNAPSHOT</version>
+    <version>1.2.4</version>
   </parent>
 
   <groupId>de.betoffice</groupId>
   <artifactId>betoffice-testutils</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1.0</version>
   <name>betoffice test utilities</name>
   <description>betoffice test utilities</description>
 
@@ -33,7 +33,7 @@
     <dependency>
       <groupId>de.winkler.dbload</groupId>
       <artifactId>dbload</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>0.1.0</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
