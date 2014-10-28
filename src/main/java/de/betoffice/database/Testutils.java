@@ -58,7 +58,7 @@ public class Testutils {
                 }
                 break;
             default:
-                throw new IllegalSelectorException();
+                System.out.println("Unknown command line arguments.");
             }
         }
     }

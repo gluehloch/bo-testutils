@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Change Notes</title>
+    <author email="andre.winkler@web.de">Andre Winkler</author>
+  </properties>
+  <body>
+
+    <release version="betoffice-testutils-0.1.0a-SNAPSHOT" date="2014-10-??"
+      description="Documentation">
+      <action dev="andrewinkler" type="added" date="2014-10-27">
+        Documentation. Active Maven site and other reports.
+      </action>
+    </release>
+
+    <release version="betoffice-testutils-0.1.0" date="2014-10-26"
+      description="Init">
+      <action dev="andrewinkler" type="added" date="2014-10-26">
+        The first release.
+      </action>
+    </release>
+
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The 'betoffice-testutils' Project.
+    </legal>
+  </footer>
+</document>

@@ -72,6 +72,8 @@
     bo_longname CDATA #IMPLIED
     bo_logo CDATA #IMPLIED
     bo_teamtype CDATA #IMPLIED
+    bo_location_ref CDATA #IMPLIED
+    bo_openligaid CDATA #IMPLIED
 >
 
 <!ELEMENT bo_team_group EMPTY>
