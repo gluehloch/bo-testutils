@@ -6,10 +6,10 @@
   </properties>
   <body>
 
-    <release version="betoffice-testutils-0.1.0a-SNAPSHOT" date="2014-10-??"
+    <release version="betoffice-testutils-0.2.0" date="2014-11-??"
       description="Documentation">
-      <action dev="andrewinkler" type="added" date="2014-10-27">
-        Documentation. Active Maven site and other reports.
+      <action dev="andrewinkler" type="update" date="2014-11-14">
+        Use dbload 0.2.0 with data type detection.
       </action>
     </release>
 
