@@ -23,7 +23,6 @@
 
 package de.betoffice.database;
 
-import java.nio.channels.IllegalSelectorException;
 import java.sql.SQLException;
 
 import de.betoffice.database.commandline.CommandLineArguments;

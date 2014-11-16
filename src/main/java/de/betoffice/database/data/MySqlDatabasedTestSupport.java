@@ -23,13 +23,12 @@
 
 package de.betoffice.database.data;
 
-import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.List;
 
-import de.betoffice.database.dbunit.ImportDatabase;
-import de.betoffice.database.hibernate.HibernateConnectionFactory;
+import de.betoffice.database.test.Database;
+import de.betoffice.database.test.Masterdata;
+import de.dbload.Dbload;
 
 /**
  * Bereitet eine MySQL Datenbank für einen oder mehrere Testfälle vor. Geladen
@@ -42,29 +41,25 @@ public final class MySqlDatabasedTestSupport {
 
     public enum DataLoader {
 
-        /** Eine leere Datenbank. */
-        EMPTY(""),
+        EMPTY(null),
 
-        /** Die kompletten Produktionsdaten einladen. */
-        FULL("/de/betoffice/database/test/database.xml"),
+        FULL(Database.class),
 
-        /** Nur die Stammdaten einladen. */
-        MASTER_DATA("/de/betoffice/database/test/masterdata.xml");
+        MASTER_DATA(Masterdata.class);
 
-        /** Die zu ladende XML Resource. */
-        private final String xmlResource;
+        private final Class<?> datResource;
 
-        private DataLoader(final String resource) {
-            xmlResource = resource;
+        private DataLoader(final Class<?> resource) {
+            datResource = resource;
         }
 
         /**
-         * Liefert die XML Resource.
+         * Returns the resource classpath.
          *
          * @return Die Resource.
          */
-        String getResource() {
-            return xmlResource;
+        Class<?> getResource() {
+            return datResource;
         }
     };
 
@@ -84,40 +79,8 @@ public final class MySqlDatabasedTestSupport {
 
         DeleteDatabase.deleteDatabase(_conn);
         if (!_dataLoader.equals(DataLoader.EMPTY)) {
-            ImportDatabase importDatabase = new ImportDatabase();
-            InputStream xmlStream = this.getClass().getResourceAsStream(
-                    _dataLoader.getResource());
-            InputStream dtdStream = this.getClass().getResourceAsStream(
-                    "/de/betoffice/database/test/database.dtd");
-            importDatabase.load(_conn, xmlStream, dtdStream);
+            Dbload.read(_conn, _dataLoader.getResource());
             _conn.commit();
-        }
-    }
-
-    /**
-     * Lädt die MySQL Datenbank mit Produktionsdaten für den Integrationstest.
-     *
-     * @param classes
-     *            Hibernate entity classes
-     * @throws SQLException
-     *             Some errors here
-     */
-    public static void start(List<Class<?>> classes) throws SQLException {
-        HibernateConnectionFactory factory = new HibernateConnectionFactory(
-                classes);
-        Connection conn = factory.getHibernateProperties().createConnection();
-        conn.setAutoCommit(false);
-
-        try {
-            MySqlDatabasedTestSupport mySqlDatabasedTestSupport = new MySqlDatabasedTestSupport();
-            mySqlDatabasedTestSupport.setUp(conn, DataLoader.FULL);
-            conn.commit();
-        } catch (Exception ex) {
-            conn.rollback();
-        } finally {
-            if (conn != null) {
-                conn.close();
-            }
         }
     }
 
