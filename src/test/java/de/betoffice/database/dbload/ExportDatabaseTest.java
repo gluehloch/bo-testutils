@@ -50,7 +50,7 @@ public class ExportDatabaseTest {
                         "-d",
                         "jdbc:mysql://localhost/betoffice",
                         "-f",
-                        "D:/export.dat",
+                        "E:/tmp/export.dat",
                         "-t",
                         //"bo_team", "bo_teamalias"},
                         "bo_team,bo_grouptype,bo_user,bo_season,"
