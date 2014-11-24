@@ -36,7 +36,7 @@ import de.betoffice.database.commandline.CommandLineParser;
  */
 public class ExportDatabaseTest {
 
-    //@Ignore
+    @Ignore
     @Test
     public void testExportDatabase() {
         CommandLineParser clp = new CommandLineParser();
@@ -59,7 +59,7 @@ public class ExportDatabaseTest {
                         + "bo_gamelist,bo_game,bo_gametipp,"
                         + "bo_goal"},
                 System.out);
-        ExportDatabase.start(arguments);
+        ExportDatabase.start(arguments, System.out);
     }
 
 }

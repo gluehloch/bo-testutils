@@ -24,6 +24,7 @@
 package de.betoffice.database.dbload;
 
 import java.io.File;
+import java.io.PrintStream;
 import java.sql.Connection;
 
 import de.betoffice.database.commandline.CommandLineArguments;
@@ -37,15 +38,18 @@ import de.dbload.jdbc.connector.JdbcConnector;
  */
 public class ExportDatabase {
 
-    public static void start(CommandLineArguments edp) {
+    public static void start(CommandLineArguments edp, PrintStream out) {
+        out.println("Start database export...");
         File file = new File(edp.getFile());
         if (file.exists()) {
+            out.println("Export file exists. It will be deleted!");
             file.delete();
         }
 
         Connection connection = JdbcConnector.createConnection(
                 edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
         Dbload.write(connection, new File(edp.getFile()), edp.getTables());
+        out.println("Database export finished.");
     }
 
 }

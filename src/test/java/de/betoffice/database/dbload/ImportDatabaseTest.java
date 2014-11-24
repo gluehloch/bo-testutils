@@ -44,7 +44,7 @@ public class ImportDatabaseTest {
                 "betoffice", "-p", "betoffice", "-d",
                 "jdbc:mysql://localhost/betoffice", "-f",
                 "D:/tmp/betoffice/export.dat" }, System.out);
-        ImportDatabase.start(arguments);
+        ImportDatabase.start(arguments, System.out);
     }
 
 }
