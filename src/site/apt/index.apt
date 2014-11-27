@@ -1,6 +1,15 @@
-Betoffice Storage Projekt
+Betoffice Testutils
 
-  Domänenklassen und Persistenzfunktionalität der Betoffice Anwendung.
+  Implements some classes to test transactional services of betoffice.
+  I.e.:
+   
+  * Delete all tables of the test database.
+  
+  * Prepare the database with masterdata.
+  
+  ...
+  TODO
+  ...
 
 
 * Implementierungs FAQ

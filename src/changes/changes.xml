@@ -9,7 +9,8 @@
     <release version="betoffice-testutils-0.2.0" date="2014-11-??"
       description="Documentation">
       <action dev="andrewinkler" type="update" date="2014-11-14">
-        Use dbload 0.2.0 with data type detection.
+        Use dbload 0.2.0 with data type detection. Removed the dependencies
+        dbunit and unitils.
       </action>
     </release>
 
