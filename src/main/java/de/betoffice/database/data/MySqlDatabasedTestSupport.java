@@ -31,6 +31,7 @@ import org.slf4j.Logger;
 
 import de.awtools.basic.LoggerFactory;
 import de.betoffice.database.test.Database;
+import de.betoffice.database.test.DatabaseMinusTipp;
 import de.betoffice.database.test.Masterdata;
 import de.dbload.Dbload;
 
@@ -48,6 +49,8 @@ public final class MySqlDatabasedTestSupport {
         EMPTY(null),
 
         FULL(Database.class),
+        
+        FULL_WITHOUT_TIPP(DatabaseMinusTipp.class),
 
         MASTER_DATA(Masterdata.class);
 
@@ -102,7 +105,6 @@ public final class MySqlDatabasedTestSupport {
             
             if (log.isInfoEnabled()) {
                 log.info("Setup the database: {} ms", stopWatch.getTime());
-                //log.info("Setup the database: {} s", stopWatch.getTime() / 100 / 60);
             }
         }
     }
