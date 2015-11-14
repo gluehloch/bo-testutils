@@ -42,6 +42,7 @@ public class DeleteDatabase {
      */
     public static void deleteDatabase(Connection connection) {
         try (Statement stmt = connection.createStatement()) {
+            stmt.execute("DELETE FROM bo_session");
             stmt.execute("DELETE FROM bo_goal");
             stmt.execute("DELETE FROM bo_gametipp");
             stmt.execute("DELETE FROM bo_game");

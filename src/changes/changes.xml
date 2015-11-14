@@ -8,6 +8,9 @@
 
     <release version="betoffice-testutils-0.2.0" date="2014-11-??"
       description="Documentation">
+      <action dev="andrewinkler" type="update" date="2015-11-14">
+        Added table bo_session to DeleteDatabase.
+      </action>
       <action dev="andrewinkler" type="update" date="2014-11-14">
         Use dbload 0.2.0 with data type detection. Removed the dependencies
         dbunit and unitils.
