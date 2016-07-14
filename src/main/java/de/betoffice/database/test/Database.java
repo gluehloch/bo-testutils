@@ -23,11 +23,18 @@
 
 package de.betoffice.database.test;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.mapping.PersistentClass;
+
 /**
  * Classpath holder for the 'database' dat file.
  *
  * @author Andre Winkler
  */
 public class Database {
+
+    private static final List<PersistentClass> pc = new ArrayList<>();
 
 }

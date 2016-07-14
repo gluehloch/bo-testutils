@@ -6,8 +6,11 @@
   </properties>
   <body>
 
-    <release version="betoffice-testutils-0.2.0" date="2014-11-??"
+    <release version="betoffice-testutils-0.2.0" date="2016-??-??"
       description="Documentation">
+      <action dev="andrewinkler" type="update" date="2065-07-14">
+        Java 8. Hibernate 5. Springframework 4.
+      </action>
       <action dev="andrewinkler" type="update" date="2015-11-14">
         Added table bo_session to DeleteDatabase.
       </action>

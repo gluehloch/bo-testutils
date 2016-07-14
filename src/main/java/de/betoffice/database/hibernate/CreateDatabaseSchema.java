@@ -26,6 +26,7 @@ package de.betoffice.database.hibernate;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.EnumSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
@@ -34,9 +35,13 @@ import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.boot.spi.MetadataImplementor;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.mapping.PersistentClass;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
+import org.hibernate.tool.schema.TargetType;
 import org.slf4j.Logger;
 
 import de.awtools.basic.LoggerFactory;
@@ -59,9 +64,18 @@ public class CreateDatabaseSchema {
      *            Eine Hibernate Configuration.
      */
     public void createSilently(final Configuration config) {
-        SchemaExport schemaExport = new SchemaExport(config);
+        SchemaExport schemaExport = new SchemaExport();
+
+        MetadataSources metadata = new MetadataSources(
+                new StandardServiceRegistryBuilder().applySettings(
+                        config.getProperties()).build());
+
+        // [...] adding annotated classes to metadata here...
+        // metadata.addAnnotatedClass(...);
+
         schemaExport.setFormat(true);
-        schemaExport.create(false, true);
+        schemaExport.create(EnumSet.of(TargetType.DATABASE),
+                metadata.buildMetadata());
     }
 
     /**
@@ -74,10 +88,18 @@ public class CreateDatabaseSchema {
      *            <code>null</code> sein.
      */
     public void create(final Configuration config, final String outputFile) {
-        SchemaExport schemaExport = new SchemaExport(config);
+        MetadataSources metadata = new MetadataSources(
+                new StandardServiceRegistryBuilder().applySettings(
+                        config.getProperties()).build());
+
+        // [...] adding annotated classes to metadata here...
+        // metadata.addAnnotatedClass(...);
+
+        SchemaExport schemaExport = new SchemaExport();
         schemaExport.setFormat(true);
         schemaExport.setOutputFile(outputFile);
-        schemaExport.create(true, true);
+        schemaExport.create(EnumSet.of(TargetType.DATABASE),
+                metadata.buildMetadata());
     }
 
     /**
@@ -85,16 +107,18 @@ public class CreateDatabaseSchema {
      * 
      * @param config
      *            Eine Hibernate Konfiguration.
+     * @param clazzes
+     *            The persistent entities
      * @return Liefert <code>true</code> wenn alle Tabellen vorhanden.
      */
-    public boolean validateSchema(final Configuration config) {
+    public boolean validateSchema(final Configuration config,
+            final List<PersistentClass> clazzes) {
+
         SessionFactory sessionFactory = config.buildSessionFactory();
         Session session = sessionFactory.openSession();
 
         boolean checkOk = true;
-        Iterator<?> iter = config.getClassMappings();
-        while (iter.hasNext()) {
-            PersistentClass pc = (PersistentClass) iter.next();
+        for (PersistentClass pc : clazzes) {
             StringBuilder sb = new StringBuilder("from ").append(pc
                     .getClassName());
             log.debug(sb.toString());
