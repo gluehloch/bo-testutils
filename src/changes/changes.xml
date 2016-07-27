@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Change Notes</title>
+    <author email="andre.winkler@web.de">Andre Winkler</author>
+  </properties>
+  <body>
+
+    <!-- RELEASED -->
+    <release version="betoffice-testutils-0.2.0" date="2016-07-27"
+      description="Documentation">
+      <action dev="andrewinkler" type="update" date="2065-07-14">
+        Java 8. Hibernate 5. Springframework 4.
+      </action>
+      <action dev="andrewinkler" type="update" date="2015-11-14">
+        Added table bo_session to DeleteDatabase.
+      </action>
+      <action dev="andrewinkler" type="update" date="2014-11-14">
+        Use dbload 0.2.0 with data type detection. Removed the dependencies
+        dbunit and unitils.
+      </action>
+    </release>
+
+    <release version="betoffice-testutils-0.1.0" date="2014-10-26"
+      description="Init">
+      <action dev="andrewinkler" type="added" date="2014-10-26">
+        The first release.
+      </action>
+    </release>
+
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The 'betoffice-testutils' Project.
+    </legal>
+  </footer>
+</document>

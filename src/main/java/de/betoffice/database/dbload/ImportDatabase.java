@@ -24,6 +24,7 @@
 package de.betoffice.database.dbload;
 
 import java.io.File;
+import java.io.PrintStream;
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -39,7 +40,8 @@ import de.dbload.jdbc.connector.JdbcConnector;
  */
 public class ImportDatabase {
 
-    public static void start(CommandLineArguments edp) {
+    public static void start(CommandLineArguments edp, PrintStream out) {
+        out.println("Start database import...");
         Connection connection = JdbcConnector.createConnection(
                 edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
 
@@ -50,6 +52,7 @@ public class ImportDatabase {
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
+        out.println("Database import finished.");
     }
 
 }

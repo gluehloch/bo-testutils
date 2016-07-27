@@ -23,12 +23,12 @@
 
 package de.betoffice.database;
 
-import java.nio.channels.IllegalSelectorException;
 import java.sql.SQLException;
 
 import de.betoffice.database.commandline.CommandLineArguments;
 import de.betoffice.database.commandline.CommandLineParser;
 import de.betoffice.database.dbload.ExportDatabase;
+import de.betoffice.database.dbload.ImportDatabase;
 import de.betoffice.database.schema.CreateMySqlDatabaseAndUsers;
 
 /**
@@ -45,10 +45,10 @@ public class Testutils {
         if (arguments != null) {
             switch (arguments.getCommand()) {
             case EXPORT:
-                ExportDatabase.start(arguments);
+                ExportDatabase.start(arguments, System.out);
                 break;
             case IMPORT:
-                ExportDatabase.start(arguments);
+                ImportDatabase.start(arguments, System.out);
                 break;
             case CREATE_SCHEMA:
                 try {
@@ -58,7 +58,7 @@ public class Testutils {
                 }
                 break;
             default:
-                throw new IllegalSelectorException();
+                System.out.println("Unknown command line arguments.");
             }
         }
     }

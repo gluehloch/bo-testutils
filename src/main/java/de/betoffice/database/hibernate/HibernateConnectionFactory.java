@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- * Project betoffice-storage Copyright (c) 2000-2014 by Andre Winkler. All
+ * Project betoffice-testutils Copyright (c) 2000-2016 by Andre Winkler. All
  * rights reserved.
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
@@ -30,6 +30,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 import org.hibernate.cfg.Configuration;
+import org.hibernate.mapping.PersistentClass;
 
 import de.awtools.config.PropertiesGlueConfig;
 
@@ -103,10 +104,12 @@ public class HibernateConnectionFactory {
 
     /**
      * Creates, if necessary, the database schema.
+     * 
+     * @param pcs the persistent classes
      */
-    public void createDatabaseSchemaIfCurrentIsNotValid() {
+    public void createDatabaseSchemaIfCurrentIsNotValid(List<PersistentClass> pcs) {
         CreateDatabaseSchema cds = new CreateDatabaseSchema();
-        if (!cds.validateSchema(config)) {
+        if (!cds.validateSchema(config, pcs)) {
             cds.createSilently(config);
         }
     }
