@@ -6,6 +6,13 @@
   </properties>
   <body>
 
+    <release version="betoffice-testutils-0.3.0" date="2016-11-07"
+      description="Init">
+      <action dev="andrewinkler" type="added" date="2016-11-07">
+        A new table: bo_session.
+      </action>
+    </release>
+
     <!-- RELEASED -->
     <release version="betoffice-testutils-0.2.0" date="2016-07-27"
       description="Documentation">
