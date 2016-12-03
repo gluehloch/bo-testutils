@@ -6,6 +6,17 @@
   </properties>
   <body>
 
+    <release version="betoffice-testutils-0.3.0" date="2016-12-03"
+      description="Init">
+      <action dev="andrewinkler" type="added" date="2016-12-03">
+        Some new columns: bo_admin (table bo_user) and bo_roletype (table
+        bo_user_season).
+      </action>
+      <action dev="andrewinkler" type="added" date="2016-11-07">
+        A new table: bo_session.
+      </action>
+    </release>
+
     <!-- RELEASED -->
     <release version="betoffice-testutils-0.2.0" date="2016-07-27"
       description="Documentation">
