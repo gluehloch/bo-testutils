@@ -21,7 +21,7 @@
   <skin>
     <groupId>org.apache.maven.skins</groupId>
     <artifactId>maven-fluido-skin</artifactId>
-    <version>1.3.0</version>
+    <version>1.6</version>
   </skin>
 
   <publishDate format="dd MMM yyyy" />
@@ -32,7 +32,7 @@
       <item name="Maven" href="http://maven.apache.org/"/>
     </links>
     <head>
-      <meta name="project" content="betoffice-testutils"/>
+      <![CDATA[<meta name="project" content="betoffice-testutils"/>]]>
     </head>
     <menu name="betoffice-testutils">
       <item name="Index"  href="index.html"/>
