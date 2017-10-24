@@ -5,7 +5,16 @@
     <author email="andre.winkler@web.de">Andre Winkler</author>
   </properties>
   <body>
+    <!-- Under development -->
+    <release version="betoffice-testutils-0.4.0" date="2017-??-??"
+      description="Update">
+      <action dev="andrewinkler" type="update" date="2017-10-24">
+        The database test connection properties can be overwritten by
+        environment variables. See file test-mysql-piratestest.properties
+      </action>
+    </release>
 
+    <!-- RELEASED -->
     <release version="betoffice-testutils-0.3.0" date="2016-12-03"
       description="Init">
       <action dev="andrewinkler" type="added" date="2016-12-03">
@@ -17,7 +26,6 @@
       </action>
     </release>
 
-    <!-- RELEASED -->
     <release version="betoffice-testutils-0.2.0" date="2016-07-27"
       description="Documentation">
       <action dev="andrewinkler" type="update" date="2065-07-14">

@@ -5,6 +5,8 @@
 
   <bean id="myProperties"
     class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+    <property name="searchSystemEnvironment" value="true" />
     <property name="location">
       <value>classpath:de/betoffice/database/test/test-mysql-piratestest.properties</value>
     </property>
