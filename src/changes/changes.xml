@@ -11,7 +11,7 @@
       <action dev="andrewinkler" type="update" date="2017-10-24">
         The database test connection properties can be overwritten by
         environment variables. See file test-mysql-piratestest.properties.
-        Substituted all point seperators with an underscore.
+        Substituted all point separators with an underscore.
       </action>
     </release>
 
