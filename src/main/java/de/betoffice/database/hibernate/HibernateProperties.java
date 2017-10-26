@@ -42,19 +42,19 @@ import org.hibernate.cfg.Configuration;
 public class HibernateProperties {
 
     /** hibernate.dialect */
-    public static final String DIALECT = "hibernate.dialect";
+    public static final String DIALECT = "hibernate_dialect";
 
     /** hibernate.connection.url */
-    public static final String URL = "hibernate.connection.url";
+    public static final String URL = "hibernate_connection_url";
 
     /** hibernate.connection.driver_class */
-    public static final String DRIVER = "hibernate.connection.driver_class";
+    public static final String DRIVER = "hibernate_connection_driver_class";
 
     /** hibernate.connection.username */
-    public static final String USERNAME = "hibernate.connection.username";
+    public static final String USERNAME = "hibernate_connection_username";
 
     /** hibernate.connection.password */
-    public static final String PASSWORD = "hibernate.connection.password";
+    public static final String PASSWORD = "hibernate_connection_password";
 
     /** Alle Hibernate Properties in einem Array. */
     private static final String[] KEYS = { DIALECT, URL, DRIVER, USERNAME,
