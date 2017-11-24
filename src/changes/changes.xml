@@ -6,7 +6,7 @@
   </properties>
   <body>
     <!-- Under development -->
-    <release version="betoffice-testutils-0.4.0" date="2017-??-??"
+    <release version="betoffice-testutils-0.4.0" date="2017-11-24"
       description="Update">
       <action dev="andrewinkler" type="update" date="2017-10-24">
         The database test connection properties can be overwritten by
