@@ -44,82 +44,84 @@ import de.awtools.config.PropertiesGlueConfig;
  */
 public class PropertyReaderTest {
 
-	private static final String PROPERTY_FILE = "/de/betoffice/database/test/test-mysql-piratestest.properties";
+    private static final String PROPERTY_FILE = "/de/betoffice/database/test/test-mysql-piratestest.properties";
 
-	/**
-	 * Der Test mit {@link Properties} funktioniert.
-	 *
-	 * @throws Exception
-	 *             Da ging was schief.
-	 */
-	@Test
-	public void testReadPropertyFiles() throws Exception {
-		InputStream is = this.getClass().getResourceAsStream(PROPERTY_FILE);
-		assertNotNull(is);
-		Properties props = new Properties();
-		props.load(is);
+    /**
+     * Der Test mit {@link Properties} funktioniert.
+     *
+     * @throws Exception
+     *             Da ging was schief.
+     */
+    @Test
+    public void testReadPropertyFiles() throws Exception {
+        InputStream is = this.getClass().getResourceAsStream(PROPERTY_FILE);
+        assertNotNull(is);
+        Properties props = new Properties();
+        props.load(is);
 
-		assertEquals("test", props.getProperty("hibernate_connection_username"));
-		assertEquals("test", props.getProperty("hibernate_connection_password"));
-		assertEquals("jdbc:mysql://localhost/botest",
-				props.getProperty("hibernate_connection_url"));
-		assertEquals("com.mysql.jdbc.Driver",
-				props.getProperty("hibernate_connection_driver_class"));
-		assertEquals("org.hibernate.dialect.MySQLDialect",
-				props.getProperty("hibernate_dialect"));
-	}
+        assertEquals("test",
+                props.getProperty("hibernate_connection_username"));
+        assertEquals("test",
+                props.getProperty("hibernate_connection_password"));
+        assertEquals("jdbc:mysql://localhost/botest",
+                props.getProperty("hibernate_connection_url"));
+        assertEquals("com.mysql.jdbc.Driver",
+                props.getProperty("hibernate_connection_driver_class"));
+        assertEquals("org.hibernate.dialect.MySQLDialect",
+                props.getProperty("hibernate_dialect"));
+    }
 
-	/**
-	 * Genau der gleiche Test funktioniert im Projekt gluehloch-util. Verlaesst
-	 * der Code das Projekt und wird z.B. hier ausgefuehrt, liefert der Test
-	 * einen Fehler zurueck.
-	 *
-	 * @throws Exception
-	 *             Da ging was schief.
-	 */
-	@Test
-	public void testReadPropertyFileByPropertyHolder() throws Exception {
-		URL resource = this.getClass().getResource(PROPERTY_FILE);
-		PropertiesGlueConfig ph = new PropertiesGlueConfig(resource);
-		ph.load();
+    /**
+     * Genau der gleiche Test funktioniert im Projekt gluehloch-util. Verlaesst
+     * der Code das Projekt und wird z.B. hier ausgefuehrt, liefert der Test
+     * einen Fehler zurueck.
+     *
+     * @throws Exception
+     *             Da ging was schief.
+     */
+    @Test
+    public void testReadPropertyFileByPropertyHolder() throws Exception {
+        URL resource = this.getClass().getResource(PROPERTY_FILE);
+        PropertiesGlueConfig ph = new PropertiesGlueConfig(resource);
+        ph.load();
 
-		assertEquals("test", ph.getProperty("hibernate_connection_username"));
-		assertEquals("test", ph.getProperty("hibernate_connection_password"));
-	}
+        assertEquals("test", ph.getProperty("hibernate_connection_username"));
+        assertEquals("test", ph.getProperty("hibernate_connection_password"));
+    }
 
-	/**
-	 * Mit Commons-Configuration geht es auch noch.
-	 *
-	 * @throws Exception
-	 *             Da ging was schief.
-	 */
-	@Test
-	public void testReadPropertyFileByCommonsConfiguration() throws Exception {
-		URL resource = this.getClass().getResource(PROPERTY_FILE);
-		PropertiesGlueConfig pc = new PropertiesGlueConfig(resource);
-		pc.load();
+    /**
+     * Mit Commons-Configuration geht es auch noch.
+     *
+     * @throws Exception
+     *             Da ging was schief.
+     */
+    @Test
+    public void testReadPropertyFileByCommonsConfiguration() throws Exception {
+        URL resource = this.getClass().getResource(PROPERTY_FILE);
+        PropertiesGlueConfig pc = new PropertiesGlueConfig(resource);
+        pc.load();
 
-		assertEquals("test", pc.getProperty("hibernate_connection_username"));
-		assertEquals("test", pc.getProperty("hibernate_connection_password"));
-	}
+        assertEquals("test", pc.getProperty("hibernate_connection_username"));
+        assertEquals("test", pc.getProperty("hibernate_connection_password"));
+    }
 
-	/**
-	 * Mit Commons-Configuration und interpoliert geht es auch noch?
-	 *
-	 * @throws Exception
-	 *             Da ging was schief.
-	 */
-	@Test
-	public void testReadPropertyFileByCommonsConfigurationInterpolated()
-			throws Exception {
+    /**
+     * Mit Commons-Configuration und interpoliert geht es auch noch?
+     *
+     * @throws Exception
+     *             Da ging was schief.
+     */
+    @Test
+    public void testReadPropertyFileByCommonsConfigurationInterpolated()
+            throws Exception {
 
-		URL resource = this.getClass().getResource(PROPERTY_FILE);
-		PropertiesGlueConfig pc = new PropertiesGlueConfig(resource);
-		pc.load();
-		GlueConfig gc = pc.interpolatedConfiguration();
+        URL resource = this.getClass().getResource(PROPERTY_FILE);
+        PropertiesGlueConfig pc = new PropertiesGlueConfig(resource);
+        pc.load();
+        GlueConfig gc = pc.interpolatedConfiguration();
 
-		assertEquals("test", gc.getProperty("hibernate_connection_username"));
-		assertEquals("test", gc.getProperty("hibernate_connection_password"));
-	}
+        assertEquals("test", gc.getProperty("hibernate_connection_username"));
+        assertEquals("test", gc.getProperty("hibernate_connection_password"));
+    }
 
 }

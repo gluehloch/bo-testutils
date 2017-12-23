@@ -103,7 +103,8 @@ public class HibernateProperties {
     public Connection createConnection() {
         Connection jdbcConnection = null;
         try {
-            Class.forName(properties.get(HibernateProperties.DRIVER).toString());
+            Class.forName(
+                    properties.get(HibernateProperties.DRIVER).toString());
             jdbcConnection = DriverManager.getConnection(
                     properties.getProperty(HibernateProperties.URL),
                     properties.getProperty(HibernateProperties.USERNAME),

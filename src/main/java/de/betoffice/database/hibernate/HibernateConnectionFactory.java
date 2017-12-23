@@ -66,7 +66,8 @@ public class HibernateConnectionFactory {
 
         hibernateProperties = new HibernateProperties(pc.getProperties());
         if (!hibernateProperties.validate()) {
-            throw new IllegalStateException("Hibernate properties are not set!");
+            throw new IllegalStateException(
+                    "Hibernate properties are not set!");
         }
         config = hibernateProperties.createConfiguration(classes);
     }
@@ -105,9 +106,11 @@ public class HibernateConnectionFactory {
     /**
      * Creates, if necessary, the database schema.
      * 
-     * @param pcs the persistent classes
+     * @param pcs
+     *            the persistent classes
      */
-    public void createDatabaseSchemaIfCurrentIsNotValid(List<PersistentClass> pcs) {
+    public void createDatabaseSchemaIfCurrentIsNotValid(
+            List<PersistentClass> pcs) {
         CreateDatabaseSchema cds = new CreateDatabaseSchema();
         if (!cds.validateSchema(config, pcs)) {
             cds.createSilently(config);

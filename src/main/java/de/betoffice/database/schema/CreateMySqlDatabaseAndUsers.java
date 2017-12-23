@@ -141,8 +141,10 @@ public class CreateMySqlDatabaseAndUsers {
 
         String sqlRevokeAllFromUserLocal = createRevokeAllFromLocalUser(user);
         String sqlRevokeAllFromUserRemote = createRevokeAllFromRemoteUser(user);
-        String sqlRevokeAllFromSuLocal = createRevokeAllFromLocalUser(superUser);
-        String sqlRevokeAllFromSuRemote = createRevokeAllFromRemoteUser(superUser);
+        String sqlRevokeAllFromSuLocal = createRevokeAllFromLocalUser(
+                superUser);
+        String sqlRevokeAllFromSuRemote = createRevokeAllFromRemoteUser(
+                superUser);
         commands.add(sqlRevokeAllFromUserLocal);
         commands.add(sqlRevokeAllFromUserRemote);
         commands.add(sqlRevokeAllFromSuLocal);
@@ -186,12 +188,14 @@ public class CreateMySqlDatabaseAndUsers {
         return replace(REVOKE_ALL_FROM_USER_REMOTE, USER, user);
     }
 
-    public static String createGrantsForUserLocal(String database, String user) {
+    public static String createGrantsForUserLocal(String database,
+            String user) {
         return replace(replace(GRANT_USER_LOCAL, DATABASE, database), USER,
                 user);
     }
 
-    public static String createGrantsForUserRemote(String database, String user) {
+    public static String createGrantsForUserRemote(String database,
+            String user) {
         return replace(replace(GRANT_USER_REMOTE, DATABASE, database), USER,
                 user);
     }
@@ -209,7 +213,8 @@ public class CreateMySqlDatabaseAndUsers {
                 edp.getUsername(), edp.getPassword(), edp.getJdbcUrl());
 
         if (StringUtils.isEmpty(edp.getCreateSchemaProperties().getUser())) {
-            throw new IllegalArgumentException("The user to create is missing!");
+            throw new IllegalArgumentException(
+                    "The user to create is missing!");
         }
         if (StringUtils.isEmpty(edp.getCreateSchemaProperties().getSu())) {
             throw new IllegalArgumentException("The su to create is missing!");
@@ -221,8 +226,10 @@ public class CreateMySqlDatabaseAndUsers {
 
         createSchema(connection, edp.getCreateSchemaProperties().getSchema(),
                 edp.getCreateSchemaProperties().getUser(), edp
-                        .getCreateSchemaProperties().getUserPassword(), edp
-                        .getCreateSchemaProperties().getSu(), edp
+                        .getCreateSchemaProperties().getUserPassword(),
+                edp
+                        .getCreateSchemaProperties().getSu(),
+                edp
                         .getCreateSchemaProperties().getSuPassword());
     }
 

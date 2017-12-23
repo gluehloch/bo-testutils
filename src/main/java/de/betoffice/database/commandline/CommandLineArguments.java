@@ -116,7 +116,9 @@ public class CommandLineArguments {
         this.createSchemaProperties = createSchemaProperties;
     }
 
-    /* (non-Javadoc)
+    /*
+     * (non-Javadoc)
+     * 
      * @see java.lang.Object#toString()
      */
     @Override

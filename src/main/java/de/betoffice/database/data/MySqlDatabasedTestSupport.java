@@ -49,7 +49,7 @@ public final class MySqlDatabasedTestSupport {
         EMPTY(null),
 
         FULL(Database.class),
-        
+
         FULL_WITHOUT_TIPP(DatabaseMinusTipp.class),
 
         MASTER_DATA(Masterdata.class);
@@ -97,12 +97,12 @@ public final class MySqlDatabasedTestSupport {
 
         if (!_dataLoader.equals(DataLoader.EMPTY)) {
             stopWatch.reset();
-            
+
             stopWatch.start();
             Dbload.read(_conn, _dataLoader.getResource());
             _conn.commit();
             stopWatch.stop();
-            
+
             if (log.isInfoEnabled()) {
                 log.info("Setup the database: {} ms", stopWatch.getTime());
             }

@@ -52,12 +52,12 @@ public class ExportDatabaseTest {
                         "-f",
                         "E:/tmp/export.dat",
                         "-t",
-                        //"bo_team", "bo_teamalias"},
+                        // "bo_team", "bo_teamalias"},
                         "bo_team,bo_grouptype,bo_user,bo_season,"
-                        + "bo_location,bo_group,bo_player,"
-                        + "bo_team_group,bo_teamalias,bo_user_season,"
-                        + "bo_gamelist,bo_game,bo_gametipp,"
-                        + "bo_goal"},
+                                + "bo_location,bo_group,bo_player,"
+                                + "bo_team_group,bo_teamalias,bo_user_season,"
+                                + "bo_gamelist,bo_game,bo_gametipp,"
+                                + "bo_goal" },
                 System.out);
         ExportDatabase.start(arguments, System.out);
     }

@@ -37,7 +37,8 @@ public class CreateMySqlDatabaseAndUsersTest {
 
     @Test
     public void testCreateSchemaCreateDatabase() {
-        String sqlCreateDatabase = CreateMySqlDatabaseAndUsers.createDatabase("mydatabase");
+        String sqlCreateDatabase = CreateMySqlDatabaseAndUsers
+                .createDatabase("mydatabase");
         assertThat(
                 sqlCreateDatabase,
                 equalTo("CREATE DATABASE `mydatabase` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci"));
@@ -45,7 +46,8 @@ public class CreateMySqlDatabaseAndUsersTest {
 
     @Test
     public void testCreateSchemaCreateLocalUser() {
-        String sqlCreateUser = CreateMySqlDatabaseAndUsers.createLocalUser("winkler",
+        String sqlCreateUser = CreateMySqlDatabaseAndUsers.createLocalUser(
+                "winkler",
                 "winklerandre");
         assertThat(
                 sqlCreateUser,
@@ -54,7 +56,8 @@ public class CreateMySqlDatabaseAndUsersTest {
 
     @Test
     public void testCreateSchemaCreateRemoteUser() {
-        String sqlCreateUser = CreateMySqlDatabaseAndUsers.createRemoteUser("winkler",
+        String sqlCreateUser = CreateMySqlDatabaseAndUsers.createRemoteUser(
+                "winkler",
                 "winklerandre");
         assertThat(
                 sqlCreateUser,
