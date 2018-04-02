@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- * Project betoffice-testutils Copyright (c) 2000-2016 by Andre Winkler. All
+ * Project betoffice-testutils Copyright (c) 2000-2018 by Andre Winkler. All
  * rights reserved.
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
@@ -24,20 +24,20 @@
 package de.betoffice.database.hibernate;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Properties;
 
 import org.hibernate.cfg.Configuration;
 import org.hibernate.mapping.PersistentClass;
 
-import de.awtools.config.PropertiesGlueConfig;
-
 /**
  * Handles Hibernate configuration and Hibernate properties.
  * 
- * @author by Andre Winkler, $LastChangedBy: andrewinkler $
+ * @author by Andre Winkler
  */
 public class HibernateConnectionFactory {
 
@@ -56,20 +56,26 @@ public class HibernateConnectionFactory {
     public HibernateConnectionFactory(List<Class<?>> classes) {
         URL resource = getClass().getResource(
                 "test-mysql-piratestest.properties");
-
-        PropertiesGlueConfig pc = new PropertiesGlueConfig(resource);
         try {
-            pc.load();
+            hibernateProperties = new HibernateProperties(load(resource));
+            if (!hibernateProperties.validate()) {
+                throw new IllegalStateException(
+                        "Hibernate properties are not set!");
+            }
         } catch (IOException ex) {
             throw new IllegalStateException(ex);
         }
 
-        hibernateProperties = new HibernateProperties(pc.getProperties());
-        if (!hibernateProperties.validate()) {
-            throw new IllegalStateException(
-                    "Hibernate properties are not set!");
-        }
         config = hibernateProperties.createConfiguration(classes);
+    }
+
+    private Properties load(URL resource) throws IOException {
+        Properties properties = new Properties();
+        try (InputStream is = resource.openStream()) {
+            properties.clear();
+            properties.load(is);
+        }
+        return properties;
     }
 
     /**

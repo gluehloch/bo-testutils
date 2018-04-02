@@ -28,8 +28,8 @@ import java.sql.SQLException;
 
 import org.apache.commons.lang.time.StopWatch;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import de.awtools.basic.LoggerFactory;
 import de.betoffice.database.test.Database;
 import de.betoffice.database.test.DatabaseMinusTipp;
 import de.betoffice.database.test.Masterdata;
@@ -70,7 +70,8 @@ public final class MySqlDatabasedTestSupport {
         }
     };
 
-    private final Logger log = LoggerFactory.make();
+    private static final Logger log = LoggerFactory
+            .getLogger(MySqlDatabasedTestSupport.class);
 
     private StopWatch stopWatch = new StopWatch();
 

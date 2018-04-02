@@ -27,24 +27,21 @@ package de.betoffice.database.hibernate;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.EnumSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 
 import org.hibernate.HibernateException;
-import org.hibernate.Query;
+import org.hibernate.query.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.boot.spi.MetadataImplementor;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.mapping.PersistentClass;
 import org.hibernate.tool.hbm2ddl.SchemaExport;
 import org.hibernate.tool.schema.TargetType;
 import org.slf4j.Logger;
-
-import de.awtools.basic.LoggerFactory;
+import org.slf4j.LoggerFactory;
 
 /**
  * Klasse für das Anlegen eines Datenbankschemas.
@@ -53,8 +50,8 @@ import de.awtools.basic.LoggerFactory;
  */
 public class CreateDatabaseSchema {
 
-    /** Logger der Klasse. */
-    private final Logger log = LoggerFactory.make();
+    private static final Logger log = LoggerFactory
+            .getLogger(CreateDatabaseSchema.class);
 
     /**
      * Legt das Datenbankschema 'still' in einer Datenbank an. D.h. es werden
