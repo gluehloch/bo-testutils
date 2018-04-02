@@ -6,6 +6,16 @@
   </properties>
   <body>
     <!-- Under development -->
+    <release version="betoffice-testutils-0.5.0" date="2018-??-??"
+      description="Update">
+      <action dev="andrewinkler" type="update" date="2018-04-02">
+        Removed the dependency awtools-config and awtools-basic.
+        Replaved fest assert with assertj.
+      </action>
+    </release>
+    
+    
+    <!-- RELEASED -->
     <release version="betoffice-testutils-0.4.0" date="2017-11-24"
       description="Update">
       <action dev="andrewinkler" type="update" date="2017-10-24">
