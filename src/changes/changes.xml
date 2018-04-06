@@ -12,6 +12,9 @@
         Removed the dependency awtools-config and awtools-basic.
         Replaved fest assert with assertj.
       </action>
+      <action dev="andrewinkler" type="add" date="2018-04-06">
+        Added a test data extraction script.
+      </action>
     </release>
     
     
