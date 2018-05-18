@@ -120,53 +120,53 @@
 
 ### TAB bo_user
 ### id | bo_name | bo_surname | bo_nickname | bo_email | bo_phone | bo_password | bo_automat | bo_excluded | bo_title | bo_admin
-1 | Rohloff | Markus | mrTipp | markusrohloff@gmx.de | 0201/61 03 36 | Essen07 | 0 | 0 |  | 0
-2 | Schulte | Christian | Xtian | spottwetten@xtian.de | 040/775 774 | jomann | 0 | 1 |  | 0
-3 | Groth | Peter | Peter | peter.groth@gmx.de | 0179/1008450 | Naso | 0 | 0 |  | 0
-4 | Automat | No1 | Automat | home@andre-winkler.de |  | awi | 1 | 0 |  | 0
-5 | Winkler | Lars | planlos | gluehloch@compuserve.de | 0201/7502407 | kopflos | 0 | 1 |  | 0
-6 | Winkler | Andre | Frosch | gluehloch@googlemail.com | 040/76 75 16 24 | awi | 0 | 0 |  | 1
-7 | Müller | Peter | Meister | xmlprofi@gmx.net |  | picasso | 0 | 1 |  | 0
-8 | Hoffmann | Melanie | Melanie | parel@gmx.de | 00000000000 | andre | 0 | 1 |  | 0
-9 | Hattwig | Lars | Hattwig | l.hattwig@web.de | 030/84 50 77 51 | Eisbaer | 0 | 0 |  | 0
-10 | Schneider | Roger | Fuxx | Ro.schneider@enbw.com |  | flavio | 0 | 1 |  | 0
-11 | Blahak | Rainer | Fuchs | r.blahak@enbw.com |  | barny | 0 | 1 |  | 0
-12 | Toth | Franz | Zocker | schneider.roger@nexgo.de |  | abseits | 0 | 1 |  | 0
-13 | Rohloff | Markus | Persistenz | markusrohloff@gmx.de | 02364/509202 | BL | 0 | 0 |  | 0
-14 | Groth | Jochen | Jogi | jochen@grothnet.de | 02594-82375 | Paquitosax | 0 | 0 | MT | 0
-15 | Bitzer | Gerd | Homer | bitzer@wsc-gmbh.de | 01736146557 | picasso | 0 | 1 |  | 0
-16 | Bucksath | Steffen | Steffen | steffen@bucksath.de | 0170/9440357 | Donald | 0 | 0 |  | 0
-17 | Schäfer | Moritz | Sunny | moritz_schaefer@gmx.de | 064047776 | joklate | 0 | 1 |  | 0
-18 | pavlovic | julia | krmaca | mm1982@web.de | 01793456712 | 12345 | 0 | 1 |  | 0
-19 | Kienzler | Günter | Dotwin74 | dotwin74@freenet.de | 084661686 | sarahk | 0 | 1 |  | 0
-20 | juergen | reisinger | junior | juergen.reisinger@gmx.net |  | thomas | 0 | 1 |  | 0
-21 | Stegemann | Claus | Santa | ClausStegemann@web.de | 02594894760 | veltins | 0 | 1 |  | 0
-22 | seidl | christine | chris | sdchristinchen@web.de | 040-76751624 | ortho7 | 0 | 0 |  | 0
-23 | Hasselmann | Jan | BayJan | janhasselmann@gmx.de |  | Rekordmeister | 0 | 0 |  | 0
-24 | Rönnebeck | Stefan | Roenne | stefan.roennebeck@medium-big-band.de | 0179-5462057 | bigband | 0 | 0 |  | 0
-25 | Esselmann | Dirk | Essel | dirk.esselmann@wertgutachter.de | 02502/6936 | Ladas | 0 | 0 |  | 0
-26 | Hühnken | Lutz | tyler | lutz@huehnken.de | 040-30237867 | koreander | 0 | 1 |  | 0
-27 | Reinke | Markus | Kron | markus_reinke@gmx.net | - | kron7 | 0 | 1 |  | 0
-28 | Timm | Volker | volki | volker.timm@web.de |  | 1234567 | 0 | 1 |  | 0
-29 | Seekamp | Holger | Holgi | seekamp@gmx.de |  | x | 0 | 0 |  | 0
-30 | Christoph | Martin | Chrisi | christophm@onbo_email.at |  | xxxx | 0 | 1 |  | 0
-31 | Schroepke | Dieter | Dieter | dieter.schroepke@gmx.de | 43272409 | dieter | 0 | 1 |  | 0
-32 | Paus | Michael | Manni | pausm@web.de |  | manni | 0 | 0 |  | 0
-33 | Wiemers | Meinolf | SpecialAgent | mail@meinolf-wiemers.de | 0511-2353935 | Bundesbank | 0 | 1 |  | 0
-34 | Kroschk | Axel | Rumo | axel@kroschk.net |  | Baluiu | 0 | 1 |  | 0
-35 | Seidl | Andreas | Andi | Andreas.seidl@gmx.de | 08419936520 | anderl | 0 | 0 |  | 0
-14147 | Parplies | Jan-Peter | Peter Pan | janpar@gmx.de | 040/859710 | kurtii | 0 | 1 |  | 0
-17279 | König | Michael | King | king@unicum.de | 0251-271194 | gewinner | 0 | 0 |  | 0
-17280 | JEDA | JonaErikDavidAxel | Goddard |  |  | minicat | 0 | 0 | (e) | 0
-17281 | Riemann | Jörg | Bernd_das_Brot | ri@mc-wetter.de |  | saale | 0 | 0 |  | 0
-17282 | Schienagel | Peter | binglers | binglers@t-online.de | binglers@t-online.de | binglers | 1 | 0 |  | 0
-17283 | Kaiser | Michael | Mikai | michael.Kaiser@derAmrumer.de | michael.Kaiser@derAmrumer.de | nebel | 1 | 0 |  | 0
-17284 | Thiele | Dirk | Rainman | diplomet@gmx.de | diplomet@gmx.de | benson | 1 | 0 |  | 0
-17285 | Schenk | Friedemann | Friedi | Friedemann.Schenk@gmx.de | Friedemann.Schenk@gmx.de | rum01 | 1 | 0 |  | 0
-17286 | Thürling | Nadine | Dennis | NadineThuerling@web.de | NadineThuerling@web.de | 031275 | 1 | 0 |  | 0
-17287 | Rohloff | Bianka | mrsTipp | andre.winkler@web.de | andre.winkler@web.de | bianka | 1 | 0 | (e) | 0
-17288 | Lampe | Marc-Oliver | Mao | molampe@web.de |  | kraichgau | 0 | 0 |  | 0
-17289 | Svea | Svea | RoteLaterne | markusrohloff@gmx.de |  | Svea | 0 | 0 |  | 0
+1 | Meister | Andre | mrTipp | xxx@gmx.de | 0201/61 03 36 | Essen07 | 0 | 0 |  | 0
+2 | Schultz | Erwin | Xtian | xxx@xxxxxxxxxx.de | 040/775 774 | jomann | 0 | 1 |  | 0
+3 | Karlmann | Peter | Peter | xxx@gmx.de | 0179/1008450 | Naso | 0 | 0 |  | 0
+4 | Automat | No1 | Automat | xxxxxx@andre-winkler.de |  | awi | 1 | 0 |  | 0
+5 | Erlohn | Lars | planlos | xxx@compuserve.de | 0201/7502407 | kopflos | 0 | 1 |  | 0
+6 | Erlohn | Andre | Frosch | xxx@googlemail.com | 040/76 75 16 24 | awi | 0 | 0 |  | 1
+7 | Meier | Karl | Meister | xxx@gmx.net |  | picasso | 0 | 1 |  | 0
+8 | Haus | Sabine | Sabine | xxx@gmx.de | 00000000000 | andre | 0 | 1 |  | 0
+9 | Huette | Otto | Hattwig | xx@web.de | 030/84 50 77 51 | Eisbaer | 0 | 0 |  | 0
+10 | Taler | Harald | Fuxx | xxx@enbw.com |  | flavio | 0 | 1 |  | 0
+11 | Bein | Jörg | Fuchs | xxx@enbw.com |  | barny | 0 | 1 |  | 0
+12 | Rummenigge | Jochen | Zocker | xxxx@nexgo.de |  | abseits | 0 | 1 |  | 0
+13 | Schuster | Sven | Persistenz | xxx@gmx.de | 02364/509202 | BL | 0 | 0 |  | 0
+14 | Wagner | Matthias | Jogi | xxx@grothnet.de | 02594-82375 | Paquitosax | 0 | 0 | MT | 0
+15 | Neuer | Volker | Homer | xxx@wsc-gmbh.de | 01736146557 | picasso | 0 | 1 |  | 0
+16 | Hummels | Ditmar | Steffen | xxx@yasdabucksath.de | 0170/9440357 | Donald | 0 | 0 |  | 0
+17 | Boateng | Kalle | Sunny | yxxxasd@gmx.de | 064047776 | joklate | 0 | 1 |  | 0
+18 | Mueller | Christiane | krmaca | sfdasd@web.de | 01793456712 | 12345 | 0 | 1 |  | 0
+19 | Kimmich | Robert | Dotwin74 | asdfasd@freenet.de | 084661686 | sarahk | 0 | 1 |  | 0
+20 | Levandovski | Wiggo | junior | asdfasd@gmx.net |  | thomas | 0 | 1 |  | 0
+21 | Petersen | Klaus | Santa | asdfasdf@web.de | 02594894760 | veltins | 0 | 1 |  | 0
+22 | Hamster | Chrstine | chris | asdfasdf@web.de | 040-76751624 | ortho7 | 0 | 0 |  | 0
+23 | Heiner | Hanno | BayJan | asdfasdf@gmx.de |  | Rekordmeister | 0 | 0 |  | 0
+24 | Rathaus | Erberhard | Roenne | sdfasdf@medium-big-band.de | 0179-5462057 | bigband | 0 | 0 |  | 0
+25 | Götze | Durk | Essel | asdfasdf@wertgutachter.de | 02502/6936 | Ladas | 0 | 0 |  | 0
+26 | Reus | Lappen | tyler | asdf@asdfasdf.de | 040-30237867 | koreander | 0 | 1 |  | 0
+27 | Sokratis | Malte | Kron | yxcvyxcv@gmx.net | - | kron7 | 0 | 1 |  | 0
+28 | Özil | Vokker | volki | asdfasd@web.de |  | 1234567 | 0 | 1 |  | 0
+29 | Seewolf | Herbert | Holgi | sdfasd@gmx.de |  | x | 0 | 0 |  | 0
+30 | Karsten | Peter | Chrisi | sdfasdf@asdfasdf_email.at |  | xxxx | 0 | 1 |  | 0
+31 | Schuppen | Thomas | Dieter | asdfasdf@gmx.de | 43272409 | dieter | 0 | 1 |  | 0
+32 | Weiter | Jörg | Manni | asdfsad@web.de |  | manni | 0 | 0 |  | 0
+33 | Wiedemann | Tobias | SpecialAgent | asdfsadfl@asdfasdf.de | 0511-2353935 | Bundesbank | 0 | 1 |  | 0
+34 | Kkkkkkk | Tobias | Rumo | asdf@asdfasdf.de|  | Baluiu | 0 | 1 |  | 0
+35 | Sindbad | Kalle | Andi | asdfasdf@gmx.de | 08419936520 | anderl | 0 | 0 |  | 0
+14147 | Pappe | Jager | Peter Pan | asdfasd@gmx.de | 040/859710 | kurtii | 0 | 1 |  | 0
+17279 | Bettler | Thorsten | King | asdf@unicum.de | 0251-271194 | gewinner | 0 | 0 |  | 0
+17280 | JEDA | Axel | Goddard |  |  | minicat | 0 | 0 | (e) | 0
+17281 | Hohlmann | David | Bernd_das_Brot | asdf@mc-wetter.de |  | saale | 0 | 0 |  | 0
+17282 | Schlange | Jonas | binglers | asdfas@t-online.de | asdfsad@t-online.de | binglers | 1 | 0 |  | 0
+17283 | Koenig | Frank | Mikai | asdf@asdf.de | asdf@asdfasd.de | nebel | 1 | 0 |  | 0
+17284 | Tal | Lars | Rainman | asdf@gmx.de | asdf@gmx.de | benson | 1 | 0 |  | 0
+17285 | Geschenk | Peter | Friedi | asdf@gmx.de | asdfs@gmx.de | rum01 | 1 | 0 |  | 0
+17286 | Wald | Petra | Dennis | asdfsa@web.de | asdfasd@web.de | 031275 | 1 | 0 |  | 0
+17287 | Hof | Merle | mrsTipp | asdfasd@web.de | asdfasd@web.de | bianka | 1 | 0 | (e) | 0
+17288 | Dunkel | Oliver | Mao | <sdfasdf@web.de |  | kraichgau | 0 | 0 |  | 0
+17289 | Karla | Karla | RoteLaterne | asdf@gmx.de |  | Svea | 0 | 0 |  | 0
 
 ### TAB bo_season
 ### id | bo_exportdirectory | bo_exporttemplate | bo_year | bo_name | bo_mode | bo_teamtype | bo_openligaleagueshortcut | bo_openligaleagueseason
