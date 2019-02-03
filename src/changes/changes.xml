@@ -1,79 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
-  <properties>
-    <title>Change Notes</title>
-    <author email="andre.winkler@web.de">Andre Winkler</author>
-  </properties>
-  <body>
-    <!-- Under development -->
-    
-    <!-- RELEASED -->
-    <release version="betoffice-testutils-0.5.1" date="2018-06-06"
-      description="Update">
-      <action dev="andrewinkler" type="update" date="2018-06-06">
-        Clean up of the test data.
-      </action>
-    </release>
+	<properties>
+		<title>Change Notes</title>
+		<author email="andre.winkler@web.de">Andre Winkler</author>
+	</properties>
+	<body>
+		<!-- Under development -->
+		<release version="betoffice-testutils-0.5.2" date="2019-??-??"
+			description="Update">
+			<action dev="andrewinkler" type="update" date="2019-02-02">
+				Dependency updates.
+			</action>
+		</release>
 
-    <!-- RELEASED -->
-    <release version="betoffice-testutils-0.5.0" date="2018-05-11"
-      description="Update">
-      <action dev="andrewinkler" type="update" date="2018-04-02">
-        Removed the dependency awtools-config and awtools-basic.
-        Replaved fest assert with assertj.
-      </action>
-      <action dev="andrewinkler" type="add" date="2018-04-06">
-        Added a test data extraction script.
-      </action>
-    </release>
-    
-    <!-- RELEASED -->
-    <release version="betoffice-testutils-0.4.0" date="2017-11-24"
-      description="Update">
-      <action dev="andrewinkler" type="update" date="2017-10-24">
-        The database test connection properties can be overwritten by
-        environment variables. See file test-mysql-piratestest.properties.
-        Substituted all point separators with an underscore.
-      </action>
-    </release>
+		<!-- RELEASED -->
+		<release version="betoffice-testutils-0.5.1" date="2018-06-06"
+			description="Update">
+			<action dev="andrewinkler" type="update" date="2018-06-06">
+				Clean up of the test data.
+			</action>
+		</release>
 
-    <!-- RELEASED -->
-    <release version="betoffice-testutils-0.3.0" date="2016-12-03"
-      description="Init">
-      <action dev="andrewinkler" type="added" date="2016-12-03">
-        Some new columns: bo_admin (table bo_user) and bo_roletype (table
-        bo_user_season).
-      </action>
-      <action dev="andrewinkler" type="added" date="2016-11-07">
-        A new table: bo_session.
-      </action>
-    </release>
+		<!-- RELEASED -->
+		<release version="betoffice-testutils-0.5.0" date="2018-05-11"
+			description="Update">
+			<action dev="andrewinkler" type="update" date="2018-04-02">
+				Removed the dependency awtools-config and awtools-basic.
+				Replaved fest assert with assertj.
+			</action>
+			<action dev="andrewinkler" type="add" date="2018-04-06">
+				Added a test data extraction script.
+			</action>
+		</release>
 
-    <release version="betoffice-testutils-0.2.0" date="2016-07-27"
-      description="Documentation">
-      <action dev="andrewinkler" type="update" date="2065-07-14">
-        Java 8. Hibernate 5. Springframework 4.
-      </action>
-      <action dev="andrewinkler" type="update" date="2015-11-14">
-        Added table bo_session to DeleteDatabase.
-      </action>
-      <action dev="andrewinkler" type="update" date="2014-11-14">
-        Use dbload 0.2.0 with data type detection. Removed the dependencies
-        dbunit and unitils.
-      </action>
-    </release>
+		<!-- RELEASED -->
+		<release version="betoffice-testutils-0.4.0" date="2017-11-24"
+			description="Update">
+			<action dev="andrewinkler" type="update" date="2017-10-24">
+				The database test connection properties can be overwritten by
+				environment variables. See file test-mysql-piratestest.properties.
+				Substituted all point separators with an underscore.
+			</action>
+		</release>
 
-    <release version="betoffice-testutils-0.1.0" date="2014-10-26"
-      description="Init">
-      <action dev="andrewinkler" type="added" date="2014-10-26">
-        The first release.
-      </action>
-    </release>
+		<!-- RELEASED -->
+		<release version="betoffice-testutils-0.3.0" date="2016-12-03"
+			description="Init">
+			<action dev="andrewinkler" type="added" date="2016-12-03">
+				Some new columns: bo_admin (table bo_user) and bo_roletype (table
+				bo_user_season).
+			</action>
+			<action dev="andrewinkler" type="added" date="2016-11-07">
+				A new table: bo_session.
+			</action>
+		</release>
 
-  </body>
-  <footer>
-    <legal>
-      Copyright (c) @year@ The 'betoffice-testutils' Project.
-    </legal>
-  </footer>
+		<release version="betoffice-testutils-0.2.0" date="2016-07-27"
+			description="Documentation">
+			<action dev="andrewinkler" type="update" date="2065-07-14">
+				Java 8. Hibernate 5. Springframework 4.
+			</action>
+			<action dev="andrewinkler" type="update" date="2015-11-14">
+				Added table bo_session to DeleteDatabase.
+			</action>
+			<action dev="andrewinkler" type="update" date="2014-11-14">
+				Use dbload 0.2.0 with data type detection. Removed the dependencies
+				dbunit and unitils.
+			</action>
+		</release>
+
+		<release version="betoffice-testutils-0.1.0" date="2014-10-26"
+			description="Init">
+			<action dev="andrewinkler" type="added" date="2014-10-26">
+				The first release.
+			</action>
+		</release>
+
+	</body>
+	<footer>
+		<legal>
+			Copyright (c) @year@ The 'betoffice-testutils' Project.
+		</legal>
+	</footer>
 </document>
