@@ -18,7 +18,7 @@
 
   <groupId>de.betoffice</groupId>
   <artifactId>betoffice-testutils</artifactId>
-  <version>0.5.2-SNAPSHOT</version>
+  <version>0.5.2</version>
   <name>betoffice test utilities</name>
   <description>betoffice test utilities</description>
 
@@ -48,7 +48,7 @@
     <dependency>
       <groupId>de.winkler.dbload</groupId>
       <artifactId>dbload</artifactId>
-      <version>0.4.0-java10-SNAPSHOT</version>
+      <version>0.4.0-java11</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
