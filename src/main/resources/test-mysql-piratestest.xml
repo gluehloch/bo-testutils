@@ -8,7 +8,7 @@
     <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
     <property name="searchSystemEnvironment" value="true" />
     <property name="location">
-      <value>classpath:de/betoffice/database/test/test-mysql-piratestest.properties</value>
+      <value>classpath:de/betoffice/database/test/botest.properties</value>
     </property>
   </bean>
 

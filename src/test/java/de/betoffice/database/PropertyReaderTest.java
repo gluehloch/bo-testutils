@@ -42,7 +42,7 @@ import org.junit.Test;
  */
 public class PropertyReaderTest {
 
-    private static final String PROPERTY_FILE = "/de/betoffice/database/test/test-mysql-piratestest.properties";
+    private static final String PROPERTY_FILE = "/de/betoffice/database/test/botest.properties";
 
     /**
      * Der Test mit {@link Properties} funktioniert.
@@ -58,15 +58,15 @@ public class PropertyReaderTest {
         props.load(is);
 
         assertEquals("test",
-                props.getProperty("hibernate_connection_username"));
+                props.getProperty("betoffice.persistence.username"));
         assertEquals("test",
-                props.getProperty("hibernate_connection_password"));
+                props.getProperty("betoffice.persistence.password"));
         assertEquals("jdbc:mysql://localhost/botest",
-                props.getProperty("hibernate_connection_url"));
+                props.getProperty("betoffice.persistence.url"));
         assertEquals("com.mysql.jdbc.Driver",
-                props.getProperty("hibernate_connection_driver_class"));
+                props.getProperty("betoffice.persistence.classname"));
         assertEquals("org.hibernate.dialect.MySQLDialect",
-                props.getProperty("hibernate_dialect"));
+                props.getProperty("betoffice.persistence.dialect"));
     }
 
     private Properties load(URL resource) throws IOException {
@@ -91,8 +91,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties ph = load(resource);
 
-        assertEquals("test", ph.getProperty("hibernate_connection_username"));
-        assertEquals("test", ph.getProperty("hibernate_connection_password"));
+        assertEquals("test", ph.getProperty("betoffice.persistence.username"));
+        assertEquals("test", ph.getProperty("betoffice.persistence.password"));
     }
 
     /**
@@ -106,8 +106,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties pc = load(resource);
 
-        assertEquals("test", pc.getProperty("hibernate_connection_username"));
-        assertEquals("test", pc.getProperty("hibernate_connection_password"));
+        assertEquals("test", pc.getProperty("betoffice.persistence.username"));
+        assertEquals("test", pc.getProperty("betoffice.persistence.password"));
     }
 
     /**
@@ -123,8 +123,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties gc = load(resource);
 
-        assertEquals("test", gc.getProperty("hibernate_connection_username"));
-        assertEquals("test", gc.getProperty("hibernate_connection_password"));
+        assertEquals("test", gc.getProperty("betoffice.persistence.username"));
+        assertEquals("test", gc.getProperty("betoffice.persistence.password"));
     }
 
 }
