@@ -25,8 +25,7 @@
 
 package de.betoffice.database;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.assertj.core.api.Assertions.*;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -53,20 +52,18 @@ public class PropertyReaderTest {
     @Test
     public void testReadPropertyFiles() throws Exception {
         InputStream is = this.getClass().getResourceAsStream(PROPERTY_FILE);
-        assertNotNull(is);
+        assertThat(is).isNotNull();
+
         Properties props = new Properties();
         props.load(is);
 
-        assertEquals("test",
-                props.getProperty("hibernate_connection_username"));
-        assertEquals("test",
-                props.getProperty("hibernate_connection_password"));
-        assertEquals("jdbc:mysql://localhost/botest",
-                props.getProperty("hibernate_connection_url"));
-        assertEquals("com.mysql.jdbc.Driver",
-                props.getProperty("hibernate_connection_driver_class"));
-        assertEquals("org.hibernate.dialect.MySQLDialect",
-                props.getProperty("hibernate_dialect"));
+        assertThat("test").isEqualTo(props.getProperty("hibernate_connection_username"));
+        assertThat("test").isEqualTo(props.getProperty("hibernate_connection_password"));
+        assertThat("com.mysql.jdbc.Driver").isEqualTo(props.getProperty("hibernate_connection_driver_class"));
+        assertThat("org.hibernate.dialect.MySQLDialect").isEqualTo(props.getProperty("hibernate_dialect"));
+        
+        assertThat(props.getProperty("hibernate_connection_url")).startsWith("jdbc:mysql://");
+        assertThat(props.getProperty("hibernate_connection_url")).endsWith("/botest");
     }
 
     private Properties load(URL resource) throws IOException {
@@ -91,8 +88,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties ph = load(resource);
 
-        assertEquals("test", ph.getProperty("hibernate_connection_username"));
-        assertEquals("test", ph.getProperty("hibernate_connection_password"));
+        assertThat("test").isEqualTo(ph.getProperty("hibernate_connection_username"));
+        assertThat("test").isEqualTo(ph.getProperty("hibernate_connection_password"));
     }
 
     /**
@@ -106,9 +103,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties pc = load(resource);
 
-        assertEquals("test", pc.getProperty("hibernate_connection_username"));
-        assertEquals("test", pc.getProperty("hibernate_connection_password"));
-    }
+        assertThat("test").isEqualTo(pc.getProperty("hibernate_connection_username"));
+        assertThat("test").isEqualTo(pc.getProperty("hibernate_connection_password"));   }
 
     /**
      * Mit Commons-Configuration und interpoliert geht es auch noch?
@@ -123,8 +119,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties gc = load(resource);
 
-        assertEquals("test", gc.getProperty("hibernate_connection_username"));
-        assertEquals("test", gc.getProperty("hibernate_connection_password"));
+        assertThat("test").isEqualTo(gc.getProperty("hibernate_connection_username"));
+        assertThat("test").isEqualTo(gc.getProperty("hibernate_connection_password"));
     }
 
 }
