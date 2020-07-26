@@ -9,8 +9,7 @@
 
 
         <!-- RELEASED -->
-        <release version="betoffice-testutils-0.5.4" date="2020-06-28"
-            description="Update">
+        <release version="betoffice-testutils-0.5.4" date="2020-07-26" description="Fix">
             <action dev="andrewinkler" type="update" date="2020-06-28">
                 Date, time and timezone problem.
             </action>
