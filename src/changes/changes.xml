@@ -6,13 +6,22 @@
     </properties>
     <body>
 		<!-- Under development -->
-        
+        <release version="betoffice-testutils-1.0.0" date="2020-??-??" description="Roundup">
+
+        </release>
+
+        <!-- RELEASED -->
+        <release version="betoffice-testutils-0.5.4" date="2020-07-26" description="Fix">
+            <action dev="andrewinkler" type="update" date="2020-06-28">
+                Date, time and timezone problem.
+            </action>
+        </release>
+
         <!-- RELEASED -->
         <release version="betoffice-testutils-0.5.2" date="2019-03-22"
             description="Update">
             <action dev="andrewinkler" type="update" date="2019-02-02">
-                Dependency
-                updates. Compiled with Java 10. Ah no Java 11.
+                Dependency updates. Compiled with Java 10. Ah no Java 11.
             </action>
         </release>
 
@@ -20,8 +29,7 @@
         <release version="betoffice-testutils-0.5.1" date="2018-06-06"
             description="Update">
             <action dev="andrewinkler" type="update" date="2018-06-06">
-                Clean up of the
-                test data.
+                Clean up of the test data.
             </action>
         </release>
 

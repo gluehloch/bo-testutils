@@ -1,8 +1,7 @@
 /*
- * $Id: PropertyReaderTest.java 3782 2013-07-27 08:44:32Z andrewinkler $
  * ============================================================================
  * Project betoffice-storage
- * Copyright (c) 2000-2012 by Andre Winkler. All rights reserved.
+ * Copyright (c) 2000-2020 by Andre Winkler. All rights reserved.
  * ============================================================================
  *          GNU GENERAL PUBLIC LICENSE
  *  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
@@ -25,8 +24,7 @@
 
 package de.betoffice.database;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.assertj.core.api.Assertions.*;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -53,20 +51,18 @@ public class PropertyReaderTest {
     @Test
     public void testReadPropertyFiles() throws Exception {
         InputStream is = this.getClass().getResourceAsStream(PROPERTY_FILE);
-        assertNotNull(is);
+        assertThat(is).isNotNull();
+
         Properties props = new Properties();
         props.load(is);
 
-        assertEquals("test",
-                props.getProperty("betoffice.persistence.username"));
-        assertEquals("test",
-                props.getProperty("betoffice.persistence.password"));
-        assertEquals("jdbc:mysql://localhost/botest",
-                props.getProperty("betoffice.persistence.url"));
-        assertEquals("com.mysql.jdbc.Driver",
-                props.getProperty("betoffice.persistence.classname"));
-        assertEquals("org.hibernate.dialect.MySQLDialect",
-                props.getProperty("betoffice.persistence.dialect"));
+        assertThat("test").isEqualTo(props.getProperty("betoffice.persistence.username"));
+        assertThat("test").isEqualTo(props.getProperty("betoffice.persistence.password"));
+        assertThat("com.mysql.jdbc.Driver").isEqualTo(props.getProperty("betoffice.persistence.classname"));
+        assertThat("org.hibernate.dialect.MySQLDialect").isEqualTo(props.getProperty("betoffice.persistence.dialect"));
+        
+        assertThat(props.getProperty("betoffice.persistence.url")).startsWith("jdbc:mysql://");
+        assertThat(props.getProperty("betoffice.persistence.url")).endsWith("/botest");
     }
 
     private Properties load(URL resource) throws IOException {
@@ -91,8 +87,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties ph = load(resource);
 
-        assertEquals("test", ph.getProperty("betoffice.persistence.username"));
-        assertEquals("test", ph.getProperty("betoffice.persistence.password"));
+        assertThat("test").isEqualTo(ph.getProperty("betoffice.persistence.username"));
+        assertThat("test").isEqualTo(ph.getProperty("betoffice.persistence.password"));
     }
 
     /**
@@ -106,8 +102,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties pc = load(resource);
 
-        assertEquals("test", pc.getProperty("betoffice.persistence.username"));
-        assertEquals("test", pc.getProperty("betoffice.persistence.password"));
+        assertThat("test").isEqualTo(pc.getProperty("betoffice.persistence.username"));
+        assertThat("test").isEqualTo(pc.getProperty("betoffice.persistence.password"));  
     }
 
     /**
@@ -123,8 +119,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties gc = load(resource);
 
-        assertEquals("test", gc.getProperty("betoffice.persistence.username"));
-        assertEquals("test", gc.getProperty("betoffice.persistence.password"));
+        assertThat("test").isEqualTo(gc.getProperty("betoffice.persistence.username"));
+        assertThat("test").isEqualTo(gc.getProperty("betoffice.persistence.password"));
     }
 
 }
