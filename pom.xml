@@ -1,63 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
+	<modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>de.winkler.betoffice</groupId>
-    <artifactId>betoffice-maven-parent</artifactId>
-    <version>1.9.0-java11</version>
-  </parent>
+	<parent>
+		<groupId>de.winkler.betoffice</groupId>
+		<artifactId>betoffice-maven-parent</artifactId>
+		<version>1.9.0-java11</version>
+	</parent>
 
-  <scm>
-    <connection>scm:git:ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-testutils</connection>
-    <developerConnection>scm:git:ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-testutils</developerConnection>
-    <url>ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-testutils</url>
-  </scm>
+	<scm>
+		<connection>scm:git:ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-testutils</connection>
+		<developerConnection>scm:git:ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-testutils</developerConnection>
+		<url>ssh://andrewinkler@git.code.sf.net/p/betoffice/betoffice-testutils</url>
+	</scm>
 
-  <groupId>de.betoffice</groupId>
-  <artifactId>betoffice-testutils</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <name>betoffice test utilities</name>
-  <description>betoffice test utilities</description>
+	<groupId>de.betoffice</groupId>
+	<artifactId>betoffice-testutils</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>betoffice test utilities</name>
+	<description>betoffice test utilities</description>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-scm-plugin</artifactId>
-        <configuration>
-          <providerImplementations>
-            <git>jgit</git>
-          </providerImplementations>
-        </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>org.apache.maven.scm</groupId>
-            <artifactId>maven-scm-provider-jgit</artifactId>
-            <version>1.9.2</version>
-          </dependency>
-        </dependencies>
-      </plugin>
-    </plugins>
-  </build>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<configuration>
+					<providerImplementations>
+						<git>jgit</git>
+					</providerImplementations>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.scm</groupId>
+						<artifactId>maven-scm-provider-jgit</artifactId>
+						<version>1.9.2</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
 
-  <dependencies>
-    <!-- TEST -->
-    <dependency>
-      <groupId>de.winkler.dbload</groupId>
-      <artifactId>dbload</artifactId>
-      <version>0.4.0-java11</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.31</version>
-      <scope>test</scope>
-    </dependency>
+	<dependencies>
+		<!-- TEST -->
+		<dependency>
+			<groupId>de.winkler.dbload</groupId>
+			<artifactId>dbload</artifactId>
+			<version>0.4.0-java11</version>
+			<scope>compile</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>2.6.2</version>
+			<scope>test</scope>
+		</dependency>
 
-  </dependencies>
+
+	</dependencies>
 
 </project>

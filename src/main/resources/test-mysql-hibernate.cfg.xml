@@ -8,13 +8,13 @@
   <!-- a SessionFactory instance listed as /jndi/name -->
   <session-factory>
     <property name="hibernate.connection.driver_class">
-      com.mysql.jdbc.Driver
+      org.mariadb.jdbc.Driver
     </property>
     <property name="hibernate.connection.url">
-      jdbc:mysql://localhost/botest
+      jdbc:jdbc:mariadb://127.0.0.1/botest
     </property>
     <property name="dialect">
-      org.hibernate.dialect.MySQLDialect
+      org.hibernate.dialect.MariaDBDialect
     </property>
     <property name="show_sql">false</property>
     <property name="hibernate.connection.username">

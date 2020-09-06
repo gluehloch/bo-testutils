@@ -58,10 +58,10 @@ public class PropertyReaderTest {
 
         assertThat("test").isEqualTo(props.getProperty("betoffice.persistence.username"));
         assertThat("test").isEqualTo(props.getProperty("betoffice.persistence.password"));
-        assertThat("com.mysql.jdbc.Driver").isEqualTo(props.getProperty("betoffice.persistence.classname"));
-        assertThat("org.hibernate.dialect.MySQLDialect").isEqualTo(props.getProperty("betoffice.persistence.dialect"));
+        assertThat("org.mariadb.jdbc.Driver").isEqualTo(props.getProperty("betoffice.persistence.classname"));
+        assertThat("org.hibernate.dialect.MariaDBDialect").isEqualTo(props.getProperty("betoffice.persistence.dialect"));
         
-        assertThat(props.getProperty("betoffice.persistence.url")).startsWith("jdbc:mysql://");
+        assertThat(props.getProperty("betoffice.persistence.url")).startsWith("jdbc:mariadb://");
         assertThat(props.getProperty("betoffice.persistence.url")).endsWith("/botest");
     }
 

@@ -42,23 +42,22 @@ import org.hibernate.cfg.Configuration;
 public class HibernateProperties {
 
     /** hibernate.dialect */
-    public static final String DIALECT = "hibernate_dialect";
+    public static final String DIALECT = "betoffice.persistence.dialect";
 
     /** hibernate.connection.url */
-    public static final String URL = "hibernate_connection_url";
+    public static final String URL = "betoffice.persistence.url";
 
     /** hibernate.connection.driver_class */
-    public static final String DRIVER = "hibernate_connection_driver_class";
+    public static final String DRIVER = "betoffice.persistence.classname";
 
     /** hibernate.connection.username */
-    public static final String USERNAME = "hibernate_connection_username";
+    public static final String USERNAME = "betoffice.persistence.username";
 
     /** hibernate.connection.password */
-    public static final String PASSWORD = "hibernate_connection_password";
+    public static final String PASSWORD = "betoffice.persistence.password";
 
     /** Alle Hibernate Properties in einem Array. */
-    private static final String[] KEYS = { DIALECT, URL, DRIVER, USERNAME,
-            PASSWORD };
+    private static final String[] KEYS = { DIALECT, URL, DRIVER, USERNAME, PASSWORD };
 
     /** Der Logger der Klasse. */
     private final Log log = LogFactory.getLog(HibernateProperties.class);

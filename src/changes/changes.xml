@@ -6,8 +6,10 @@
     </properties>
     <body>
 		<!-- Under development -->
-        <release version="betoffice-testutils-1.0.0" date="2020-??-??" description="Roundup">
-
+        <release version="betoffice-testutils-1.0.0" date="2020-??-??" description="MariaDB">
+            <action dev="andrewinkler" type="update" date="2020-09-06">
+                Using MariaDB JDBC driver.
+            </action>
         </release>
 
         <!-- RELEASED -->
