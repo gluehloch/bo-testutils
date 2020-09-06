@@ -23,8 +23,8 @@
 
 package de.betoffice.database.dbload;
 
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import de.betoffice.database.commandline.CommandLineArguments;
 import de.betoffice.database.commandline.CommandLineParser;
@@ -36,7 +36,7 @@ import de.betoffice.database.commandline.CommandLineParser;
  */
 public class ExportDatabaseTest {
 
-    @Ignore
+    @Disabled
     @Test
     public void testExportDatabase() {
         CommandLineParser clp = new CommandLineParser();

@@ -6,12 +6,20 @@
     </properties>
     <body>
 		<!-- Under development -->
-        <release version="betoffice-testutils-1.0.0" date="2020-??-??" description="MariaDB">
+        <release version="betoffice-testutils-1.0.0" date="2020-??-??" description="MariaDB and Roundup">
             <action dev="andrewinkler" type="update" date="2020-09-06">
                 Using MariaDB JDBC driver.
             </action>
         </release>
 
+        <!-- Under development -->
+        <release version="betoffice-testutils-0.6.0" date="2019-04-22"
+            description="Update">
+            <action dev="andrewinkler" type="update" date="2019-04-22">
+                Renamed the persistence properties. Prefixed with betoffice.
+            </action>
+        </release>
+        
         <!-- RELEASED -->
         <release version="betoffice-testutils-0.5.4" date="2020-07-26" description="Fix">
             <action dev="andrewinkler" type="update" date="2020-06-28">

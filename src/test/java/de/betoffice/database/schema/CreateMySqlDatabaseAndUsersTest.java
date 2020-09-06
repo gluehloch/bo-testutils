@@ -23,10 +23,9 @@
 
 package de.betoffice.database.schema;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * Creates the database schema.
@@ -39,9 +38,8 @@ public class CreateMySqlDatabaseAndUsersTest {
     public void testCreateSchemaCreateDatabase() {
         String sqlCreateDatabase = CreateMySqlDatabaseAndUsers
                 .createDatabase("mydatabase");
-        assertThat(
-                sqlCreateDatabase,
-                equalTo("CREATE DATABASE `mydatabase` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci"));
+        assertThat(sqlCreateDatabase).isEqualTo(
+                "CREATE DATABASE `mydatabase` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci");
     }
 
     @Test
@@ -49,9 +47,8 @@ public class CreateMySqlDatabaseAndUsersTest {
         String sqlCreateUser = CreateMySqlDatabaseAndUsers.createLocalUser(
                 "winkler",
                 "winklerandre");
-        assertThat(
-                sqlCreateUser,
-                equalTo("CREATE USER 'winkler'@'localhost' IDENTIFIED BY 'winklerandre'"));
+        assertThat(sqlCreateUser).isEqualTo(
+                "CREATE USER 'winkler'@'localhost' IDENTIFIED BY 'winklerandre'");
     }
 
     @Test
@@ -59,9 +56,8 @@ public class CreateMySqlDatabaseAndUsersTest {
         String sqlCreateUser = CreateMySqlDatabaseAndUsers.createRemoteUser(
                 "winkler",
                 "winklerandre");
-        assertThat(
-                sqlCreateUser,
-                equalTo("CREATE USER 'winkler'@'%' IDENTIFIED BY 'winklerandre'"));
+        assertThat(sqlCreateUser).isEqualTo(
+                "CREATE USER 'winkler'@'%' IDENTIFIED BY 'winklerandre'");
     }
 
 }

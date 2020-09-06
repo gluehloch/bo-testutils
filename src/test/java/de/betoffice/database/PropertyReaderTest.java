@@ -24,14 +24,14 @@
 
 package de.betoffice.database;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Properties;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * Testet das Auslesen der Property-Dateien.
@@ -40,7 +40,7 @@ import org.junit.Test;
  */
 public class PropertyReaderTest {
 
-    private static final String PROPERTY_FILE = "/de/betoffice/database/test/botest.properties";
+    private static final String PROPERTY_FILE = "/botest.properties";
 
     /**
      * Der Test mit {@link Properties} funktioniert.
@@ -51,16 +51,17 @@ public class PropertyReaderTest {
     @Test
     public void testReadPropertyFiles() throws Exception {
         InputStream is = this.getClass().getResourceAsStream(PROPERTY_FILE);
-        assertThat(is).isNotNull();
-
         Properties props = new Properties();
         props.load(is);
+        assertThat(is).isNotNull();
 
-        assertThat("test").isEqualTo(props.getProperty("betoffice.persistence.username"));
-        assertThat("test").isEqualTo(props.getProperty("betoffice.persistence.password"));
-        assertThat("org.mariadb.jdbc.Driver").isEqualTo(props.getProperty("betoffice.persistence.classname"));
-        assertThat("org.hibernate.dialect.MariaDBDialect").isEqualTo(props.getProperty("betoffice.persistence.dialect"));
-        
+        assertThat(props.getProperty("betoffice.persistence.username")).isEqualTo("test");
+        assertThat(props.getProperty("betoffice.persistence.password")).isEqualTo("test");
+        // Should be defined local on your machine as environment variable!
+        // assertThat(props.getProperty("betoffice.persistence.url"))
+        // .isEqualTo("jdbc:mysql://192.168.99.100/botest");
+        assertThat(props.getProperty("betoffice.persistence.classname")).isEqualTo("org.mariadb.jdbc.Driver");
+        assertThat(props.getProperty("betoffice.persistence.dialect")).isEqualTo("org.hibernate.dialect.MariaDBDialect");
         assertThat(props.getProperty("betoffice.persistence.url")).startsWith("jdbc:mariadb://");
         assertThat(props.getProperty("betoffice.persistence.url")).endsWith("/botest");
     }
@@ -75,9 +76,8 @@ public class PropertyReaderTest {
     }
 
     /**
-     * Genau der gleiche Test funktioniert im Projekt gluehloch-util. Verlaesst
-     * der Code das Projekt und wird z.B. hier ausgefuehrt, liefert der Test
-     * einen Fehler zurueck.
+     * Genau der gleiche Test funktioniert im Projekt gluehloch-util. Verlaesst der Code das Projekt und wird z.B. hier
+     * ausgefuehrt, liefert der Test einen Fehler zurueck.
      *
      * @throws Exception
      *             Da ging was schief.
@@ -87,8 +87,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties ph = load(resource);
 
-        assertThat("test").isEqualTo(ph.getProperty("betoffice.persistence.username"));
-        assertThat("test").isEqualTo(ph.getProperty("betoffice.persistence.password"));
+        assertThat(ph.getProperty("betoffice.persistence.username")).isEqualTo("test");
+        assertThat(ph.getProperty("betoffice.persistence.password")).isEqualTo("test");
     }
 
     /**
@@ -102,8 +102,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties pc = load(resource);
 
-        assertThat("test").isEqualTo(pc.getProperty("betoffice.persistence.username"));
-        assertThat("test").isEqualTo(pc.getProperty("betoffice.persistence.password"));  
+        assertThat(pc.getProperty("betoffice.persistence.username")).isEqualTo("test");
+        assertThat(pc.getProperty("betoffice.persistence.password")).isEqualTo("test");
     }
 
     /**
@@ -119,8 +119,8 @@ public class PropertyReaderTest {
         URL resource = this.getClass().getResource(PROPERTY_FILE);
         Properties gc = load(resource);
 
-        assertThat("test").isEqualTo(gc.getProperty("betoffice.persistence.username"));
-        assertThat("test").isEqualTo(gc.getProperty("betoffice.persistence.password"));
+        assertThat(gc.getProperty("betoffice.persistence.username")).isEqualTo("test");
+        assertThat(gc.getProperty("betoffice.persistence.password")).isEqualTo("test");
     }
 
 }
