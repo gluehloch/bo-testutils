@@ -5,14 +5,14 @@
         <author email="andre.winkler@web.de">Andre Winkler</author>
     </properties>
     <body>
-		<!-- Under development -->
+		<!-- RELEASED -->
         <release version="betoffice-testutils-1.0.0" date="2020-10-07" description="MariaDB and Roundup">
             <action dev="andrewinkler" type="update" date="2020-09-06">
                 Using MariaDB JDBC driver.
             </action>
         </release>
 
-        <!-- Under development -->
+        <!-- RELEASED -->
         <release version="betoffice-testutils-0.6.0" date="2019-04-22"
             description="Update">
             <action dev="andrewinkler" type="update" date="2019-04-22">
