@@ -6,6 +6,13 @@
     </properties>
     <body>
 		<!-- RELEASED -->
+        <release version="betoffice-testutils-1.1.0" date="2021-07-17" description="JDK 16">
+            <action dev="andrewinkler" type="update" date="2021-07-17">
+                JDK 16.
+            </action>
+        </release>
+
+		<!-- RELEASED -->
         <release version="betoffice-testutils-1.0.0" date="2020-10-07" description="MariaDB and Roundup">
             <action dev="andrewinkler" type="update" date="2020-09-06">
                 Using MariaDB JDBC driver.

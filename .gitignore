@@ -9,3 +9,6 @@
 .vscode
 .factorypath
 
+# IntelliJ
+*.iml
+
