@@ -5,6 +5,13 @@
         <author email="andre.winkler@web.de">Andre Winkler</author>
     </properties>
     <body>
+        <!-- RELEASED -->
+        <release version="betoffice-testutils-1.1.1" date="2021-12-24" description="Removed log4j">
+            <action dev="andrewinkler" type="fix" date="2021-12-24">
+                Removed log4j. Update to parent pom 1.12.1
+            </action>
+        </release>
+
 		<!-- RELEASED -->
         <release version="betoffice-testutils-1.1.0" date="2021-07-17" description="JDK 16">
             <action dev="andrewinkler" type="update" date="2021-07-17">
