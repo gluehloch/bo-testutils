@@ -6,6 +6,13 @@
     </properties>
     <body>
         <!-- RELEASED -->
+        <release version="betoffice-testutils-1.1.2" date="2022-01-18" description="dbload release update">
+            <action dev="andrewinkler" type="update" date="2022-01-18">
+                Update to dbload-0.6.0
+            </action>
+        </release>
+
+        <!-- RELEASED -->
         <release version="betoffice-testutils-1.1.1" date="2021-12-24" description="Removed log4j">
             <action dev="andrewinkler" type="fix" date="2021-12-24">
                 Removed log4j. Update to parent pom 1.12.1
