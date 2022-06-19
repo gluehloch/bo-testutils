@@ -5,6 +5,13 @@
         <author email="andre.winkler@web.de">Andre Winkler</author>
     </properties>
     <body>
+    	<!-- Under construction  -->
+    	<release version="betoffice-testutils-1.2.0" date="2022-06-19" description="community edition">
+    		<action dev="andrewinkler" type="add" date="2022-06-19">
+    			Prepare test data for the community edition.
+    		</action>
+    	</release>
+    
         <!-- RELEASED -->
         <release version="betoffice-testutils-1.1.2" date="2022-01-18" description="dbload release update">
             <action dev="andrewinkler" type="update" date="2022-01-18">

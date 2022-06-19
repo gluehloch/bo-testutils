@@ -1,0 +1,215 @@
+### TAB bo_grouptype
+### id | bo_name
+72 | 1. Liga
+67 | Achtelfinale
+71 | Finale
+59 | Gruppe A
+60 | Gruppe B
+61 | Gruppe C
+62 | Gruppe D
+63 | Gruppe E
+64 | Gruppe F
+65 | Gruppe G
+66 | Gruppe H
+69 | Halbfinale
+70 | Spiel um Platz 3
+68 | Viertelfinale
+
+### TAB bo_team
+### id | bo_name | bo_longname | bo_logo | bo_teamtype | bo_location_ref | bo_openligaid | bo_shortname | bo_xshortname
+27 | Frankreich | Frankreich | frankreich.gif | 1 |  |  | Frankreich | FRA
+28 | Senegal | Senegal | senegal.gif | 1 |  |  | Senegal | SEN
+29 | Uruguay | Uruguay | uruguay.gif | 1 |  |  | Uruguay | URU
+30 | Dänemark | Dänemark | daenemark.gif | 1 |  |  | Dänemark | DEN
+31 | Paraguay | Paraguay | paraguay.gif | 1 |  |  | Paraguay | 
+32 | Südafrika | Südafrika | suedafrika.gif | 1 |  |  | Südafrika | 
+33 | Spanien | Spanien | spanien.gif | 1 |  |  | Spanien | SPA
+34 | Slowenien | Slowenien | slowenien.gif | 1 |  |  | Slowenien | 
+35 | Brasilien | Brasilien | brasilien.gif | 1 |  |  | Brasilien | BRA
+36 | Türkei | Türkei | tuerkei.gif | 1 |  |  | Türkei | TUR
+37 | China VR | China VR | china.gif | 1 |  |  | China VR | 
+38 | Costa Rica | Costa Rica | costarica.gif | 1 |  |  | Costa Rica | CRC
+39 | Rep.Korea | Rep.Korea | suedkorea.gif | 1 |  |  | Rep.Korea | SKO
+40 | Polen | Polen | polen.gif | 1 |  |  | Polen | POL
+41 | USA | USA | usa.gif | 1 |  |  | USA | 
+42 | Portugal | Portugal | portugal.gif | 1 |  |  | Portugal | POR
+43 | Irland | Irland | irland.gif | 1 |  |  | Irland | 
+44 | Kamerun | Kamerun | kamerun.gif | 1 |  |  | Kamerun | 
+45 | Deutschland | Deutschland | dfb.gif | 1 |  |  | Deutschland | DEU
+46 | Saudi Arabien | Saudi Arabien | saudiarabien.gif | 1 |  |  | Saudi Arabien | SAR
+47 | England | England | england.gif | 1 |  |  | England | ENG
+48 | Schweden | Schweden | schweden.gif | 1 |  |  | Schweden | SWE
+49 | Argentinien | Argentinien | argentinien.gif | 1 |  |  | Argentinien | ARG
+50 | Nigeria | Nigeria | nigeria.gif | 1 |  |  | Nigeria | NIG
+51 | Kroatien | Kroatien | kroatien.gif | 1 |  |  | Kroatien | KRO
+52 | Mexiko | Mexiko | mexiko.gif | 1 |  |  | Mexiko | MEX
+53 | Ecuador | Ecuador | ecuador.gif | 1 |  |  | Ecuador | 
+54 | Italien | Italien | italien.gif | 1 |  |  | Italien | ITA
+55 | Japan | Japan | japan.gif | 1 |  |  | Japan | JPN
+56 | Belgien | Belgien | belgien.gif | 1 |  |  | Belgien | BEL
+57 | Russland | Russland | russland.gif | 1 |  |  | Russland | RUS
+58 | Tunesien | Tunesien | tunesien.gif | 1 |  |  | Tunesien | TUN
+907 | Griechenland | Griechenland | greece.gif | 1 |  |  | Griechenland | 
+911 | Schweiz | Schweiz | swiss.gif | 1 |  |  | Schweiz | CH
+919 | Bulgarien | Bulgarien | bulgary.gif | 1 |  |  | Bulgarien | 
+922 | Tschechien | Tschechien | czech.gif | 1 |  |  | Tschechien | CZE
+923 | Lettland | Lettland | lettland.gif | 1 |  |  | Lettland | 
+924 | Niederlande | Niederlande | netherland | 1 |  |  | Niederlande | NED
+1131 | [noch_nicht_bekannt] | [noch_nicht_bekannt] | unbekannt.gif | 1 |  |  | [noch_nicht_bekannt] | 
+1132 | Trinidad Tabago | Trinidad und Tabago | trinidadtabago.gif | 1 |  |  | Trinidad Tabago | 
+1133 | Elfenbeinküste | Elfenbeinküste | elfenbeinkueste.gif | 1 |  |  | Elfenbeinküste | 
+1134 | Serbien Montenegro | Serbien und Montenegro | serbienmontenegro.gif | 1 |  |  | Serbien Montenegro | 
+1135 | Iran | Iran | iran.gif | 1 |  |  | Iran | IRN
+1136 | Angola | Angola | angola.gif | 1 |  |  | Angola | 
+1137 | Ghana | Ghana | ghana.gif | 1 |  |  | Ghana | 
+1138 | Australien | Australien | australien.gif | 1 |  |  | Australien | AUS
+1139 | Togo | Togo | togo.gif | 1 |  |  | Togo | 
+1140 | Ukraine | Ukraine | ukraine.gif | 1 |  |  | Ukraine | UKR
+1141 | FC Bayern München | FC Bayern München | https://i.imgur.com/jJEsJrj.png | 0 |  | 40 | München | FCB
+1142 | Borussia Dortmund | Borussia Dortmund | https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/560px-Borussia_Dortmund_logo.svg.png | 0 |  | 7 | Dortmund | BVB
+1143 | Bayer 04 Leverkusen | Bayer 04 Leverkusen | https://upload.wikimedia.org/wikipedia/de/thumb/f/f7/Bayer_Leverkusen_Logo.svg/1200px-Bayer_Leverkusen_Logo.svg.png | 0 |  | 6 | Leverkusen | B04
+1144 | SC Freiburg | SC Freiburg | https://i.imgur.com/r3mvi0h.png | 0 |  | 112 | Freiburg | SCF
+1145 | SV Werder Bremen | SV Werder Bremen | https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/SV-Werder-Bremen-Logo.svg/681px-SV-Werder-Bremen-Logo.svg.png | 0 |  | 134 | Bremen | SVW
+1146 | 1.FC Kaiserslautern | 1.FC Kaiserslautern | lautern.gif | 0 |  |  | Lautern | FCK
+1147 | VfL Wolfsburg | VfL Wolfsburg | https://i.imgur.com/ucqKV4B.png | 0 |  | 131 | Wolfsburg | VFL
+1148 | 1.FC Köln | 1.FC Köln | https://upload.wikimedia.org/wikipedia/en/thumb/5/53/FC_Cologne_logo.svg/1200px-FC_Cologne_logo.svg.png | 0 |  | 65 | Köln | FCK
+1149 | Hansa Rostock | Hansa Rostock | rostock.gif | 0 |  |  | Hansa Rostock | 
+1150 | TSV 1860 München | TSV 1860 München | 1860.bmp | 0 |  |  | TSV 1860 München | 
+1151 | Hamburger SV | Hamburger SV | hsv.gif | 0 |  | 100 | Hamburg | HSV
+1152 | Energie Cottbus | Energie Cottbus | cottbus.gif | 0 |  |  | Energie Cottbus | 
+1153 | VfB Stuttgart | VfB Stuttgart | https://i.imgur.com/v0tkpNx.png | 0 |  | 16 | Stuttgart | VFB
+1154 | SpVgg Unterhaching | SpVgg Unterhaching | haching.gif | 0 |  |  | SpVgg Unterhaching | 
+1155 | Eintracht Frankfurt | Eintracht Frankfurt | https://i.imgur.com/X8NFkOb.png | 0 |  | 91 | Frankfurt | EFF
+1156 | VfL Bochum | VfL Bochum | https://i.imgur.com/5jy3Gfr.png | 0 |  | 129 | Bochum | VFL
+1157 | Hertha BSC Berlin | Hertha BSC Berlin | https://i.imgur.com/apFwbYZ.png | 0 |  | 54 | Berlin | BSC
+1158 | St. Pauli | St. Pauli | stpauli.gif | 0 |  |  | Pauli | FCP
+1159 | 1.FC Nürnberg | 1.FC Nürnberg | nuernberg.gif | 0 |  | 79 | 1.FC Nürnberg | FCN
+1160 | Borussia MGladbach | Borussia Mönchen Gladbach | https://i.imgur.com/KSIk0Eu.png | 0 |  | 87 | Gladbach | BMG
+1161 | FC Schalke 04 | FC Schalke 04 | https://upload.wikimedia.org/wikipedia/commons/6/6d/FC_Schalke_04_Logo.svg | 0 |  | 9 | Schalke | S04
+1162 | Hannover 96 | Hannover 96 | hannover96.gif | 0 |  | 55 | Hannover | H96
+1163 | Arminia Bielefeld | Arminia Bielefeld | https://upload.wikimedia.org/wikipedia/commons/f/f1/Logo_mit_Rand.png | 0 |  | 83 | Arminia Bielefeld | DAB
+1164 | FSV Mainz 05 | FSV Mainz 05 | https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Logo_Mainz_05.svg/1200px-Logo_Mainz_05.svg.png | 0 |  | 81 | Mainz | FSV
+1165 | MSV Duisburg | MSV Duisburg | duisburg.gif | 0 |  |  | Duisburg | MSV
+1166 | Alemannia Aachen | Alemannia Aachen | aachen.gif | 0 |  |  | Alemannia Aachen | 
+1167 | Karlsruher SC | Karlsruher SC | ksc.gif | 0 |  |  | Karlsruher SC | 
+1168 | Österreich | Österreich | oesterreich.gif | 1 |  |  | Österreich | AUT
+1169 | Rumänien | Rumänien | rumaenien.gif | 1 |  |  | Rumänien | 
+1170 | 1899 Hoffenheim | 1899 Hoffenheim | https://i.imgur.com/gF0PfEl.png | 0 |  | 175 | Hoffenheim | HFH
+1171 | Serbien | Serbien | serbien.gif | 1 |  |  | Serbien | SRB
+1172 | Algerien | Algerien | algerien.gif | 1 |  |  | Algerien | 
+1173 | Neuseeland | Neuseeland | neuseeland.gif | 1 |  |  | Neuseeland | 
+1174 | Slowakei | Slowakei | slowakei.gif | 1 |  |  | Slowakei | SVK
+1175 | Nordkorea | Nordkorea | nordkorea.gif | 1 |  |  | Nordkorea | 
+1176 | Honduras | Honduras | honduras.gif | 1 |  |  | Honduras | 
+1177 | Chile | Chile | chile.gif | 1 |  |  | Chile | 
+1178 | FC Augsburg | FC Augsburg | https://i.imgur.com/sdE62e2.png | 0 |  | 95 | Augsburg | AGB
+1179 | Fortuna Düsseldorf | Fortuna Düsseldorf | fortuna.gif | 0 |  | 185 | Düsseldorf | FDÜ
+1180 | SpVgg Greuther Fürth | SpVgg Greuther Fürth | https://i.imgur.com/pwuVbKr.png | 0 |  | 115 | SpVgg Greuther Fürth | SVG
+1181 | Eintracht Braunschweig | Eintracht Braunschweig | braunschweig.gif | 0 |  |  | Eintracht Braunschweig | 
+1182 | Kolumbien | Kolumbien | kolumbien.gif | 1 |  |  | Kolumbien | KOL
+1183 | Bosnien-Herzegowina | Bosnien-Herzegowina | bosnien.gif | 1 |  |  | Bosnien-Herzegowina | 
+1184 | SC Paderborn 07 | SC Paderborn 07 | Paderborn | 0 |  | 31 | SC Paderborn 07 | SCP
+1185 | FC Ingolstadt 04 | FC Ingolstadt 04 | Ingolstadt.gif | 0 |  | 171 | Ingolstadt | I04
+1186 | SV Darmstadt 98 | SV Darmstadt 98 | Darmstadt.gif | 0 |  | 118 | SV Darmstadt 98 | 
+1187 | Albanien | Albanien | albanien.gif | 1 |  |  | Albanien | 
+1188 | Wales | Wales | wales.gif | 1 |  |  | Wales | WAL
+1189 | Nordirland | Nordirland | nordirland.gif | 1 |  |  | Nordirland | 
+1190 | Ungarn | Ungarn | ungarn.gif | 1 |  |  | Ungarn | HUN
+1191 | Island | Island | island.gif | 1 |  |  | Island | ISL
+1192 | RB Leipzig | RB Leipzig | https://i.imgur.com/Rpwsjz1.png | 0 |  | 1635 | Leipzig | RBL
+1193 | Ägypten | Ägypten | aegypten.gif | 1 |  |  | Ägypten | EGY
+1194 | Marokko | Marokko | marokko.gif | 1 |  |  | Marokko | MAR
+1195 | Panama | Panama | panama.gif | 1 |  |  | Panama | PAN
+1196 | Peru | Peru | peru.gif | 1 |  |  | Peru | PER
+1197 | Union Berlin | 1.FC Union Berlin | https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/FCU_Standard_Logo.png/240px-FCU_Standard_Logo.png | 0 |  | 80 | Union Berlin | UNI
+1198 | Finnland | Finnland | finnland.gif | 1 |  |  | Finnland | FIN
+1199 | Nordmazedonien | Nordmazedonien | nordmazedonien.gif | 1 |  |  | Nordmazedonien | MKD
+1200 | Schottland | Schottland | schottland.gif | 1 |  |  | Schottland | SCO
+
+### TAB bo_teamalias
+### id | bo_aliasname | bo_team_ref
+1 | 1. FC Kaiserslautern | 1146
+2 | 1. FC Köln | 1148
+3 | 1. FC Nürnberg | 1159
+4 | Bayern München | 1141
+5 | VfL Wolfsburg | 1147
+6 | Borussia Mönchengladbach | 1160
+7 | 1899 Hoffenheim | 1170
+8 | Werder Bremen | 1145
+9 | SC Freiburg | 1144
+10 | FC St. Pauli | 1158
+11 | Hannover 96 | 1162
+12 | Eintracht Frankfurt | 1155
+13 | Hamburger SV | 1151
+14 | FSV Mainz 05 | 1164
+15 | VfB Stuttgart | 1153
+16 | Borussia Dortmund | 1142
+17 | Bayer Leverkusen | 1143
+18 | Schalke 04 | 1161
+19 | FC Augsburg | 1178
+20 | Hertha BSC Berlin | 1157
+21 | Fortuna Düsseldorf | 1179
+22 | SpVgg Greuther Fürth | 1180
+23 | Eintracht Braunschweig | 1181
+24 | Hertha BSC | 1157
+25 | SC Paderborn | 1184
+26 | FC Bayern MÃ¼nchen | 1141
+27 | TSG 1899 Hoffenheim | 1170
+28 | FC Schalke 04 | 1161
+29 | SV Werder Bremen | 1145
+30 | HSV | 1151
+31 | BVB | 1142
+32 | SC Paderborn 07 | 1184
+33 | 1. FSV Mainz 05 | 1164
+
+### TAB bo_user
+### id | bo_name | bo_surname | bo_nickname | bo_email | bo_phone | bo_password | bo_automat | bo_excluded | bo_title | bo_admin
+1 | Rohloff | Markus | mrTipp | markusrohloff@gmx.de | 0201/61 03 36 | Essen07 | 0 | 0 |  | 0
+2 | Schulte | Christian | Xtian | spottwetten@xtian.de | 040/775 774 | jomann | 0 | 1 |  | 0
+3 | Groth | Peter | Peter | peter.groth@gmx.de | 0179/1008450 | Naso | 0 | 0 |  | 0
+4 | Automat | No1 | Automat | home@andre-winkler.de |  | awi | 1 | 0 |  | 0
+5 | Winkler | Lars | planlos | gluehloch@compuserve.de | 0201/7502407 | kopflos | 0 | 1 |  | 0
+6 | Winkler | Andre | Frosch | gluehloch@googlemail.com | 040/76 75 16 24 | awi | 0 | 0 |  | 1
+7 | Müller | Peter | Meister | xmlprofi@gmx.net |  | picasso | 0 | 1 |  | 0
+8 | Hoffmann | Melanie | Melanie | parel@gmx.de | 00000000000 | andre | 0 | 1 |  | 0
+9 | Hattwig | Lars | Hattwig | l.hattwig@web.de | 030/84 50 77 51 | Eisbaer | 0 | 0 |  | 0
+10 | Schneider | Roger | Fuxx | Ro.schneider@enbw.com |  | flavio | 0 | 1 |  | 0
+11 | Blahak | Rainer | Fuchs | r.blahak@enbw.com |  | barny | 0 | 1 |  | 0
+12 | Toth | Franz | Zocker | schneider.roger@nexgo.de |  | abseits | 0 | 1 |  | 0
+13 | Rohloff | Markus | Persistenz | markusrohloff@gmx.de | 02364/509202 | BL | 0 | 0 |  | 0
+14 | Groth | Jochen | Jogi | jochen@grothnet.de | 02594-82375 | Paquitosax | 0 | 0 | MT | 0
+15 | Bitzer | Gerd | Homer | bitzer@wsc-gmbh.de | 01736146557 | picasso | 0 | 1 |  | 0
+16 | Bucksath | Steffen | Steffen | steffen@bucksath.de | 0170/9440357 | Donald | 0 | 0 |  | 0
+17 | Schäfer | Moritz | Sunny | moritz_schaefer@gmx.de | 064047776 | joklate | 0 | 1 |  | 0
+18 | pavlovic | julia | krmaca | mm1982@web.de | 01793456712 | 12345 | 0 | 1 |  | 0
+19 | Kienzler | Günter | Dotwin74 | dotwin74@freenet.de | 084661686 | sarahk | 0 | 1 |  | 0
+20 | juergen | reisinger | junior | juergen.reisinger@gmx.net |  | thomas | 0 | 1 |  | 0
+21 | Stegemann | Claus | Santa | ClausStegemann@web.de | 02594894760 | veltins | 0 | 1 |  | 0
+22 | seidl | christine | chris | sdchristinchen@web.de | 040-76751624 | ortho7 | 0 | 0 |  | 0
+23 | Hasselmann | Jan | BayJan | janhasselmann@gmx.de |  | Rekordmeister | 0 | 0 |  | 0
+24 | Rönnebeck | Stefan | Roenne | stefan.roennebeck@medium-big-band.de | 0179-5462057 | bigband | 0 | 0 |  | 0
+25 | Esselmann | Dirk | Essel | dirk.esselmann@wertgutachter.de | 02502/6936 | Ladas | 0 | 0 |  | 0
+26 | Hühnken | Lutz | tyler | lutz@huehnken.de | 040-30237867 | koreander | 0 | 1 |  | 0
+27 | Reinke | Markus | Kron | markus_reinke@gmx.net | - | kron7 | 0 | 1 |  | 0
+28 | Timm | Volker | volki | volker.timm@web.de |  | 1234567 | 0 | 1 |  | 0
+29 | Seekamp | Holger | Holgi | seekamp@gmx.de |  | x | 0 | 0 |  | 0
+30 | Christoph | Martin | Chrisi | christophm@onbo_email.at |  | xxxx | 0 | 1 |  | 0
+31 | Schroepke | Dieter | Dieter | dieter.schroepke@gmx.de | 43272409 | dieter | 0 | 1 |  | 0
+32 | Paus | Michael | Manni | pausm@web.de |  | manni | 0 | 0 |  | 0
+33 | Wiemers | Meinolf | SpecialAgent | mail@meinolf-wiemers.de | 0511-2353935 | Bundesbank | 0 | 1 |  | 0
+34 | Kroschk | Axel | Rumo | axel@kroschk.net |  | Baluiu | 0 | 1 |  | 0
+35 | Seidl | Andreas | Andi | Andreas.seidl@gmx.de | 08419936520 | anderl | 0 | 0 |  | 0
+14147 | Parplies | Jan-Peter | Peter Pan | janpar@gmx.de | 040/859710 | kurtii | 0 | 1 |  | 0
+17279 | König | Michael | King | king@unicum.de | 0251-271194 | gewinner | 0 | 0 |  | 0
+17280 | JEDA | JonaErikDavidAxel | Goddard |  |  | minicat | 0 | 0 | (e) | 0
+17281 | Riemann | Jörg | Bernd_das_Brot | ri@mc-wetter.de |  | saale | 0 | 0 |  | 0
+17282 | Schienagel | Peter | binglers | binglers@t-online.de | binglers@t-online.de | binglers | 1 | 0 |  | 0
+17283 | Kaiser | Michael | Mikai | michael.Kaiser@derAmrumer.de | michael.Kaiser@derAmrumer.de | nebel | 1 | 0 |  | 0
+17284 | Thiele | Dirk | Rainman | diplomet@gmx.de | diplomet@gmx.de | benson | 1 | 0 |  | 0
+17285 | Schenk | Friedemann | Friedi | Friedemann.Schenk@gmx.de | Friedemann.Schenk@gmx.de | rum01 | 1 | 0 |  | 0
+17286 | Thürling | Nadine | Dennis | NadineThuerling@web.de | NadineThuerling@web.de | 031275 | 1 | 0 |  | 0
+17287 | Rohloff | Bianka | mrsTipp | andre.winkler@web.de | andre.winkler@web.de | bianka | 1 | 0 | (e) | 0
+17288 | Lampe | Marc-Oliver | Mao | molampe@web.de |  | kraichgau | 0 | 0 |  | 0
+17289 | Svea | Svea | Svea | markusrohloff@gmx.de |  | Svea1001 | 0 | 0 |  | 0
+17290 | Wortmann | Martin | Martin04 | m_wortmann@gmx.de |  | S04 | 0 | 0 |  | 0
+
