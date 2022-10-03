@@ -21,7 +21,7 @@
 
 	<groupId>de.betoffice</groupId>
 	<artifactId>betoffice-testutils</artifactId>
-	<version>1.1.2</version>
+	<version>1.1.3-SNAPSHOT</version>
 	<name>betoffice test utilities</name>
 	<description>betoffice test utilities</description>
 
