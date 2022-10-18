@@ -5,6 +5,13 @@
         <author email="andre.winkler@web.de">Andre Winkler</author>
     </properties>
     <body>
+    	<!-- RELEASED -->
+    	<release version="betoffice-testurils-1.1.3" date="2022-10-18" description="dependency update">
+            <action dev="andrewinkler" type="update" date="2022-10-18">
+                Update to dbload-0.6.0
+            </action>
+    	</release>
+    
         <!-- RELEASED -->
         <release version="betoffice-testutils-1.1.2" date="2022-01-18" description="dbload release update">
             <action dev="andrewinkler" type="update" date="2022-01-18">
