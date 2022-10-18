@@ -10,6 +10,12 @@
     		<action dev="andrewinkler" type="add" date="2022-06-19">
     			Prepare test data for the community edition.
     		</action>
+
+    	<!-- RELEASED -->
+    	<release version="betoffice-testurils-1.1.3" date="2022-10-18" description="dependency update">
+            <action dev="andrewinkler" type="update" date="2022-10-18">
+                Update to dbload-0.6.0
+            </action>
     	</release>
     
         <!-- RELEASED -->
