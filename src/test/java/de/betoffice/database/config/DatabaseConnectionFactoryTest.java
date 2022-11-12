@@ -37,7 +37,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 /**
- * 
+ * Example: How to create a JUnit 5 test with the Spring framework.
  * 
  * @author Andre Winkler
  */
