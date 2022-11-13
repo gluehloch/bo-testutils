@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- * Project betoffice-testutils Copyright (c) 2000-2014 by Andre Winkler. All
+ * Project betoffice-testutils Copyright (c) 2000-2022 by Andre Winkler. All
  * rights reserved.
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
@@ -30,78 +30,66 @@ import org.apache.commons.lang.time.StopWatch;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.betoffice.database.test.Database;
-import de.betoffice.database.test.DatabaseMinusTipp;
-import de.betoffice.database.test.Masterdata;
+import de.betoffice.database.test.Complete;
+import de.betoffice.database.test.CompleteExTipp;
+import de.betoffice.database.test.Core;
 import de.dbload.Dbload;
 
 /**
- * Bereitet eine MySQL Datenbank für einen oder mehrere Testfälle vor. Geladen
- * wird ein relativ komplexer Datenbestand. Auf diesem Datenbestand sollten so
- * viele Testfälle wie möglich abgehandelt werden.
+ * Bereitet eine MySQL Datenbank für einen oder mehrere Testfälle vor. Geladen wird ein relativ komplexer Datenbestand.
+ * Auf diesem Datenbestand sollten so viele Testfälle wie möglich abgehandelt werden.
  *
  * @author Andre Winkler
  */
-public final class MySqlDatabasedTestSupport {
+public final class DatabaseTestData {
+
+    private static final Logger log = LoggerFactory.getLogger(DatabaseTestData.class);
 
     public enum DataLoader {
 
         EMPTY(null),
 
-        FULL(Database.class),
+        COMPLETE(Complete.class),
 
-        FULL_WITHOUT_TIPP(DatabaseMinusTipp.class),
+        COMPLETE_EX_TIPP(CompleteExTipp.class),
 
-        MASTER_DATA(Masterdata.class);
+        CORE(Core.class);
 
-        private final Class<?> datResource;
+        private final Class<?> classpathResource;
 
         private DataLoader(final Class<?> resource) {
-            datResource = resource;
+            classpathResource = resource;
         }
 
-        /**
-         * Returns the resource classpath.
-         *
-         * @return Die Resource.
-         */
         Class<?> getResource() {
-            return datResource;
+            return classpathResource;
         }
     };
 
-    private static final Logger log = LoggerFactory
-            .getLogger(MySqlDatabasedTestSupport.class);
-
-    private StopWatch stopWatch = new StopWatch();
+    private final StopWatch stopWatch = new StopWatch();
 
     /**
      * Setup the test database with data.
      *
-     * @param _conn
-     *            A database connection object
-     * @param _dataLoader
-     *            Welche Daten sollen geladen werden?
-     * @throws SQLException
-     *             Datenbank konnte nicht geleert werden.
+     * @param  conn         A database connection object
+     * @param  dataLoader   Welche Daten sollen geladen werden?
+     * @throws SQLException Datenbank konnte nicht geleert werden.
      */
-    public void setUp(final Connection _conn, final DataLoader _dataLoader)
-            throws SQLException {
-
+    public void setUp(final Connection conn, final DataLoader dataLoader) throws SQLException {
         stopWatch.start();
-        DeleteDatabase.deleteDatabase(_conn);
+        DeleteDatabase.deleteDatabase(conn);
         stopWatch.stop();
 
         if (log.isInfoEnabled()) {
             log.info("Deleting the database: {} ms", stopWatch.getTime());
         }
 
-        if (!_dataLoader.equals(DataLoader.EMPTY)) {
+        if (!DataLoader.EMPTY.equals(dataLoader)) {
             stopWatch.reset();
 
             stopWatch.start();
-            Dbload.read(_conn, _dataLoader.getResource());
-            _conn.commit();
+            Dbload.read(conn, dataLoader.getResource());
+            conn.commit();
             stopWatch.stop();
 
             if (log.isInfoEnabled()) {

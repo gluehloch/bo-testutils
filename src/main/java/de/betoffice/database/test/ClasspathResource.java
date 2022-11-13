@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- * Project betoffice-testutils Copyright (c) 2000-2014 by Andre Winkler. All
+ * Project betoffice-testutils Copyright (c) 2000-2022 by Andre Winkler. All
  * rights reserved.
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
@@ -23,11 +23,10 @@
 
 package de.betoffice.database.test;
 
-/**
- * Classpath holder for the 'database' dat file.
- *
- * @author Andre Winkler
- */
-public class DatabaseMinusTipp {
+public interface ClasspathResource {
+
+    public static String DAT_FILE_ENDING = ".dat";
+
+    String name();
 
 }

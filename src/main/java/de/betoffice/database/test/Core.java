@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- * Project betoffice-testutils Copyright (c) 2000-2014 by Andre Winkler. All
+ * Project betoffice-testutils Copyright (c) 2000-2022 by Andre Winkler. All
  * rights reserved.
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
@@ -28,6 +28,16 @@ package de.betoffice.database.test;
  *
  * @author Andre Winkler
  */
-public class Masterdata {
+public final class Core implements ClasspathResource {
+
+    private static final String NAME = "betoffice-core" + ClasspathResource.DAT_FILE_ENDING;
+
+    private Core() {
+    }
+
+    @Override
+    public String name() {
+        return Core.NAME;
+    }
 
 }

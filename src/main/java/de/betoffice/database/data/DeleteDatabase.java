@@ -41,6 +41,8 @@ public class DeleteDatabase {
      *            a database connection
      */
     public static void deleteDatabase(Connection connection) {
+        executeStatement(connection, "DELETE FROM bo_community_user");
+        executeStatement(connection, "DELETE FROM bo_community");
         executeStatement(connection, "DELETE FROM bo_session");
         executeStatement(connection, "DELETE FROM bo_goal");
         executeStatement(connection, "DELETE FROM bo_gametipp");

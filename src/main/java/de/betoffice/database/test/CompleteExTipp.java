@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- * Project betoffice-testutils Copyright (c) 2000-2016 by Andre Winkler. All
+ * Project betoffice-testutils Copyright (c) 2000-2022 by Andre Winkler. All
  * rights reserved.
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
@@ -23,18 +23,21 @@
 
 package de.betoffice.database.test;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.hibernate.mapping.PersistentClass;
-
 /**
  * Classpath holder for the 'database' dat file.
  *
  * @author Andre Winkler
  */
-public class Database {
+public final class CompleteExTipp implements ClasspathResource {
 
-    private static final List<PersistentClass> pc = new ArrayList<>();
+    private static final String NAME = "betoffice-complete-ex-tipp" + ClasspathResource.DAT_FILE_ENDING;
+    
+    private CompleteExTipp() {
+    }
+
+    @Override
+    public String name() {
+        return CompleteExTipp.NAME;
+    }
 
 }
