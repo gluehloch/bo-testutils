@@ -30,6 +30,7 @@ import org.apache.commons.lang.time.StopWatch;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.betoffice.database.test.ClasspathResource;
 import de.betoffice.database.test.Complete;
 import de.betoffice.database.test.CompleteExTipp;
 import de.betoffice.database.test.Core;
@@ -49,19 +50,19 @@ public final class DatabaseTestData {
 
         EMPTY(null),
 
-        COMPLETE(Complete.class),
+        COMPLETE(Complete.instance()),
 
-        COMPLETE_EX_TIPP(CompleteExTipp.class),
+        COMPLETE_EX_TIPP(CompleteExTipp.instance()),
 
-        CORE(Core.class);
+        CORE(Core.instance());
 
-        private final Class<?> classpathResource;
+        private final ClasspathResource classpathResource;
 
-        private DataLoader(final Class<?> resource) {
+        private DataLoader(final ClasspathResource resource) {
             classpathResource = resource;
         }
 
-        Class<?> getResource() {
+        ClasspathResource getResource() {
             return classpathResource;
         }
     };
@@ -88,7 +89,7 @@ public final class DatabaseTestData {
             stopWatch.reset();
 
             stopWatch.start();
-            Dbload.read(conn, dataLoader.getResource());
+            Dbload.read(conn, dataLoader.getResource().getClass(), dataLoader.getResource().name());
             conn.commit();
             stopWatch.stop();
 

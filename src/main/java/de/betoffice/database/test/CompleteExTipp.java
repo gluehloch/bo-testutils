@@ -32,6 +32,12 @@ public final class CompleteExTipp implements ClasspathResource {
 
     private static final String NAME = "betoffice-complete-ex-tipp" + ClasspathResource.DAT_FILE_ENDING;
     
+    private static final CompleteExTipp SINGLETON = new CompleteExTipp();
+    
+    public static CompleteExTipp instance() {
+        return SINGLETON;
+    }
+    
     private CompleteExTipp() {
     }
 

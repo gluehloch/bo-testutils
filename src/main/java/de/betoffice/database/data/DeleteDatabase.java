@@ -41,9 +41,9 @@ public class DeleteDatabase {
      *            a database connection
      */
     public static void deleteDatabase(Connection connection) {
+        executeStatement(connection, "DELETE FROM bo_session");
         executeStatement(connection, "DELETE FROM bo_community_user");
         executeStatement(connection, "DELETE FROM bo_community");
-        executeStatement(connection, "DELETE FROM bo_session");
         executeStatement(connection, "DELETE FROM bo_goal");
         executeStatement(connection, "DELETE FROM bo_gametipp");
         executeStatement(connection, "DELETE FROM bo_game");
@@ -54,8 +54,6 @@ public class DeleteDatabase {
         executeStatement(connection, "DELETE FROM bo_season");
         executeStatement(connection, "DELETE FROM bo_teamalias");
         executeStatement(connection, "DELETE FROM bo_team");
-        executeStatement(connection, "DELETE FROM bo_community_user");
-        executeStatement(connection, "DELETE FROM bo_community");
         executeStatement(connection, "DELETE FROM bo_user");
         executeStatement(connection, "DELETE FROM bo_grouptype");
         executeStatement(connection, "DELETE FROM bo_location");
@@ -64,8 +62,7 @@ public class DeleteDatabase {
         try (Statement stmt = connection.createStatement()) {
             connection.commit();
         } catch (SQLException ex) {
-            throw new RuntimeException("Unable to delete the botest database!",
-                    ex);
+            throw new RuntimeException("Unable to delete the botest database!", ex);
         }
     }
 

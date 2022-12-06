@@ -32,6 +32,12 @@ public final class Complete implements ClasspathResource {
 
     private static final String NAME = "betoffice-complete" + ClasspathResource.DAT_FILE_ENDING; 
     
+    private static final Complete SINGLETON = new Complete();
+    
+    public static ClasspathResource instance() {
+        return SINGLETON;
+    }
+    
     private Complete() {
     }
 

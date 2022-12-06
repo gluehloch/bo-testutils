@@ -32,6 +32,12 @@ public final class Core implements ClasspathResource {
 
     private static final String NAME = "betoffice-core" + ClasspathResource.DAT_FILE_ENDING;
 
+    private static final Core SINGLETON = new Core();
+    
+    public static Core instance() {
+        return SINGLETON;
+    }
+    
     private Core() {
     }
 
