@@ -1972,7 +1972,7 @@
 664 | Max Kruse |  | 16255
 665 | Eggestein |  | 15681
 666 | Kagawa |  | 1608
-667 | Kevin Volland
+667 | Kevin Volland  |  | 16260
 668 | Fin Bartels |  | 16257
 669 | Christian Clemens |  | 15625
 670 | Ibrahima Traore |  | 247
@@ -1990,7 +1990,7 @@
 682 | G. Burgstaller |  | 15617
 683 | Sven Schipplock |  | 11001
 684 | Schulz |  | 3425
-685 | Kai Havertz
+685 | Kai Havertz  |  | 16261
 686 | Khedira |  | 785
 687 | Torunarigha, Junior |  | 15296
 688 | Lasogga |  | 1990
@@ -2001,7 +2001,7 @@
 693 | Barta |  | 2021
 694 | Elvedi |  | 14744
 695 | An. Hahn |  | 2242
-696 | Karim Bellarabi
+696 | Karim Bellarabi  |  | 16259
 697 | Badstuber |  | 1016
 698 | Nuri Sahin |  | 1007
 699 | Jonathas |  | 14635
@@ -2851,6 +2851,10 @@
 1614 | É. Dina Ebimbe |  | 19617
 1615 | D. Kabak |  | 19464
 1616 | M. Simakan |  | 19618
+1617 | M.Thuram |  | 18572
+1618 | J. Tah |  | 19623
+1619 | O. Kabak |  | 19621
+1620 | C. Groß |  | 8255
 
 ### TAB bo_location
 ### id | bo_name | bo_city | bo_geodat | bo_openligaid

@@ -37,8 +37,7 @@ public class DeleteDatabase {
     /**
      * Deletes all data from all betoffice tables.
      * 
-     * @param connection
-     *            a database connection
+     * @param connection a database connection
      */
     public static void deleteDatabase(Connection connection) {
         executeStatement(connection, "DELETE FROM bo_session");
@@ -59,10 +58,10 @@ public class DeleteDatabase {
         executeStatement(connection, "DELETE FROM bo_location");
         executeStatement(connection, "DELETE FROM bo_player");
 
-        try (Statement stmt = connection.createStatement()) {
+        try {
             connection.commit();
         } catch (SQLException ex) {
-            throw new RuntimeException("Unable to delete the botest database!", ex);
+            throw new IllegalStateException(ex);
         }
     }
 
