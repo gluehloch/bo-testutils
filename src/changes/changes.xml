@@ -8,6 +8,13 @@
     	<!-- Under construction  -->
 
         <!-- RELEASED -->
+    	<release version="betoffice-testutils-1.2.1" date="2023-01-02" description="community edition">
+    		<action dev="andrewinkler" type="fix" date="2023-01-02">
+    			dbload 0.7.1 / fix
+    		</action>
+ 		</release>
+ 
+        <!-- RELEASED -->
     	<release version="betoffice-testutils-1.2.0" date="2023-01-02" description="community edition">
     		<action dev="andrewinkler" type="add" date="2022-06-19">
     			Prepare test data for the community edition.
