@@ -6,7 +6,9 @@
     </properties>
     <body>
     	<!-- Under construction  -->
-    	<release version="betoffice-testutils-1.2.0" date="2022-06-19" description="community edition">
+
+        <!-- RELEASED -->
+    	<release version="betoffice-testutils-1.2.0" date="2023-01-02" description="community edition">
     		<action dev="andrewinkler" type="add" date="2022-06-19">
     			Prepare test data for the community edition.
     		</action>

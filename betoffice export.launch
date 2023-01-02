@@ -25,5 +25,4 @@
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="betoffice-testutils"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-export -u betoffice -p betoffice -d jdbc:mysql://192.168.99.100/betoffice -f E:/projects/tmp/export.dat -t bo_team,bo_grouptype,bo_user,bo_season,bo_location,bo_group,bo_player,bo_team_group,bo_teamalias,bo_user_season,bo_gamelist,bo_game,bo_gametipp,bo_goal,bo_session"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="betoffice-testutils"/>
-    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
 </launchConfiguration>
