@@ -1,102 +1,102 @@
 ### TAB bo_user
 ### id | bo_name | bo_surname | bo_nickname | bo_email | bo_phone | bo_password | bo_automat | bo_excluded | bo_title | bo_admin
-1 | Rohloff | Markus | mrTipp | markusrohloff@gmx.de | 0201/61 03 36 |  | 0 | 0 |  | 0
-2 | Schulte | Christian | Xtian | spottwetten@xtian.de | 040/775 774 |  | 0 | 1 |  | 0
-3 | Groth | Peter | Peter | peter.groth@gmx.de | 0179/1008450 |  | 0 | 0 |  | 0
-4 | Automat | No1 | Automat | home@andre-winkler.de |  |  | 1 | 0 |  | 0
-5 | Winkler | Lars | planlos | gluehloch@compuserve.de | 0201/7502407 |  | 0 | 1 |  | 0
-6 | Winkler | Andre | Frosch | gluehloch@googlemail.com | 040/76 75 16 24 |  | 0 | 0 |  | 1
-7 | Müller | Peter | Meister | xmlprofi@gmx.net |  |  | 0 | 1 |  | 0
-8 | Hoffmann | Melanie | Melanie | parel@gmx.de | 00000000000 |  | 0 | 1 |  | 0
-9 | Hattwig | Lars | Hattwig | l.hattwig@web.de | 030/84 50 77 51 |  | 0 | 0 |  | 0
-10 | Schneider | Roger | Fuxx | Ro.schneider@enbw.com |  |  | 0 | 1 |  | 0
-11 | Blahak | Rainer | Fuchs | r.blahak@enbw.com |  |  | 0 | 1 |  | 0
-12 | Toth | Franz | Zocker | schneider.roger@nexgo.de |  |  | 0 | 1 |  | 0
-13 | Rohloff | Markus | Persistenz | markusrohloff@gmx.de | 02364/509202 |  | 0 | 0 |  | 0
-14 | Groth | Jochen | Jogi | jochen@grothnet.de | 02594-82375 |  | 0 | 0 | MT | 0
-15 | Bitzer | Gerd | Homer | bitzer@wsc-gmbh.de | 01736146557 |  | 0 | 1 |  | 0
-16 | Bucksath | Steffen | Steffen | steffen@bucksath.de | 0170/9440357 |  | 0 | 0 |  | 0
-17 | Schäfer | Moritz | Sunny | moritz_schaefer@gmx.de | 064047776 |  | 0 | 1 |  | 0
-18 | pavlovic | julia | krmaca | mm1982@web.de | 01793456712 |  | 0 | 1 |  | 0
-19 | Kienzler | Günter | Dotwin74 | dotwin74@freenet.de | 084661686 |  | 0 | 1 |  | 0
-20 | juergen | reisinger | junior | juergen.reisinger@gmx.net |  |  | 0 | 1 |  | 0
-21 | Stegemann | Claus | Santa | ClausStegemann@web.de | 02594894760 |  | 0 | 1 |  | 0
-22 | seidl | christine | chris | sdchristinchen@web.de | 040-76751624 |  | 0 | 0 |  | 0
-23 | Hasselmann | Jan | BayJan | janhasselmann@gmx.de |  |  | 0 | 0 |  | 0
-24 | Rönnebeck | Stefan | Roenne | stefan.roennebeck@medium-big-band.de | 0179-5462057 |  | 0 | 0 |  | 0
-25 | Esselmann | Dirk | Essel | dirk.esselmann@wertgutachter.de | 02502/6936 |  | 0 | 0 |  | 0
-26 | Hühnken | Lutz | tyler | lutz@huehnken.de | 040-30237867 |  | 0 | 1 |  | 0
-27 | Reinke | Markus | Kron | markus_reinke@gmx.net | - |  | 0 | 1 |  | 0
-28 | Timm | Volker | volki | volker.timm@web.de |  |  | 0 | 1 |  | 0
-29 | Seekamp | Holger | Holgi | seekamp@gmx.de |  |  | 0 | 0 |  | 0
-30 | Christoph | Martin | Chrisi | christophm@onbo_email.at |  |  | 0 | 1 |  | 0
-31 | Schroepke | Dieter | Dieter | dieter.schroepke@gmx.de | 43272409 |  | 0 | 1 |  | 0
-32 | Paus | Michael | Manni | pausm@web.de |  |  | 0 | 0 |  | 0
-33 | Wiemers | Meinolf | SpecialAgent | mail@meinolf-wiemers.de | 0511-2353935 |  | 0 | 1 |  | 0
-34 | Kroschk | Axel | Rumo | axel@kroschk.net |  |  | 0 | 1 |  | 0
-35 | Seidl | Andreas | Andi | Andreas.seidl@gmx.de | 08419936520 |  | 0 | 0 |  | 0
-14147 | Parplies | Jan-Peter | Peter Pan | janpar@gmx.de | 040/859710 |  | 0 | 1 |  | 0
-17279 | König | Michael | King | king@unicum.de | 0251-271194 |  | 0 | 0 |  | 0
-17280 | JEDA | JonaErikDavidAxel | Goddard |  |  |  | 0 | 0 | (e) | 0
-17281 | Riemann | Jörg | Bernd_das_Brot | ri@mc-wetter.de |  |  | 0 | 0 |  | 0
-17282 | Schienagel | Peter | binglers | binglers@t-online.de | binglers@t-online.de |  | 1 | 0 |  | 0
-17283 | Kaiser | Michael | Mikai | michael.Kaiser@derAmrumer.de | michael.Kaiser@derAmrumer.de |  | 1 | 0 |  | 0
-17284 | Thiele | Dirk | Rainman | diplomet@gmx.de | diplomet@gmx.de |  | 1 | 0 |  | 0
-17285 | Schenk | Friedemann | Friedi | Friedemann.Schenk@gmx.de | Friedemann.Schenk@gmx.de |  | 1 | 0 |  | 0
-17286 | Thürling | Nadine | Dennis | NadineThuerling@web.de | NadineThuerling@web.de |  | 1 | 0 |  | 0
-17287 | Rohloff | Bianka | mrsTipp | andre.winkler@web.de | andre.winkler@web.de |  | 1 | 0 | (e) | 0
-17288 | Lampe | Marc-Oliver | Mao | molampe@web.de |  |  | 0 | 0 |  | 0
-17289 | Svea | Svea | Svea | markusrohloff@gmx.de |  |  | 0 | 0 |  | 0
-17290 | Wortmann | Martin | Martin04 | m_wortmann@gmx.de |  |  | 0 | 0 |  | 0
+1 | Rohloff | Markus | mrTipp | markusrohloff@gmx.de | 0201/61 03 36 | xxx | 0 | 0 |  | 0
+2 | Schulte | Christian | Xtian | spottwetten@xtian.de | 040/775 774 | xxx | 0 | 1 |  | 0
+3 | Groth | Peter | Peter | peter.groth@gmx.de | 0179/1008450 | xxx | 0 | 0 |  | 0
+4 | Automat | No1 | Automat | home@andre-winkler.de |  | xxx | 1 | 0 |  | 0
+5 | Winkler | Lars | planlos | gluehloch@compuserve.de | 0201/7502407 | xxx | 0 | 1 |  | 0
+6 | Winkler | Andre | Frosch | gluehloch@googlemail.com | 040/76 75 16 24 | xxx | 0 | 0 |  | 1
+7 | Müller | Peter | Meister | xmlprofi@gmx.net |  | xxx | 0 | 1 |  | 0
+8 | Hoffmann | Melanie | Melanie | parel@gmx.de | 00000000000 | xxx | 0 | 1 |  | 0
+9 | Hattwig | Lars | Hattwig | l.hattwig@web.de | 030/84 50 77 51 | xxx | 0 | 0 |  | 0
+10 | Schneider | Roger | Fuxx | Ro.schneider@enbw.com |  | xxx | 0 | 1 |  | 0
+11 | Blahak | Rainer | Fuchs | r.blahak@enbw.com |  | xxx | 0 | 1 |  | 0
+12 | Toth | Franz | Zocker | schneider.roger@nexgo.de |  | xxx | 0 | 1 |  | 0
+13 | Rohloff | Markus | Persistenz | markusrohloff@gmx.de | 02364/509202 | xxx | 0 | 0 |  | 0
+14 | Groth | Jochen | Jogi | jochen@grothnet.de | 02594-82375 | xxx | 0 | 0 | MT | 0
+15 | Bitzer | Gerd | Homer | bitzer@wsc-gmbh.de | 01736146557 | xxx | 0 | 1 |  | 0
+16 | Bucksath | Steffen | Steffen | steffen@bucksath.de | 0170/9440357 | xxx | 0 | 0 |  | 0
+17 | Schäfer | Moritz | Sunny | moritz_schaefer@gmx.de | 064047776 | xxx | 0 | 1 |  | 0
+18 | pavlovic | julia | krmaca | mm1982@web.de | 01793456712 | xxx | 0 | 1 |  | 0
+19 | Kienzler | Günter | Dotwin74 | dotwin74@freenet.de | 084661686 | xxx | 0 | 1 |  | 0
+20 | juergen | reisinger | junior | juergen.reisinger@gmx.net |  | xxx | 0 | 1 |  | 0
+21 | Stegemann | Claus | Santa | ClausStegemann@web.de | 02594894760 | xxx | 0 | 1 |  | 0
+22 | seidl | christine | chris | sdchristinchen@web.de | 040-76751624 | xxx | 0 | 0 |  | 0
+23 | Hasselmann | Jan | BayJan | janhasselmann@gmx.de |  | xxx | 0 | 0 |  | 0
+24 | Rönnebeck | Stefan | Roenne | stefan.roennebeck@medium-big-band.de | 0179-5462057 | xxx | 0 | 0 |  | 0
+25 | Esselmann | Dirk | Essel | dirk.esselmann@wertgutachter.de | 02502/6936 | xxx | 0 | 0 |  | 0
+26 | Hühnken | Lutz | tyler | lutz@huehnken.de | 040-30237867 | xxx | 0 | 1 |  | 0
+27 | Reinke | Markus | Kron | markus_reinke@gmx.net | - | xxx | 0 | 1 |  | 0
+28 | Timm | Volker | volki | volker.timm@web.de |  | xxx | 0 | 1 |  | 0
+29 | Seekamp | Holger | Holgi | seekamp@gmx.de |  | xxx | 0 | 0 |  | 0
+30 | Christoph | Martin | Chrisi | christophm@onbo_email.at |  | xxx | 0 | 1 |  | 0
+31 | Schroepke | Dieter | Dieter | dieter.schroepke@gmx.de | 43272409 | xxx | 0 | 1 |  | 0
+32 | Paus | Michael | Manni | pausm@web.de |  | xxx | 0 | 0 |  | 0
+33 | Wiemers | Meinolf | SpecialAgent | mail@meinolf-wiemers.de | 0511-2353935 | xxx | 0 | 1 |  | 0
+34 | Kroschk | Axel | Rumo | axel@kroschk.net |  | xxx | 0 | 1 |  | 0
+35 | Seidl | Andreas | Andi | Andreas.seidl@gmx.de | 08419936520 | xxx | 0 | 0 |  | 0
+14147 | Parplies | Jan-Peter | Peter Pan | janpar@gmx.de | 040/859710 | xxx | 0 | 1 |  | 0
+17279 | König | Michael | King | king@unicum.de | 0251-271194 | xxx | 0 | 0 |  | 0
+17280 | JEDA | JonaErikDavidAxel | Goddard |  |  | xxx | 0 | 0 | (e) | 0
+17281 | Riemann | Jörg | Bernd_das_Brot | ri@mc-wetter.de |  | xxx | 0 | 0 |  | 0
+17282 | Schienagel | Peter | binglers | binglers@t-online.de | binglers@t-online.de | xxx | 1 | 0 |  | 0
+17283 | Kaiser | Michael | Mikai | michael.Kaiser@derAmrumer.de | michael.Kaiser@derAmrumer.de | xxx | 1 | 0 |  | 0
+17284 | Thiele | Dirk | Rainman | diplomet@gmx.de | diplomet@gmx.de | xxx | 1 | 0 |  | 0
+17285 | Schenk | Friedemann | Friedi | Friedemann.Schenk@gmx.de | Friedemann.Schenk@gmx.de | xxx | 1 | 0 |  | 0
+17286 | Thürling | Nadine | Dennis | NadineThuerling@web.de | NadineThuerling@web.de | xxx | 1 | 0 |  | 0
+17287 | Rohloff | Bianka | mrsTipp | andre.winkler@web.de | andre.winkler@web.de | xxx | 1 | 0 | (e) | 0
+17288 | Lampe | Marc-Oliver | Mao | molampe@web.de |  | xxx | 0 | 0 |  | 0
+17289 | Svea | Svea | Svea | markusrohloff@gmx.de |  | xxx | 0 | 0 |  | 0
+17290 | Wortmann | Martin | Martin04 | m_wortmann@gmx.de |  | xxx | 0 | 0 |  | 0
 
 ### TAB bo_team
 ### id | bo_name | bo_longname | bo_logo | bo_teamtype | bo_location_ref | bo_openligaid | bo_shortname | bo_xshortname
-27 | Frankreich | Frankreich | frankreich.gif | 1 |  |  | Frankreich | FRA
-28 | Senegal | Senegal | senegal.gif | 1 |  |  | Senegal | SEN
-29 | Uruguay | Uruguay | uruguay.gif | 1 |  |  | Uruguay | URU
-30 | Dänemark | Dänemark | daenemark.gif | 1 |  |  | Dänemark | DEN
+27 | Frankreich | Frankreich | /assets/nationflag/france.svg | 1 |  |  | Frankreich | FRA
+28 | Senegal | Senegal | /assets/nationflag/senegal.svg | 1 |  |  | Senegal | SEN
+29 | Uruguay | Uruguay | /assets/nationflag/uruguay.svg | 1 |  |  | Uruguay | URU
+30 | Dänemark | Dänemark | /assets/nationflag/denmark.svg | 1 |  |  | Dänemark | DEN
 31 | Paraguay | Paraguay | paraguay.gif | 1 |  |  | Paraguay | 
 32 | Südafrika | Südafrika | suedafrika.gif | 1 |  |  | Südafrika | 
-33 | Spanien | Spanien | spanien.gif | 1 |  |  | Spanien | SPA
+33 | Spanien | Spanien | /assets/nationflag/spain.svg | 1 |  |  | Spanien | SPA
 34 | Slowenien | Slowenien | slowenien.gif | 1 |  |  | Slowenien | 
-35 | Brasilien | Brasilien | brasilien.gif | 1 |  |  | Brasilien | BRA
+35 | Brasilien | Brasilien | /assets/nationflag/brazil.svg | 1 |  |  | Brasilien | BRA
 36 | Türkei | Türkei | tuerkei.gif | 1 |  |  | Türkei | TUR
 37 | China VR | China VR | china.gif | 1 |  |  | China VR | 
-38 | Costa Rica | Costa Rica | costarica.gif | 1 |  |  | Costa Rica | CRC
-39 | Rep.Korea | Rep.Korea | suedkorea.gif | 1 |  |  | Rep.Korea | SKO
-40 | Polen | Polen | polen.gif | 1 |  |  | Polen | POL
-41 | USA | USA | usa.gif | 1 |  |  | USA | 
-42 | Portugal | Portugal | portugal.gif | 1 |  |  | Portugal | POR
+38 | Costa Rica | Costa Rica | /assets/nationflag/costarica.svg | 1 |  |  | Costa Rica | CRC
+39 | Rep.Korea | Rep.Korea | /assets/nationflag/southkorea.svg | 1 |  |  | Rep.Korea | KOR
+40 | Polen | Polen | /assets/nationflag/poland.svg | 1 |  |  | Polen | POL
+41 | USA | USA | /assets/nationflag/usa.svg | 1 |  |  | USA | USA
+42 | Portugal | Portugal | /assets/nationflag/portugal.svg | 1 |  |  | Portugal | PRT
 43 | Irland | Irland | irland.gif | 1 |  |  | Irland | 
-44 | Kamerun | Kamerun | kamerun.gif | 1 |  |  | Kamerun | 
-45 | Deutschland | Deutschland | dfb.gif | 1 |  |  | Deutschland | DEU
-46 | Saudi Arabien | Saudi Arabien | saudiarabien.gif | 1 |  |  | Saudi Arabien | SAR
-47 | England | England | england.gif | 1 |  |  | England | ENG
+44 | Kamerun | Kamerun | /assets/nationflag/cameroon.svg | 1 |  |  | Kamerun | CMR
+45 | Deutschland | Deutschland | /assets/nationflag/germany.svg | 1 |  |  | Deutschland | DEU
+46 | Saudi Arabien | Saudi Arabien | /assets/nationflag/saudiarabien.svg | 1 |  |  | Saudi Arabien | SAR
+47 | England | England | /assets/nationflag/england.svg | 1 |  |  | England | ENG
 48 | Schweden | Schweden | schweden.gif | 1 |  |  | Schweden | SWE
-49 | Argentinien | Argentinien | argentinien.gif | 1 |  |  | Argentinien | ARG
+49 | Argentinien | Argentinien | /assets/nationflag/argentina.svg | 1 |  |  | Argentinien | ARG
 50 | Nigeria | Nigeria | nigeria.gif | 1 |  |  | Nigeria | NIG
-51 | Kroatien | Kroatien | kroatien.gif | 1 |  |  | Kroatien | KRO
-52 | Mexiko | Mexiko | mexiko.gif | 1 |  |  | Mexiko | MEX
-53 | Ecuador | Ecuador | ecuador.gif | 1 |  |  | Ecuador | 
+51 | Kroatien | Kroatien | /assets/nationflag/croatia.svg | 1 |  |  | Kroatien | KRO
+52 | Mexiko | Mexiko | /assets/nationflag/mexico.svg | 1 |  |  | Mexiko | MEX
+53 | Ecuador | Ecuador | /assets/nationflag/ecuador.svg | 1 |  |  | Ecuador | ECU
 54 | Italien | Italien | italien.gif | 1 |  |  | Italien | ITA
-55 | Japan | Japan | japan.gif | 1 |  |  | Japan | JPN
-56 | Belgien | Belgien | belgien.gif | 1 |  |  | Belgien | BEL
+55 | Japan | Japan | /assets/nationflag/japan.svg | 1 |  |  | Japan | JPN
+56 | Belgien | Belgien | /assets/nationflag/belgium.svg | 1 |  |  | Belgien | BEL
 57 | Russland | Russland | russland.gif | 1 |  |  | Russland | RUS
-58 | Tunesien | Tunesien | tunesien.gif | 1 |  |  | Tunesien | TUN
+58 | Tunesien | Tunesien | /assets/nationflag/tunisia.svg | 1 |  |  | Tunesien | TUN
 907 | Griechenland | Griechenland | greece.gif | 1 |  |  | Griechenland | 
-911 | Schweiz | Schweiz | swiss.gif | 1 |  |  | Schweiz | CH
+911 | Schweiz | Schweiz | /assets/nationflag/switzerland.svg | 1 |  |  | Schweiz | CHE
 919 | Bulgarien | Bulgarien | bulgary.gif | 1 |  |  | Bulgarien | 
 922 | Tschechien | Tschechien | czech.gif | 1 |  |  | Tschechien | CZE
 923 | Lettland | Lettland | lettland.gif | 1 |  |  | Lettland | 
-924 | Niederlande | Niederlande | netherland | 1 |  |  | Niederlande | NED
+924 | Niederlande | Niederlande | /assets/nationflag/netherlands.svg | 1 |  |  | Niederlande | NED
 1131 | [noch_nicht_bekannt] | [noch_nicht_bekannt] | unbekannt.gif | 1 |  |  | [noch_nicht_bekannt] | 
 1132 | Trinidad Tabago | Trinidad und Tabago | trinidadtabago.gif | 1 |  |  | Trinidad Tabago | 
 1133 | Elfenbeinküste | Elfenbeinküste | elfenbeinkueste.gif | 1 |  |  | Elfenbeinküste | 
 1134 | Serbien Montenegro | Serbien und Montenegro | serbienmontenegro.gif | 1 |  |  | Serbien Montenegro | 
-1135 | Iran | Iran | iran.gif | 1 |  |  | Iran | IRN
+1135 | Iran | Iran | /assets/nationflag/iran.svg | 1 |  |  | Iran | IRN
 1136 | Angola | Angola | angola.gif | 1 |  |  | Angola | 
-1137 | Ghana | Ghana | ghana.gif | 1 |  |  | Ghana | 
-1138 | Australien | Australien | australien.gif | 1 |  |  | Australien | AUS
+1137 | Ghana | Ghana | /assets/nationflag/ghana.svg | 1 |  |  | Ghana | GHA
+1138 | Australien | Australien | /assets/nationflag/australia.svg | 1 |  |  | Australien | AUS
 1139 | Togo | Togo | togo.gif | 1 |  |  | Togo | 
 1140 | Ukraine | Ukraine | ukraine.gif | 1 |  |  | Ukraine | UKR
 1141 | FC Bayern München | FC Bayern München | https://i.imgur.com/jJEsJrj.png | 0 |  | 40 | München | FCB
@@ -129,7 +129,7 @@
 1168 | Österreich | Österreich | oesterreich.gif | 1 |  |  | Österreich | AUT
 1169 | Rumänien | Rumänien | rumaenien.gif | 1 |  |  | Rumänien | 
 1170 | 1899 Hoffenheim | 1899 Hoffenheim | https://i.imgur.com/gF0PfEl.png | 0 |  | 175 | Hoffenheim | HFH
-1171 | Serbien | Serbien | serbien.gif | 1 |  |  | Serbien | SRB
+1171 | Serbien | Serbien | /assets/nationflag/serbia.svg | 1 |  |  | Serbien | SRB
 1172 | Algerien | Algerien | algerien.gif | 1 |  |  | Algerien | 
 1173 | Neuseeland | Neuseeland | neuseeland.gif | 1 |  |  | Neuseeland | 
 1174 | Slowakei | Slowakei | slowakei.gif | 1 |  |  | Slowakei | SVK
@@ -146,19 +146,21 @@
 1185 | FC Ingolstadt 04 | FC Ingolstadt 04 | Ingolstadt.gif | 0 |  | 171 | Ingolstadt | I04
 1186 | SV Darmstadt 98 | SV Darmstadt 98 | Darmstadt.gif | 0 |  | 118 | SV Darmstadt 98 | 
 1187 | Albanien | Albanien | albanien.gif | 1 |  |  | Albanien | 
-1188 | Wales | Wales | wales.gif | 1 |  |  | Wales | WAL
+1188 | Wales | Wales | /assets/nationflag/wales.svg | 1 |  |  | Wales | WAL
 1189 | Nordirland | Nordirland | nordirland.gif | 1 |  |  | Nordirland | 
 1190 | Ungarn | Ungarn | ungarn.gif | 1 |  |  | Ungarn | HUN
 1191 | Island | Island | island.gif | 1 |  |  | Island | ISL
 1192 | RB Leipzig | RB Leipzig | https://i.imgur.com/Rpwsjz1.png | 0 |  | 1635 | Leipzig | RBL
 1193 | Ägypten | Ägypten | aegypten.gif | 1 |  |  | Ägypten | EGY
-1194 | Marokko | Marokko | marokko.gif | 1 |  |  | Marokko | MAR
+1194 | Marokko | Marokko | /assets/nationflag/morocco.svg | 1 |  |  | Marokko | MAR
 1195 | Panama | Panama | panama.gif | 1 |  |  | Panama | PAN
 1196 | Peru | Peru | peru.gif | 1 |  |  | Peru | PER
 1197 | Union Berlin | 1.FC Union Berlin | https://www.fc-union-berlin.de/cache/1-FC-Union-Berlin-e979b4b72734cc0af9d1b159719235b9.png | 0 |  | 80 | Union Berlin | UNI
 1198 | Finnland | Finnland | finnland.gif | 1 |  |  | Finnland | FIN
 1199 | Nordmazedonien | Nordmazedonien | nordmazedonien.gif | 1 |  |  | Nordmazedonien | MKD
 1200 | Schottland | Schottland | schottland.gif | 1 |  |  | Schottland | SCO
+1201 | Katar | Katar | /assets/nationflag/qatar.svg | 1 |  |  | Katar | KAT
+1202 | Kanada | Kanada | /assets/nationflag/canada.svg | 1 |  |  | Kanada | CAN
 
 ### TAB bo_teamalias
 ### id | bo_aliasname | bo_team_ref
@@ -248,6 +250,7 @@
 31 |  |  | 2021 | EM Europe | 5 | 1 |  | 
 32 |  |  | 2021/2022 | Bundesliga | 0 | 0 | bl1 | 2021
 33 |  |  | 2022/2023 | Bundesliga | 0 | 0 | bl1 | 2022
+34 |  |  | 2022 | WM Katar | 4 | 1 |  | 
 
 ### TAB bo_group
 ### id | bo_season_ref | bo_grouptype_ref
@@ -380,6 +383,19 @@
 127 | 31 | 71
 128 | 32 | 72
 129 | 33 | 72
+130 | 34 | 59
+131 | 34 | 60
+132 | 34 | 61
+133 | 34 | 62
+134 | 34 | 63
+135 | 34 | 64
+136 | 34 | 65
+137 | 34 | 66
+138 | 34 | 67
+139 | 34 | 68
+140 | 34 | 69
+141 | 34 | 70
+142 | 34 | 71
 
 ### TAB bo_team_group
 ### bo_group_ref | bo_team_ref
@@ -410,10 +426,17 @@
 114 | 27
 123 | 27
 124 | 27
+133 | 27
+138 | 27
+139 | 27
+140 | 27
+142 | 27
 15 | 28
 16 | 28
 20 | 28
 109 | 28
+130 | 28
+138 | 28
 20 | 29
 51 | 29
 59 | 29
@@ -425,6 +448,7 @@
 102 | 29
 110 | 29
 111 | 29
+137 | 29
 16 | 30
 20 | 30
 28 | 30
@@ -437,6 +461,7 @@
 124 | 30
 125 | 30
 126 | 30
+133 | 30
 2 | 31
 16 | 31
 24 | 31
@@ -473,6 +498,8 @@
 124 | 33
 125 | 33
 126 | 33
+134 | 33
+138 | 33
 24 | 34
 54 | 34
 1 | 35
@@ -494,6 +521,9 @@
 106 | 35
 110 | 35
 111 | 35
+136 | 35
+138 | 35
+139 | 35
 15 | 36
 16 | 36
 23 | 36
@@ -511,6 +541,7 @@
 83 | 38
 87 | 38
 106 | 38
+134 | 38
 11 | 39
 14 | 39
 15 | 39
@@ -521,6 +552,8 @@
 59 | 39
 82 | 39
 107 | 39
+137 | 39
+138 | 39
 8 | 40
 14 | 40
 48 | 40
@@ -530,6 +563,8 @@
 98 | 40
 109 | 40
 122 | 40
+132 | 40
+138 | 40
 7 | 41
 14 | 41
 15 | 41
@@ -538,6 +573,8 @@
 59 | 41
 81 | 41
 83 | 41
+131 | 41
+138 | 41
 1 | 42
 3 | 42
 5 | 42
@@ -565,6 +602,9 @@
 110 | 42
 123 | 42
 124 | 42
+137 | 42
+138 | 42
+139 | 42
 16 | 43
 17 | 43
 68 | 43
@@ -573,6 +613,7 @@
 17 | 44
 55 | 44
 75 | 44
+136 | 44
 1 | 45
 3 | 45
 5 | 45
@@ -608,9 +649,11 @@
 107 | 45
 123 | 45
 124 | 45
+134 | 45
 4 | 46
 17 | 46
 102 | 46
+132 | 46
 1 | 47
 2 | 47
 12 | 47
@@ -636,6 +679,9 @@
 125 | 47
 126 | 47
 127 | 47
+131 | 47
+138 | 47
+139 | 47
 1 | 48
 2 | 48
 16 | 48
@@ -664,6 +710,11 @@
 87 | 49
 105 | 49
 110 | 49
+132 | 49
+138 | 49
+139 | 49
+140 | 49
+142 | 49
 21 | 50
 52 | 50
 80 | 50
@@ -685,6 +736,11 @@
 114 | 51
 121 | 51
 124 | 51
+135 | 51
+138 | 51
+139 | 51
+140 | 51
+141 | 51
 1 | 52
 10 | 52
 16 | 52
@@ -695,10 +751,12 @@
 83 | 52
 107 | 52
 110 | 52
+132 | 52
 1 | 53
 8 | 53
 22 | 53
 79 | 53
+130 | 53
 1 | 54
 3 | 54
 6 | 54
@@ -731,6 +789,8 @@
 77 | 55
 109 | 55
 110 | 55
+134 | 55
+138 | 55
 16 | 56
 18 | 56
 82 | 56
@@ -747,6 +807,7 @@
 119 | 56
 124 | 56
 125 | 56
+135 | 56
 18 | 57
 30 | 57
 43 | 57
@@ -762,6 +823,7 @@
 4 | 58
 18 | 58
 108 | 58
+133 | 58
 28 | 907
 29 | 907
 30 | 907
@@ -786,6 +848,8 @@
 118 | 911
 124 | 911
 125 | 911
+136 | 911
+138 | 911
 32 | 919
 7 | 922
 27 | 922
@@ -819,6 +883,9 @@
 87 | 924
 120 | 924
 124 | 924
+130 | 924
+138 | 924
+139 | 924
 29 | 1131
 2 | 1132
 9 | 1133
@@ -828,6 +895,7 @@
 10 | 1135
 80 | 1135
 103 | 1135
+131 | 1135
 10 | 1136
 1 | 1137
 7 | 1137
@@ -835,11 +903,14 @@
 59 | 1137
 60 | 1137
 81 | 1137
+137 | 1137
 1 | 1138
 13 | 1138
 53 | 1138
 76 | 1138
 104 | 1138
+133 | 1138
+138 | 1138
 11 | 1139
 1 | 1140
 4 | 1140
@@ -1235,6 +1306,7 @@
 129 | 1170
 53 | 1171
 106 | 1171
+136 | 1171
 54 | 1172
 82 | 1172
 83 | 1172
@@ -1288,6 +1360,7 @@
 98 | 1188
 118 | 1188
 124 | 1188
+131 | 1188
 92 | 1189
 96 | 1189
 95 | 1190
@@ -1306,6 +1379,11 @@
 129 | 1192
 102 | 1193
 103 | 1194
+135 | 1194
+138 | 1194
+139 | 1194
+140 | 1194
+141 | 1194
 108 | 1195
 104 | 1196
 116 | 1197
@@ -1315,6 +1393,8 @@
 119 | 1198
 120 | 1199
 121 | 1200
+130 | 1201
+135 | 1202
 
 ### TAB bo_player
 ### id | bo_name | bo_vorname | bo_openligaid
@@ -3927,6 +4007,14 @@
 968 | 13 |  | 33 | 129 | 2022-11-09 00:00:00 | 39894
 969 | 14 |  | 33 | 129 | 2022-11-12 00:00:00 | 39895
 970 | 15 |  | 33 | 129 | 2023-01-21 00:00:00 | 39896
+971 | 0 |  | 34 | 130 | 2022-11-20 17:00:00 | 
+972 | 1 |  | 34 | 130 | 2022-11-25 11:00:00 | 
+973 | 2 |  | 34 | 130 | 2022-11-29 16:00:00 | 
+974 | 3 |  | 34 | 138 | 2022-12-03 16:00:00 | 
+975 | 4 |  | 34 | 139 | 2022-12-09 16:00:00 | 
+976 | 5 |  | 34 | 140 | 2022-12-13 20:00:00 | 
+977 | 6 |  | 34 | 141 | 2022-12-17 16:00:00 | 
+978 | 7 |  | 34 | 142 | 2022-12-18 16:00:00 | 
 
 ### TAB bo_game
 ### id | bo_date | bo_group_ref | bo_hometeam_ref | bo_guestteam_ref | bo_homegoals | bo_guestgoals | bo_isplayed | bo_gamelist_ref | bo_index | bo_datetime | bo_halftimehomegoals | bo_halftimeguestgoals | bo_overtimehomegoals | bo_overtimeguestgoals | bo_penaltyhomegoals | bo_penaltyguestgoals | bo_location_ref | bo_openligaid | bo_ko
@@ -11303,15 +11391,15 @@
 7458 |  | 129 | 1153 | 1157 | 2 | 1 | 1 | 968 | 6 | 2022-11-08 20:30:00 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 63988 | 0
 7459 |  | 129 | 1197 | 1178 | 2 | 2 | 1 | 968 | 7 | 2022-11-09 20:30:00 | 2 | 2 | 0 | 0 | 0 | 0 | 1 | 63989 | 0
 7460 |  | 129 | 1147 | 1142 | 2 | 0 | 1 | 968 | 8 | 2022-11-08 18:30:00 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 63990 | 0
-7461 |  | 129 | 1178 | 1156 | 0 | 0 | 0 | 969 | 0 | 2022-11-12 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 63991 | 0
-7462 |  | 129 | 1143 | 1153 | 0 | 0 | 0 | 969 | 1 | 2022-11-12 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 63992 | 0
-7463 |  | 129 | 1160 | 1142 | 0 | 0 | 0 | 969 | 2 | 2022-11-11 20:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 63993 | 0
-7464 |  | 129 | 1144 | 1197 | 0 | 0 | 0 | 969 | 3 | 2022-11-13 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 63994 | 0
-7465 |  | 129 | 1157 | 1148 | 0 | 0 | 0 | 969 | 4 | 2022-11-12 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 63995 | 0
-7466 |  | 129 | 1170 | 1147 | 0 | 0 | 0 | 969 | 5 | 2022-11-12 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 63996 | 0
-7467 |  | 129 | 1164 | 1155 | 0 | 0 | 0 | 969 | 6 | 2022-11-13 17:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 63997 | 0
-7468 |  | 129 | 1161 | 1141 | 0 | 0 | 0 | 969 | 7 | 2022-11-12 18:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 63998 | 0
-7469 |  | 129 | 1145 | 1192 | 0 | 0 | 0 | 969 | 8 | 2022-11-12 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 63999 | 0
+7461 |  | 129 | 1178 | 1156 | 0 | 1 | 1 | 969 | 0 | 2022-11-12 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 63991 | 0
+7462 |  | 129 | 1143 | 1153 | 2 | 0 | 1 | 969 | 1 | 2022-11-12 15:30:00 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 63992 | 0
+7463 |  | 129 | 1160 | 1142 | 4 | 2 | 1 | 969 | 2 | 2022-11-11 20:30:00 | 3 | 2 | 0 | 0 | 0 | 0 | 1 | 63993 | 0
+7464 |  | 129 | 1144 | 1197 | 4 | 1 | 1 | 969 | 3 | 2022-11-13 17:30:00 | 4 | 0 | 0 | 0 | 0 | 0 | 1 | 63994 | 0
+7465 |  | 129 | 1157 | 1148 | 2 | 0 | 1 | 969 | 4 | 2022-11-12 15:30:00 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 63995 | 0
+7466 |  | 129 | 1170 | 1147 | 1 | 2 | 1 | 969 | 5 | 2022-11-12 15:30:00 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 63996 | 0
+7467 |  | 129 | 1164 | 1155 | 1 | 1 | 1 | 969 | 6 | 2022-11-13 15:30:00 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 63997 | 0
+7468 |  | 129 | 1161 | 1141 | 0 | 2 | 1 | 969 | 7 | 2022-11-12 18:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 63998 | 0
+7469 |  | 129 | 1145 | 1192 | 1 | 2 | 1 | 969 | 8 | 2022-11-12 15:30:00 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 63999 | 0
 7470 |  | 129 | 1156 | 1157 | 0 | 0 | 0 | 970 | 0 | 2023-01-21 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 64000 | 0
 7471 |  | 129 | 1142 | 1178 | 0 | 0 | 0 | 970 | 1 | 2023-01-22 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 64001 | 0
 7472 |  | 129 | 1160 | 1143 | 0 | 0 | 0 | 970 | 2 | 2023-01-22 17:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 64002 | 0
@@ -11321,6 +11409,70 @@
 7476 |  | 129 | 1153 | 1164 | 0 | 0 | 0 | 970 | 6 | 2023-01-21 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 64006 | 0
 7477 |  | 129 | 1197 | 1170 | 0 | 0 | 0 | 970 | 7 | 2023-01-21 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 64007 | 0
 7478 |  | 129 | 1147 | 1144 | 0 | 0 | 0 | 970 | 8 | 2023-01-21 15:30:00 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 64008 | 0
+7479 |  | 130 | 1201 | 53 | 0 | 2 | 1 | 971 | 0 | 2022-11-20 17:00:00 | 0 | 2 | 0 | 0 | 0 | 0 |  |  | 0
+7480 |  | 131 | 47 | 1135 | 6 | 2 | 1 | 971 | 1 | 2022-11-21 14:00:00 | 3 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7481 |  | 130 | 28 | 924 | 0 | 2 | 1 | 971 | 2 | 2022-11-21 17:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7482 |  | 131 | 41 | 1188 | 1 | 1 | 1 | 971 | 3 | 2022-11-21 20:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7483 |  | 132 | 49 | 46 | 1 | 2 | 1 | 971 | 4 | 2022-11-22 11:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7484 |  | 133 | 30 | 58 | 0 | 0 | 1 | 971 | 5 | 2022-11-22 14:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7485 |  | 132 | 52 | 40 | 0 | 0 | 1 | 971 | 6 | 2022-11-22 17:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7486 |  | 133 | 27 | 1138 | 4 | 1 | 1 | 971 | 7 | 2022-11-22 20:00:00 | 2 | 1 | 0 | 0 | 0 | 0 |  |  | 0
+7487 |  | 135 | 1194 | 51 | 0 | 0 | 1 | 971 | 8 | 2022-11-23 11:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7488 |  | 134 | 45 | 55 | 1 | 2 | 1 | 971 | 9 | 2022-11-23 14:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7489 |  | 134 | 33 | 38 | 7 | 0 | 1 | 971 | 10 | 2022-11-23 17:00:00 | 3 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7490 |  | 135 | 56 | 1202 | 1 | 0 | 1 | 971 | 11 | 2022-11-23 20:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7491 |  | 136 | 911 | 44 | 1 | 0 | 1 | 971 | 12 | 2022-11-24 11:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7492 |  | 137 | 29 | 39 | 0 | 0 | 1 | 971 | 13 | 2022-11-24 14:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7493 |  | 137 | 42 | 1137 | 3 | 2 | 1 | 971 | 14 | 2022-11-24 17:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7494 |  | 136 | 35 | 1171 | 2 | 0 | 1 | 971 | 15 | 2022-11-24 20:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7495 |  | 131 | 1188 | 1135 | 0 | 2 | 1 | 972 | 0 | 2022-11-25 11:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7496 |  | 130 | 1201 | 28 | 1 | 3 | 1 | 972 | 1 | 2022-11-25 14:00:00 | 0 | 1 | 0 | 0 | 0 | 0 |  |  | 0
+7497 |  | 130 | 924 | 53 | 1 | 1 | 1 | 972 | 2 | 2022-11-25 17:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7498 |  | 131 | 47 | 41 | 0 | 0 | 1 | 972 | 3 | 2022-11-25 20:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7499 |  | 133 | 58 | 1138 | 0 | 1 | 1 | 972 | 4 | 2022-11-26 11:00:00 | 0 | 1 | 0 | 0 | 0 | 0 |  |  | 0
+7500 |  | 132 | 40 | 46 | 2 | 0 | 1 | 972 | 5 | 2022-11-26 14:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7501 |  | 133 | 27 | 30 | 2 | 1 | 1 | 972 | 6 | 2022-11-26 17:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7502 |  | 132 | 49 | 52 | 2 | 0 | 1 | 972 | 7 | 2022-11-26 20:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7503 |  | 134 | 55 | 38 | 0 | 1 | 1 | 972 | 8 | 2022-11-27 11:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7504 |  | 135 | 56 | 1194 | 0 | 2 | 1 | 972 | 9 | 2022-11-27 14:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7505 |  | 135 | 51 | 1202 | 4 | 1 | 1 | 972 | 10 | 2022-11-27 17:00:00 | 2 | 1 | 0 | 0 | 0 | 0 |  |  | 0
+7506 |  | 134 | 33 | 45 | 1 | 1 | 1 | 972 | 11 | 2022-11-27 20:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7507 |  | 136 | 44 | 1171 | 3 | 3 | 1 | 972 | 12 | 2022-11-28 11:00:00 | 1 | 2 | 0 | 0 | 0 | 0 |  |  | 0
+7508 |  | 137 | 39 | 1137 | 2 | 3 | 1 | 972 | 13 | 2022-11-28 14:00:00 | 0 | 2 | 0 | 0 | 0 | 0 |  |  | 0
+7509 |  | 136 | 35 | 911 | 1 | 0 | 1 | 972 | 14 | 2022-11-28 17:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7510 |  | 137 | 42 | 29 | 2 | 0 | 1 | 972 | 15 | 2022-11-28 20:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7511 |  | 130 | 924 | 1201 | 2 | 0 | 1 | 973 | 0 | 2022-11-29 16:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7512 |  | 130 | 53 | 28 | 1 | 2 | 1 | 973 | 1 | 2022-11-29 16:00:00 | 0 | 1 | 0 | 0 | 0 | 0 |  |  | 0
+7513 |  | 131 | 1188 | 47 | 0 | 3 | 1 | 973 | 2 | 2022-11-29 20:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7514 |  | 131 | 1135 | 41 | 0 | 1 | 1 | 973 | 3 | 2022-11-29 20:00:00 | 0 | 1 | 0 | 0 | 0 | 0 |  |  | 0
+7515 |  | 133 | 58 | 27 | 1 | 0 | 1 | 973 | 4 | 2022-11-30 16:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7516 |  | 133 | 1138 | 30 | 1 | 0 | 1 | 973 | 5 | 2022-11-30 16:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7517 |  | 132 | 40 | 49 | 0 | 2 | 1 | 973 | 6 | 2022-11-30 20:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7518 |  | 132 | 46 | 52 | 1 | 2 | 1 | 973 | 7 | 2022-11-30 20:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7519 |  | 135 | 51 | 56 | 0 | 0 | 1 | 973 | 8 | 2022-12-01 16:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7520 |  | 135 | 1202 | 1194 | 1 | 2 | 1 | 973 | 9 | 2022-12-01 16:00:00 | 1 | 2 | 0 | 0 | 0 | 0 |  |  | 0
+7521 |  | 134 | 55 | 33 | 2 | 1 | 1 | 973 | 10 | 2022-12-01 20:00:00 | 0 | 1 | 0 | 0 | 0 | 0 |  |  | 0
+7522 |  | 134 | 38 | 45 | 2 | 4 | 1 | 973 | 11 | 2022-12-01 20:00:00 | 0 | 1 | 0 | 0 | 0 | 0 |  |  | 0
+7523 |  | 137 | 39 | 42 | 2 | 1 | 1 | 973 | 12 | 2022-12-02 16:00:00 | 1 | 1 | 0 | 0 | 0 | 0 |  |  | 0
+7524 |  | 137 | 1137 | 29 | 0 | 2 | 1 | 973 | 13 | 2022-12-02 16:00:00 | 0 | 2 | 0 | 0 | 0 | 0 |  |  | 0
+7525 |  | 136 | 44 | 35 | 1 | 0 | 1 | 973 | 14 | 2022-12-02 20:00:00 | 0 | 0 | 0 | 0 | 0 | 0 |  |  | 0
+7526 |  | 136 | 1171 | 911 | 2 | 3 | 1 | 973 | 15 | 2022-12-02 20:00:00 | 2 | 2 | 0 | 0 | 0 | 0 |  |  | 0
+7527 |  | 138 | 924 | 41 | 3 | 1 | 1 | 974 | 0 | 2022-12-03 16:00:00 | 2 | 0 | 0 | 0 | 0 | 0 |  |  | 1
+7528 |  | 138 | 49 | 1138 | 2 | 1 | 1 | 974 | 1 | 2022-12-03 20:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 1
+7529 |  | 138 | 27 | 40 | 3 | 1 | 1 | 974 | 2 | 2022-12-04 16:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 1
+7530 |  | 138 | 47 | 28 | 3 | 0 | 1 | 974 | 3 | 2022-12-04 20:00:00 | 2 | 0 | 0 | 0 | 0 | 0 |  |  | 1
+7531 |  | 138 | 55 | 51 | 1 | 1 | 1 | 974 | 4 | 2022-12-05 16:00:00 | 1 | 0 | 1 | 1 | 1 | 3 |  |  | 1
+7532 |  | 138 | 35 | 39 | 4 | 1 | 1 | 974 | 5 | 2022-12-05 20:00:00 | 4 | 0 | 0 | 0 | 0 | 0 |  |  | 1
+7533 |  | 138 | 1194 | 33 | 0 | 0 | 1 | 974 | 6 | 2022-12-06 16:00:00 | 0 | 0 | 0 | 0 | 3 | 0 |  |  | 1
+7534 |  | 138 | 42 | 911 | 6 | 1 | 1 | 974 | 7 | 2022-12-06 20:00:00 | 2 | 0 | 0 | 0 | 0 | 0 |  |  | 1
+7535 |  | 139 | 51 | 35 | 0 | 0 | 1 | 975 | 0 | 2022-12-09 16:00:00 | 0 | 0 | 1 | 1 | 4 | 2 |  |  | 1
+7536 |  | 139 | 924 | 49 | 2 | 2 | 1 | 975 | 1 | 2022-12-09 20:00:00 | 0 | 1 | 2 | 2 | 3 | 4 |  |  | 1
+7537 |  | 139 | 1194 | 42 | 1 | 0 | 1 | 975 | 2 | 2022-12-10 16:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 1
+7538 |  | 139 | 47 | 27 | 1 | 2 | 1 | 975 | 3 | 2022-12-10 20:00:00 | 0 | 1 | 0 | 0 | 0 | 0 |  |  | 1
+7539 |  | 140 | 49 | 51 | 3 | 0 | 1 | 976 | 0 | 2022-12-13 20:00:00 | 2 | 0 | 0 | 0 | 0 | 0 |  |  | 1
+7540 |  | 140 | 27 | 1194 | 2 | 0 | 1 | 976 | 1 | 2022-12-14 20:00:00 | 1 | 0 | 0 | 0 | 0 | 0 |  |  | 1
+7541 |  | 141 | 51 | 1194 | 2 | 1 | 1 | 977 | 0 | 2022-12-17 16:00:00 | 2 | 1 | 0 | 0 | 0 | 0 |  |  | 1
+7542 |  | 142 | 49 | 27 | 2 | 2 | 1 | 978 | 0 | 2022-12-18 16:00:00 | 2 | 0 | 3 | 3 | 7 | 5 |  |  | 1
 
 ### TAB bo_goal
 ### id | bo_index | bo_homegoals | bo_guestgoals | bo_game_ref | bo_player_ref | bo_minute | bo_goaltype | bo_comment | bo_openligaid
@@ -19044,6 +19196,32 @@
 7787 | 0 | 1 | 1 | 7459 | 1217 | 9 | 0 |  | 97569
 7788 | 0 | 2 | 1 | 7459 | 1400 | 22 | 0 |  | 97573
 7789 | 0 | 2 | 2 | 7459 | 1217 | 39 | 0 |  | 97576
+7790 | 0 | 1 | 0 | 7463 | 1326 | 4 | 0 |  | 97591
+7791 | 0 | 1 | 1 | 7463 | 1204 | 19 | 0 |  | 97592
+7792 | 0 | 2 | 1 | 7463 | 1327 | 26 | 0 |  | 97593
+7793 | 0 | 3 | 1 | 7463 | 1617 | 30 | 0 |  | 97594
+7794 | 0 | 3 | 2 | 7463 | 1290 | 40 | 0 |  | 97595
+7795 | 0 | 4 | 2 | 7463 | 1473 | 46 | 0 |  | 97596
+7796 | 0 | 0 | 1 | 7461 | 1483 | 58 | 0 |  | 97634
+7797 | 0 | 1 | 0 | 7462 | 1203 | 30 | 0 |  | 97628
+7798 | 0 | 2 | 0 | 7462 | 1618 | 82 | 0 |  | 97636
+7799 | 0 | 1 | 0 | 7465 | 1606 | 9 | 0 |  | 97626
+7800 | 0 | 2 | 0 | 7465 | 1185 | 54 | 0 |  | 97631
+7801 | 0 | 1 | 0 | 7466 | 1230 | 42 | 0 |  | 97629
+7802 | 0 | 1 | 1 | 7466 | 1619 | 45 | 3 |  | 97630
+7803 | 0 | 1 | 2 | 7466 | 1219 | 56 | 0 |  | 97632
+7804 | 0 | 0 | 1 | 7469 | 1469 | 13 | 0 |  | 97627
+7805 | 0 | 1 | 1 | 7469 | 1620 | 56 | 0 |  | 97633
+7806 | 0 | 1 | 2 | 7469 | 1335 | 71 | 0 |  | 97635
+7807 | 0 | 0 | 1 | 7468 | 1243 | 38 | 0 |  | 97637
+7808 | 0 | 0 | 2 | 7468 | 1274 | 52 | 0 |  | 97638
+7809 | 0 | 1 | 0 | 7467 | 1416 | 41 | 0 |  | 97649
+7810 | 0 | 1 | 1 | 7467 | 1570 | 67 | 0 |  | 97650
+7811 | 0 | 1 | 0 | 7464 | 1521 | 4 | 1 |  | 97651
+7812 | 0 | 2 | 0 | 7464 | 652 | 6 | 0 |  | 97652
+7813 | 0 | 3 | 0 | 7464 | 1521 | 20 | 1 |  | 97653
+7814 | 0 | 4 | 0 | 7464 | 1435 | 45 | 2 |  | 97654
+7815 | 0 | 4 | 1 | 7464 | 950 | 84 | 0 |  | 97655
 
 ### TAB bo_community
 ### id | bo_shortname | bo_name | bo_year | bo_user_ref | bo_season_ref
@@ -19417,16 +19595,3 @@
 336 | 33 | 14
 337 | 33 | 17290
 338 | 33 | 3
-
-### TAB bo_session
-### id | bo_nickname | bo_token | bo_login | bo_logout | bo_remoteaddress | bo_browser | bo_failedlogins | bo_user_ref
-12 | Frosch | 824A7188845EDF520E45B3D0EEF2868B | 2016-07-26 17:34:59 |  | 78.51.236.129 | Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36 | 0 | 6
-13 | Frosch | BB11D4C7A1DD1D05016B7C32D7D5793B | 2016-07-27 09:29:37 | 2016-07-27 09:29:38 | 78.51.163.12 | Mozilla/5.0 (Windows NT 10.0; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0 | 0 | 6
-14 | Frosch | B4EBCD54827823784D80D50456989FC5 | 2016-07-27 15:21:18 | 2016-08-09 18:40:08 | 78.51.163.12 | Mozilla/5.0 (Windows NT 10.0; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0 | 0 | 6
-15 | mrtipp | 40A7697FDF95942CB0415CC6FE053F3A | 2016-07-28 08:23:43 | 2016-07-28 08:31:56 | 217.115.65.21 | Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0 | 0 | 1
-16 | Frosch | 98DEE736EA5194184492F506005C9E8D | 2016-08-01 13:10:11 |  | 193.41.135.69 | Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0 | 0 | 6
-17 | Frosch | 23ABE53006C145F1C702C5EF7A507999 | 2016-08-02 16:02:31 |  | 87.253.160.225 | Mozilla/5.0 (Linux; Android 5.1.1; Nexus 4 Build/LMY48T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.81 Mobile Safari/537.36 | 0 | 6
-18 | Frosch | 0015A1F0980D38A8B3BB32B57C45F1A8 | 2016-08-07 21:25:05 | 2016-10-20 19:36:16 | 78.51.234.101 | Mozilla/5.0 (Windows NT 10.0; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0 | 0 | 6
-19 | Frosch | 79C595EF4F27161BDC224A4713A2A757 | 2016-08-09 18:40:10 | 2017-04-05 07:47:48 | 78.51.52.24 | Mozilla/5.0 (Windows NT 10.0; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0 | 0 | 6
-20 | Frosch | B63513A1BA3D6EC4B71F0ECC44C01822 | 2016-08-10 10:26:59 |  | 193.41.135.69 | Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0 | 0 | 6
-21 | Frosch | D1C1AC07E2EC6C8BE0876FB9787A2EC0 | 2016-08-11 19:07:39 |  | 193.41.135.69 | Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0 | 0 | 6
