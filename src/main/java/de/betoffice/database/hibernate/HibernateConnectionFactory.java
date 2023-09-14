@@ -1,6 +1,6 @@
 /*
  * ============================================================================
- * Project betoffice-testutils Copyright (c) 2000-2018 by Andre Winkler. All
+ * Project betoffice-testutils Copyright (c) 2000-2023 by Andre Winkler. All
  * rights reserved.
  * ============================================================================
  * GNU GENERAL PUBLIC LICENSE TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND
@@ -32,7 +32,6 @@ import java.util.List;
 import java.util.Properties;
 
 import org.hibernate.cfg.Configuration;
-import org.hibernate.mapping.PersistentClass;
 
 /**
  * Handles Hibernate configuration and Hibernate properties.
@@ -50,8 +49,7 @@ public class HibernateConnectionFactory {
     /**
      * Konstruktor.
      * 
-     * @param classes
-     *            Hibernate entity class list
+     * @param classes Hibernate entity class list
      */
     public HibernateConnectionFactory(List<Class<?>> classes) {
         URL resource = getClass().getResource(
@@ -99,28 +97,13 @@ public class HibernateConnectionFactory {
     /**
      * Creates and returns a connection.
      * 
-     * @return A database connection
-     * @throws SQLException
-     *             A SQL exception
+     * @return              A database connection
+     * @throws SQLException A SQL exception
      */
     public Connection createConnection() throws SQLException {
         Connection conn = hibernateProperties.createConnection();
         conn.setAutoCommit(false);
         return conn;
-    }
-
-    /**
-     * Creates, if necessary, the database schema.
-     * 
-     * @param pcs
-     *            the persistent classes
-     */
-    public void createDatabaseSchemaIfCurrentIsNotValid(
-            List<PersistentClass> pcs) {
-        CreateDatabaseSchema cds = new CreateDatabaseSchema();
-        if (!cds.validateSchema(config, pcs)) {
-            cds.createSilently(config);
-        }
     }
 
 }
