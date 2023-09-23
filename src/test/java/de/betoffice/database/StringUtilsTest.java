@@ -25,7 +25,7 @@ package de.betoffice.database;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Test;
 
 /**

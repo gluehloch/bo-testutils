@@ -23,7 +23,7 @@
 
 package de.betoffice.database.schema;
 
-import static org.apache.commons.lang.StringUtils.replace;
+import static org.apache.commons.lang3.StringUtils.replace;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -31,7 +31,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import de.betoffice.database.commandline.CommandLineArguments;
 import de.dbload.jdbc.connector.JdbcConnector;
