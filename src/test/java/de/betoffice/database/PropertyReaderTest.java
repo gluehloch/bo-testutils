@@ -63,7 +63,7 @@ public class PropertyReaderTest {
         assertThat(props.getProperty("betoffice.persistence.classname")).isEqualTo("org.mariadb.jdbc.Driver");
         assertThat(props.getProperty("betoffice.persistence.dialect")).isEqualTo("org.hibernate.dialect.MariaDBDialect");
         assertThat(props.getProperty("betoffice.persistence.url")).startsWith("jdbc:mariadb://");
-        assertThat(props.getProperty("betoffice.persistence.url")).endsWith("/botest?connectionTimeZone=UTC+2");
+        assertThat(props.getProperty("betoffice.persistence.url")).endsWith("/botest");
     }
 
     private Properties load(URL resource) throws IOException {
