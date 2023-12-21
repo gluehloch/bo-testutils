@@ -6,7 +6,9 @@
     </properties>
     <body>
         <!-- Under construction -->
-        <release version="betoffice-testutils-1.3.0" date="2023-09-14" description="dependency update">
+        
+        <!-- RELEASED -->
+        <release version="betoffice-testutils-1.3.0" date="2023-12-21" description="dependency update">
             <action dev="andrewinkler" type="update" date="2023-09-14">
                 Hibernate and Spring update.
             </action>
