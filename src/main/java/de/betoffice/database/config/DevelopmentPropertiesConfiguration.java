@@ -10,6 +10,8 @@ import org.springframework.context.annotation.PropertySource;
 @Profile(value = "dev")
 @Configuration
 @PropertySource(ignoreResourceNotFound = true, value = {
+        "file:${AWTOOLS_CONFDIR}/betoffice/betoffice.properties",
+        "file:${user.home}/.bodev.properties",
         "classpath:/bodev.properties"
 })
 public class DevelopmentPropertiesConfiguration {
