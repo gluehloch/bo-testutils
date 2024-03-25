@@ -7,7 +7,7 @@ import org.springframework.context.annotation.PropertySource;
 /**
  * Configuration for dev environment.
  */
-@Profile(value = "dev")
+@Profile(value = "test")
 @Configuration
 @PropertySource(ignoreResourceNotFound = true, value = {
         "file:${AWTOOLS_CONFDIR}/betoffice/betoffice.properties",
