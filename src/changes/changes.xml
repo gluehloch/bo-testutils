@@ -6,9 +6,13 @@
     </properties>
     <body>
         <!-- Under construction -->
-        
         <!-- RELEASED -->
+
+        <!-- Under construction -->
         <release version="betoffice-testutils-1.4.1" date="2025-07-08" description="mail configuration">
+            <action dev="andrewinkler" type="update" date="2025-10-25">
+                parent pom update (JDK 25)
+            </action>
             <action dev="andrewinkler" type="added" date="2025-01-25">
                 Added mail configuration.
             </action>
