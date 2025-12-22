@@ -6,7 +6,15 @@
     </properties>
     <body>
         <!-- Under construction -->
-        
+        <release version="betoffice-testutils-1.4.2" date="2025-12-??" description="Dependency update">
+            <action dev="andrewinkler" type="update" date="2025-12-22">
+                parent pom update fix
+            </action>
+            <action dev="andrewinkler" type="update" date="2025-12-20">
+                dbload-0.9.0 dependency update.
+            </action>
+        </release>
+
         <!-- RELEASED -->
         <release version="betoffice-testutils-1.4.1" date="2025-11-08" description="mail configuration">
             <action dev="andrewinkler" type="update" date="2025-10-25">
